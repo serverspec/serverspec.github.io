@@ -30,7 +30,7 @@ end
 
 ----
 
-### <a name="files_and_directories">Files and Directories</a>
+### <a name="files_and_directories">Files/Directories</a>
 
 Matchers for testing files and directories.
 
@@ -182,7 +182,7 @@ end
 ```
 
 ----
-### <a name="users_and_groups">User/Group</a>
+### <a name="users_and_groups">Users/Groups</a>
 
 Matchers for testing users and groups.
 
