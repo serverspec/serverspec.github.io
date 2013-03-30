@@ -28,6 +28,15 @@ describe 'cron' do
 end
 ```
 
+You can test a given user has the cron entry like this.
+
+```ruby
+describe 'cron' do
+  it { should have_cron_entry '* * * * * /usr/local/bin/foo' }.with_user('foo')
+end
+```
+
+
 ----
 
 ### <a name="files_and_directories">Files/Directories</a>
