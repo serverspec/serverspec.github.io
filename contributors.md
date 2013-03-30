@@ -1,9 +1,9 @@
 ---
 layout: layout
-title: contributers
+title: contributors
 ---
 
-## Contributers
+## Contributors
 
  * [Tatsuya Takamura](https://github.com/ttakamura)
  * [studio3104](https://github.com/studio3104)
