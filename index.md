@@ -1,6 +1,6 @@
 ---
 layout: layout
-title: Home
+title: home
 ---
 
 ## Installation
