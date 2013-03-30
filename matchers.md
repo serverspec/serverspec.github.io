@@ -145,9 +145,9 @@ end
 
 Matchers fo testing packages.
 
-**be_listening**
+#### be_listening
 
-In order to test a given port is listening, you should use **be_listening}} matcher.
+In order to test a given port is listening, you should use **be_listening** matcher.
 
 ```ruby
 describe 'port 80' do
