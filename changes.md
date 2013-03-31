@@ -7,5 +7,5 @@ title: changes
 
 ### 0.1.0
 
- * Support have\_iptables\_rule matcher
+ * [Support have\_iptables\_rule matcher](/matchers.html#iptables)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.0.19...v0.1.0)
