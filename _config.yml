@@ -1,1 +1,3 @@
 markdown: redcarpet
+server: yes
+auto: yes

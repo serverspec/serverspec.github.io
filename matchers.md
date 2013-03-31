@@ -6,8 +6,9 @@ title: matchers
 ## Matchers
 
 <nav>
-[Cron](#cron)
+  [Cron](#cron)
 | [Files and Directories](#files_and_directories)
+| [Iptables](#iptables)
 | [Packages](#packages)
 | [Ports](#ports)
 | [Services](#services)
@@ -110,6 +111,30 @@ In order to test a subject is linked to a given file or directory, you should us
 ```ruby
 describe '/etc/system-release' do
   it { should be_linked_to '/etc/redhat-release' }
+end
+```
+
+----
+
+### <a name="iptables">Iptables</a>
+
+Matchers for testing iptables.
+
+#### have\_iptables\_rule
+
+In order to test iptables has a given rule, you should use **have\_iptables\_rule** matcher.
+
+```ruby
+describe 'iptables' do
+  it { should have_iptables_rule('-P INPUT ACCEPT') }
+end
+```
+
+You can give a table name and a chain name like this.
+
+```ruby
+describe 'iptables' do
+  it { should have_iptables_rule('-P INPUT ACCEPT').with_table('mangle').with_chain('INPUT') }
 end
 ```
 
@@ -218,19 +243,10 @@ end
 
 #### belong\_to\_group
 
-In order to test a user belongs to a given group, you should use **belong_to_group** matcher.
+In order to test a user belongs to a given group, you should use **belong\_to\_group** matcher.
 
 ```ruby
 describe 'apache' do
   it { should belong_to_group 'apache' }
 end
 ```
-
-
-
-
-
-
-
-
-
