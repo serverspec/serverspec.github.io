@@ -7,7 +7,7 @@ title: home
 
 With serverspec, you can write RSpec tests for checking your servers are provisioned correctly.
 
-Serverspec tests your servers' **actual state**  through **SSH access**, so you don't need to install any agent softwares on your servers and can use any provisioning tools, Puppet, Chef, CFEngine and so on.
+Serverspec tests your servers' **actual state**  through **SSH access**, so you don't need to install any agent softwares on your servers and can use any provisioning tools, [Puppet](https://puppetlabs.com/), [Chef](http://www.opscode.com/chef/), [CFEngine](http://cfengine.com/) and so on.
 
 ----
 
