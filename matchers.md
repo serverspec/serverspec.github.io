@@ -7,6 +7,7 @@ title: matchers
 
 <nav>
   [Cron](#cron)
+| [Commands](#commands)
 | [Files and Directories](#files_and_directories)
 | [Iptables](#iptables)
 | [Packages](#packages)
@@ -34,6 +35,22 @@ You can test a given user has the cron entry like this.
 ```ruby
 describe 'cron' do
   it { should have_cron_entry('* * * * * /usr/local/bin/foo').with_user('mizzy') }
+end
+```
+
+----
+
+### <a name="commands">Commands</a>
+
+Matchers for testing executing command result.
+
+#### get_stdout
+
+In order to test a given command gets correct stdout, you should use **get_stdout** matcher.
+
+```ruby
+describe 'whoami' do
+  it { should get_stdout 'root' }
 end
 ```
 

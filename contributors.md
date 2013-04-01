@@ -10,3 +10,4 @@ title: contributors
  * [Shimpei Makimoto](https://github.com/makimoto)
  * [ftnk](https://github.com/ftnk)
  * [MATSUU Takuto](https://github.com/matsuu)
+ * [Tomohiro TAIRA](https://github.com/Tomohiro)
