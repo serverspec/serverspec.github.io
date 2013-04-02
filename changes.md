@@ -5,6 +5,12 @@ title: changes
 
 ## Changes
 
+### 0.1.2
+
+ * Don't add sudo to ssh commands if ssh user is root
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.1.1...v0.1.2)
+
+
 ### 0.1.1
 
  * [Support get_stdout matcher](/matchers.html#commands)
