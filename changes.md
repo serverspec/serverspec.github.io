@@ -7,9 +7,9 @@ title: changes
 
 ### 0.1.2
 
-* Change the command of check_process() from "ps -e" to "ps aux"
-  * [Pull Request #28](https://github.com/mizzy/serverspec/pull/28)
-* [View Diff](https://github.com/mizzy/serverspec/compare/v0.1.2...v0.1.3)
+ * Change the command of check_process() from "ps -e" to "ps aux"
+   * [Pull Request #28](https://github.com/mizzy/serverspec/pull/28)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.1.2...v0.1.3)
 
 ### 0.1.2
 
