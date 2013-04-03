@@ -12,4 +12,4 @@ title: contributors
  * [MATSUU Takuto](https://github.com/matsuu)
  * [Tomohiro TAIRA](https://github.com/Tomohiro)
  * [darron froese](https://github.com/darron)
-
+ * [Wataru MIYAGUNI](https://github.com/gongo)

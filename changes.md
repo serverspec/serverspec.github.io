@@ -5,6 +5,12 @@ title: changes
 
 ## Changes
 
+### 0.1.5
+
+ * Contain matcher supports some chains
+   * [Pull Request #32](https://github.com/mizzy/serverspec/pull/32)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.1.4...v0.1.5)
+
 ### 0.1.4
 
  * Be\_running matcher runs check\_process() if check\_running() returns "stopped".

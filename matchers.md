@@ -83,12 +83,28 @@ end
 
 #### contain
 
-In order to test a file contains given string, you should use **contain** mathcer.
+In order to test a file contains a given string, you should use **contain** mathcer.
 
 ```ruby
 describe '/etc/httpd/conf/httpd.conf' do
   it { should contain 'ServerName www.example.jp' }
 end
+```
+
+You can test a file contains a given string within a given range.
+
+```ruby
+describe 'Gemfile' do
+  # test 'rspec' exists between "group :test do" and "end".
+  it { should contain('rspec').from(/^group :test do/).to(/^end/) }
+
+  # test 'rspec' exists after "group :test do".
+  it { should contain('rspec').after(/^group :test do/) }
+
+  # test 'rspec' exists before "end".
+  it { should contain('rspec').before(/^end/) }
+end
+
 ```
 
 #### be_mode
