@@ -7,7 +7,7 @@ title: changes
 
 ### 0.1.4
 
- * Be_running matcher runs check_process() if check_running() returns "stopped".
+ * Be\_running matcher runs check\_process() if check\_running() returns "stopped".
    * [Pull Request #31](https://github.com/mizzy/serverspec/pull/31)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.1.3...v0.1.4)
 
