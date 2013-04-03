@@ -5,7 +5,7 @@ title: changes
 
 ## Changes
 
-### 0.1.2
+### 0.1.3
 
  * Change the command of check_process() from "ps -e" to "ps aux"
    * [Pull Request #28](https://github.com/mizzy/serverspec/pull/28)
