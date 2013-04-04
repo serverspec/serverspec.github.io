@@ -5,6 +5,12 @@ title: changes
 
 ## Changes
 
+### 0.1.6
+
+ * Ignore "grep" in check_process()
+   * [Pull Request #33](https://github.com/mizzy/serverspec/pull/33)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.1.5...v0.1.6)
+
 ### 0.1.5
 
  * Contain matcher supports some chains
