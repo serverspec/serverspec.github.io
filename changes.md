@@ -5,6 +5,12 @@ title: changes
 
 ## Changes
 
+### 0.1.7
+
+ * Support an Exec backend in addition to Ssh
+   * [Pull Request #33](https://github.com/mizzy/serverspec/pull/34)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.1.6...v0.1.7)
+
 ### 0.1.6
 
  * Ignore "grep" in check_process()
