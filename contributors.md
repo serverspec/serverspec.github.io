@@ -13,3 +13,4 @@ title: contributors
  * [Tomohiro TAIRA](https://github.com/Tomohiro)
  * [darron froese](https://github.com/darron)
  * [Wataru MIYAGUNI](https://github.com/gongo)
+ * [Raphael Pinson](https://github.com/raphink)
