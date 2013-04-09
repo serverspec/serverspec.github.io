@@ -5,6 +5,10 @@ title: changes
 
 ## Changes
 
+### 0.2.4
+ * [Support be\_readable, be\_writable and be\_executable file matchers](https://github.com/mizzy/serverspec/pull/48)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.3...v0.2.4)
+
 ### 0.2.3
  * ["be\_running" matcher support a chain "under" and check_running\_under\_supervisor](https://github.com/mizzy/serverspec/pull/44)
  * [Add dependency rspec to gemspec](https://github.com/mizzy/serverspec/pull/46)
