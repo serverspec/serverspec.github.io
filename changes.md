@@ -9,6 +9,8 @@ title: changes
  * [Add be_zfs matcher](https://github.com/mizzy/serverspec/pull/40)
  * [Support multiple properties with be_zfs mathcer](https://github.com/mizzy/serverspec/pull/41)
  * [Fix stat commands for exact match](https://github.com/mizzy/serverspec/pull/43)
+  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.1...v0.2.2)
+
  
 ### 0.2.1
  * [Move backends and OS helpers to separate directories](https://github.com/mizzy/serverspec/pull/36)
