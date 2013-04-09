@@ -5,6 +5,11 @@ title: changes
 
 ## Changes
 
+### 0.2.2
+ * [Add be_zfs matcher](https://github.com/mizzy/serverspec/pull/40)
+ * [Support multiple properties with be_zfs mathcer](https://github.com/mizzy/serverspec/pull/41)
+ * [Fix stat commands for exact match](https://github.com/mizzy/serverspec/pull/43)
+ 
 ### 0.2.1
  * [Move backends and OS helpers to separate directories](https://github.com/mizzy/serverspec/pull/36)
  * [Fix installed_by_gem edge effect](https://github.com/mizzy/serverspec/pull/37)
