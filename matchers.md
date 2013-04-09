@@ -147,6 +147,66 @@ describe '/etc/system-release' do
 end
 ```
 
+#### be_readable
+
+In order to test a subject is readable, you should use **be\_readable** matcher.
+
+```ruby
+describe '/etc/sudoers' do
+  it { should be_readable }
+end
+```
+
+You can also test a subject is readable by owner, group members or others.
+
+```ruby
+describe '/etc/sudoers' do
+  it { should be_readable.by('owner') }
+  it { should be_readable.by('group') }
+  it { should be_readable.by('others') }
+end
+```
+
+#### be_writable
+
+In order to test a subject is writable, you should use **be\_writable** matcher.
+
+```ruby
+describe '/etc/sudoers' do
+  it { should be_writable }
+end
+```
+
+You can also test a subject is writable by owner, group members or others.
+
+```ruby
+describe '/etc/sudoers' do
+  it { should be_writable.by('owner') }
+  it { should be_writable.by('group') }
+  it { should be_writable.by('others') }
+end
+```
+
+#### be_executable
+
+In order to test a subject is executable, you should use **be\_executable** matcher.
+
+```ruby
+describe '/etc/sudoers' do
+  it { should be_executable }
+end
+```
+
+You can also test a subject is executable by owner, group members or others.
+
+```ruby
+describe '/etc/sudoers' do
+  it { should be_executable.by('owner') }
+  it { should be_executable.by('group') }
+  it { should be_executable.by('others') }
+end
+```
+
 ----
 
 ### <a name="iptables">Iptables</a>
