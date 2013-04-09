@@ -259,6 +259,14 @@ describe 'ntpd' do
 end
 ```
 
+You can test a given service/process is running under [supervisor](http://supervisord.org/).
+
+```ruby
+describe 'ntpd' do
+  it { should be_running.under('supervisor') }
+end
+```
+
 ----
 ### <a name="users_and_groups">Users/Groups</a>
 
