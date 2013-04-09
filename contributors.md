@@ -14,3 +14,5 @@ title: contributors
  * [darron froese](https://github.com/darron)
  * [Wataru MIYAGUNI](https://github.com/gongo)
  * [Rapha&euml;l Pinson](https://github.com/raphink)
+ * [Kentaro Kuribayashi](https://github.com/kentaro)
+ * [Yutaro Sugai](https://github.com/hokkai7go)
