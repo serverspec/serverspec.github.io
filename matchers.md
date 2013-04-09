@@ -187,7 +187,18 @@ describe 'httpd' do
 end
 ```
 
+You can also test a given version of gem is installed.
+
+```ruby
+describe 'jekyll' do
+  it { should be_installed.by('gem').with_version('0.12.1') }
+end
+```
+
+
 #### be\_installed\_by\_gem
+
+**be\_installed\_by\_gem will be depricated. Please use be\_installed.by('gem') instead**
 
 In order to test a gem is installed, you should use **be\_installed\_by\_gem** matcher.
 
