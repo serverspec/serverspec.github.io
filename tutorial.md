@@ -3,9 +3,15 @@ layout: layout
 title: tutorial
 ---
 
+<nav>
+  [Writing tests](#writing_tests)
+| [Multi OS support](#multi_os_support)
+| [Sudo password support](#sudo_password_support)
+</nav>
+
 ## Tutorial
 
-### Writing tests
+### <a name="writing_tests">Writing tests</a>
 
 #### Basic structure of test files
 
@@ -29,7 +35,7 @@ See details on [Matchers](/matchers.html).
 
 ----
 
-#### Multi OS support
+#### <a name="multi_os_support">Multi OS support</a>
 
 Serverspec is supporting Red Hat based OS, Debian based OS, Gentoo and Solaris now.
 
@@ -80,3 +86,15 @@ describe '/etc/httpd/conf/httpd.conf', :os => :debian do
   it { should contain "ServerName www.example.jp" }
 end
 ```
+
+----
+
+#### <a name="sudo_password_support">Sudo password support</a>
+
+If you log into servers as non-root user, serverspec add "sudo" in front of the command.You can specify sudo password like this.
+
+```
+$ SUDO_PASSWORD=xxxxxxxx rake spec
+```
+
+If you'd like to give sudo password by another way, please customize spec_helper.rb.
