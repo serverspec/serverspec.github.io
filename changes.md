@@ -24,7 +24,7 @@ title: changes
  
 ### 0.2.1
  * [Move backends and OS helpers to separate directories](https://github.com/mizzy/serverspec/pull/36)
- * [Fix installed_by_gem edge effect](https://github.com/mizzy/serverspec/pull/37)
+ * [Fix installed\_by\_gem edge effect](https://github.com/mizzy/serverspec/pull/37)
  * [Add a Puppet backend](https://github.com/mizzy/serverspec/pull/38)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.1.7...v0.2.1)
  
