@@ -5,6 +5,13 @@ title: changes
 
 ## Changes
 
+### 0.2.5
+ * [Support handling sudo password](https://github.com/mizzy/serverspec/pull/51)
+ * Some internal refactoring
+   * [Send example to backend](https://github.com/mizzy/serverspec/pull/49)
+   * [Simplify Exec backend with a method_missing method](https://github.com/mizzy/serverspec/pull/50)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.4...v0.2.5)
+
 ### 0.2.4
  * [Support be\_readable, be\_writable and be\_executable file matchers](https://github.com/mizzy/serverspec/pull/48)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.3...v0.2.4)
