@@ -17,9 +17,9 @@ title: changes
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.3...v0.2.4)
 
 ### 0.2.3
- * ["be\_running" matcher support a chain "under" and check_running\_under\_supervisor](https://github.com/mizzy/serverspec/pull/44)
+ * ["be\_running" matcher support a chain "under" and check\_running\_under\_supervisor](https://github.com/mizzy/serverspec/pull/44)
  * [Add dependency rspec to gemspec](https://github.com/mizzy/serverspec/pull/46)
- * [Change be_installed_by_gem to be_installed.by('gem')](https://github.com/mizzy/serverspec/pull/47)
+ * [Change be\_installed\_by\_gem to be_installed.by('gem')](https://github.com/mizzy/serverspec/pull/47)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.2...v0.2.3)
 
 ### 0.2.2
@@ -31,7 +31,7 @@ title: changes
  
 ### 0.2.1
  * [Move backends and OS helpers to separate directories](https://github.com/mizzy/serverspec/pull/36)
- * [Fix installed_by_gem edge effect](https://github.com/mizzy/serverspec/pull/37)
+ * [Fix installed\_by\_gem edge effect](https://github.com/mizzy/serverspec/pull/37)
  * [Add a Puppet backend](https://github.com/mizzy/serverspec/pull/38)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.1.7...v0.2.1)
  
