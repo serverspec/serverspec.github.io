@@ -5,6 +5,10 @@ title: changes
 
 ## Changes
 
+### 0.2.6
+ * [Support have_ipfilter_rule matcher for Solaris](https://github.com/mizzy/serverspec/pull/52)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.5...v0.2.6)
+
 ### 0.2.5
  * [Support handling sudo password](https://github.com/mizzy/serverspec/pull/51)
  * Some internal refactoring
