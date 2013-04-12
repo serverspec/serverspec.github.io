@@ -5,6 +5,12 @@ title: changes
 
 ## Changes
 
+### 0.2.7
+ * [Support have\_ipnat\_rule matcher for Solaris](https://github.com/mizzy/serverspec/pull/54)
+ * [Support have\_svcprop and have\_svcprops matchers for Solaris)[https://github.com/mizzy/serverspec/pull/55)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.6...v0.2.7)
+
+
 ### 0.2.6
  * [Support have\_ipfilter\_rule matcher for Solaris](https://github.com/mizzy/serverspec/pull/52)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.5...v0.2.6)
