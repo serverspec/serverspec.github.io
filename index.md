@@ -32,15 +32,22 @@ Or install it yourself as:
 
 ```
 $ serverspec-init
+Select a backend type:
+
+  1) SSH
+  2) Exec (local)
+
+Select number: 1
+
 Input target host name: www.example.jp
 
 Select OS type of target host:
 
-  1) Red Hat
-  2) Debian
-  3) Gentoo
-  4) Solaris
-  5) None
+  1) Auto Detect
+  2) Red Hat
+  3) Debian
+  4) Gentoo
+  5) Solaris
 
 Select number: 1
 

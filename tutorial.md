@@ -39,7 +39,9 @@ See details on [Matchers](/matchers.html).
 
 Serverspec is supporting Red Hat based OS, Debian based OS, Gentoo and Solaris now.
 
-If your target host's OS is Debian, you should include Serverspec::DebianHelper like this.
+Serverspec can detect target host's OS automatically.
+
+If you'd like to set target host's OS explicitly, you should include `Serverspec::Helper::OSName` like this.
 
 ```ruby
 require 'serverspec'
@@ -47,8 +49,12 @@ require 'pathname'
 require 'net/ssh'
 
 RSpec.configure do |c|
-  # Include appropriate OS helper
-  c.include(Serverspec::DebianHelper)
+  # Include backend helper
+  c.include(Serverspec::Helper::Ssh)
+  # Include OS helper
+  c.include(Serverspec::Helper::Debian)
+  # Add SSH before hook in case you use the SSH backend
+  # (not required for the Exec backend)
   c.before do
     host  = File.basename(Pathname.new(example.metadata[:location]).dirname)
     if c.host != host
@@ -60,32 +66,9 @@ RSpec.configure do |c|
     end
   end
 end
-
 ```
 
-You can select **RedHatHelper**, **DebianHelper**, **GentooHelper** or **SolarisHelper**.
-
-Or you can specify the target host's OS per spec like this.
-
-
-```ruby
-require 'spec_helper'
-
-describe 'httpd', :os => :debian do
-  it { should be_installed }
-  it { should be_enabled   }
-  it { should be_running   }
-end
-
-describe 'port 80', :os => :debian do
-  it { should be_listening }
-end
-
-describe '/etc/httpd/conf/httpd.conf', :os => :debian do
-  it { should be_file }
-  it { should contain "ServerName www.example.jp" }
-end
-```
+You can select **Serverspec::Helper::RedHat**, **Serverspec::Helper::Debian**, **Serverspec::Helper::Gentoo** or **Serverspec::Helper::Solaris**.
 
 ----
 
