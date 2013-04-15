@@ -5,6 +5,11 @@ title: changes
 
 ## Changes
 
+### 0.2.9
+ *  [Fix bugs in OS auto detecting with Exec backend](https://github.com/mizzy/serverspec/pull/58)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.8...v0.2.9)
+
+
 ### 0.2.8
  * [Support detecting target host's OS automatically](https://github.com/mizzy/serverspec/pull/56)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.7...v0.2.8)
