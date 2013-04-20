@@ -5,8 +5,12 @@ title: changes
 
 ## Changes
 
+### 0.2.10
+ * ["belong\_to\_group" matcher matches all groups](https://github.com/mizzy/serverspec/pull/59)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.9...v0.2.10)
+ 
 ### 0.2.9
- *  [Fix bugs in OS auto detecting with Exec backend](https://github.com/mizzy/serverspec/pull/58)
+ * [Fix bugs in OS auto detecting with Exec backend](https://github.com/mizzy/serverspec/pull/58)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.8...v0.2.9)
 
 
