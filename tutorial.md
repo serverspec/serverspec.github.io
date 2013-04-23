@@ -80,4 +80,12 @@ If you log into servers as non-root user, serverspec add "sudo" in front of the 
 $ SUDO_PASSWORD=xxxxxxxx rake spec
 ```
 
+Or display prompt for sudo password if you run serverspec like this.
+
+```
+$ ASK_SUDO_PASSWORD=1 rake spec
+```
+
+If your ``spec/spec_helper.rb`` was created before the version supports sudo password, you should re-create ``spec/spec_helper.rb`` by executing ``rm spec/spec_helper.rb; serverspec-init``.
+
 If you'd like to give sudo password by another way, please customize spec_helper.rb.
