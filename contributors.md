@@ -17,4 +17,4 @@ title: contributors
  * [Kentaro Kuribayashi](https://github.com/kentaro)
  * [Yutaro Sugai](https://github.com/hokkai7go)
  * [Sho Hashimoto](https://github.com/sho-h)
- 
+ * [FUJIWARA Shunichiro](https://github.com/fujiwara)
