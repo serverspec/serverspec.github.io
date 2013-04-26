@@ -5,8 +5,25 @@ title: changes
 
 ## Changes
 
+### 0.2.13
+ * Deprecate "get\_stdout" matcher.Use "return\_stdout" instead.
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.12...v0.2.13)
+
+### 0.2.12
+ * [Support generic command matchers](https://github.com/mizzy/serverspec/pull/61)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.11...v0.2.12)
+
+
+### 0.2.11
+ * [Support showing prompt for sudo password](https://github.com/mizzy/serverspec/pull/62)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.10...v0.2.11)
+
+### 0.2.10
+ * ["belong\_to\_group" matcher matches all groups](https://github.com/mizzy/serverspec/pull/59)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.9...v0.2.10)
+ 
 ### 0.2.9
- *  [Fix bugs in OS auto detecting with Exec backend](https://github.com/mizzy/serverspec/pull/58)
+ * [Fix bugs in OS auto detecting with Exec backend](https://github.com/mizzy/serverspec/pull/58)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.8...v0.2.9)
 
 

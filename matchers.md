@@ -44,7 +44,55 @@ end
 
 Matchers for testing executing command result.
 
+#### return_stdout
+
+In order to test a given command returns correct stdout, you should use **return_stdout** matcher.
+
+```ruby
+describe 'whoami' do
+  it { should return_stdout 'root' }
+end
+```
+
+You can also use a regular expression.
+
+```ruby
+describe 'cat /etc/resolv.conf' do
+  it { should return_stdout /8\.8\.8\.8/ }
+end
+```
+
+#### return_stderr
+
+In order to test a given command returns correct stderr, you should use **return_stderr** matcher.
+
+```ruby
+describe 'ls /foo' do
+  it { should return_stderr 'ls: /foo: No such file or directory' }
+end
+```
+
+You can also use a regular expression.
+
+```ruby
+describe 'ls /foo' do
+  it { should return_stderr /No such file or directory/ }
+end
+```
+
+#### return\_exit\_status
+
+In order to test a given command returns correct exit status, you should use **return\_exit\_status** matcher.
+
+```ruby
+describe 'ls /tmp' do
+  it { should return_exit_status 0 }
+end
+```
+
 #### get_stdout
+
+**Warning! get\_stdout will be deprecated. Please use return_stdout instead**
 
 In order to test a given command gets correct stdout, you should use **get_stdout** matcher.
 
@@ -53,6 +101,7 @@ describe 'whoami' do
   it { should get_stdout 'root' }
 end
 ```
+
 
 
 ----
@@ -258,7 +307,7 @@ end
 
 #### be\_installed\_by\_gem
 
-**Warning! be\_installed\_by\_gem will be depricated. Please use be\_installed.by('gem') instead**
+**Warning! be\_installed\_by\_gem will be deprecated. Please use be\_installed.by('gem') instead**
 
 In order to test a gem is installed, you should use **be\_installed\_by\_gem** matcher.
 
