@@ -12,6 +12,7 @@ title: matchers
 | [Iptables](#iptables)
 | [Packages](#packages)
 | [Ports](#ports)
+| [SELinux](#selinux)
 | [Services](#services)
 | [Users and Groups](#user_and_groups)
 </nav>
@@ -341,6 +342,33 @@ describe 'port 80' do
   it { should be_listening }
 end
 ```
+
+----
+### <a name="selinux">SELinux</a>
+
+Matchers for testing SELinux.
+
+#### be\_disabled/be\_enforcing/be\_permissive
+
+In order to test SELinux is a given mode, you should use **be\_disabled, be\_enforcing and be\_permissinve** matchers.
+
+```ruby
+### SELinux should be disabled
+describe 'selinux' do
+  it { should be_disabled }
+end
+
+### SELinux should be enforcing
+describe 'selinux' do
+  it { should be_enforcing }
+end
+
+### SELinux should be permissive
+describe 'selinux' do
+  it { should be_permissive }
+end
+```
+
 
 ----
 
