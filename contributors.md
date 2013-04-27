@@ -18,3 +18,4 @@ title: contributors
  * [Yutaro Sugai](https://github.com/hokkai7go)
  * [Sho Hashimoto](https://github.com/sho-h)
  * [FUJIWARA Shunichiro](https://github.com/fujiwara)
+ * [kenjiskywalker](https://github.com/kenjiskywalker)
