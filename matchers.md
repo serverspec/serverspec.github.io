@@ -10,6 +10,7 @@ title: matchers
 | [Commands](#commands)
 | [Files and Directories](#files_and_directories)
 | [Iptables](#iptables)
+| [Linux kernel parameters](#linux_kernel_parameters)
 | [Packages](#packages)
 | [Ports](#ports)
 | [SELinux](#selinux)
@@ -280,6 +281,29 @@ describe 'iptables' do
   it { should have_iptables_rule('-P INPUT ACCEPT').with_table('mangle').with_chain('INPUT') }
 end
 ```
+
+----
+
+### <a name="linux_kernel_parameters">Linux kernel parameters</a>
+
+You can test Linux kernel parameters like this.
+
+```ruby
+describe 'Linux kernel parameters' do
+  context 'net.ipv4.tcp_syncookies' do 
+    its(:value) { should eq 1 }
+  end
+
+  context 'kernel.shmall' do
+    its(:value) { should >= 4294967296 }
+  end
+
+  context 'kernel.shmmax' do
+    its(:value) { should <= 68719476736 }
+  end
+end
+```
+
 
 ----
 
