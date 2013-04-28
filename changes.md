@@ -5,6 +5,12 @@ title: changes
 
 ## Changes
 
+### 0.2.15
+ * [Some fixes in spec_helper created by serverspec-init](https://github.com/mizzy/serverspec/pull/68)
+ * [Support linux kernel parameter checking](https://github.com/mizzy/serverspec/pull/69)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.14...v0.2.15)
+
+
 ### 0.2.14
  * [Support selinux matchers](https://github.com/mizzy/serverspec/pull/64)
  * [Change specs for serverspec itself](https://github.com/mizzy/serverspec/pull/65)
