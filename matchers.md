@@ -295,11 +295,11 @@ describe 'Linux kernel parameters' do
   end
 
   context 'kernel.shmall' do
-    its(:value) { should >= 4294967296 }
+    its(:value) { should be >= 4294967296 }
   end
 
   context 'kernel.shmmax' do
-    its(:value) { should <= 68719476736 }
+    its(:value) { should be <= 68719476736 }
   end
 end
 ```
