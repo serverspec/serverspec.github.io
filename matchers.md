@@ -301,6 +301,14 @@ describe 'Linux kernel parameters' do
   context 'kernel.shmmax' do
     its(:value) { should be <= 68719476736 }
   end
+
+  context 'kernel.osrelease' do
+    its(:value) { should eq '2.6.32-131.0.15.el6.x86_64' }
+  end
+
+  context 'net.ipv4.tcp_wmem' do
+    its(:value) { should match /4096\t16384\t4194304/ }
+  end
 end
 ```
 
