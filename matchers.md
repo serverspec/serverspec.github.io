@@ -471,3 +471,43 @@ describe 'apache' do
   it { should belong_to_group 'apache' }
 end
 ```
+
+### have_uid
+
+In order to test a user have a given uid, you should use **have_uid** matcher.
+
+```ruby
+describe 'root' do
+  it { should have_uid 0 }
+end
+```
+
+### have\_home\_directory
+
+In order to test a user have a given home directory, you should use **have\_home\_directory** matcher.
+
+```ruby
+describe 'root' do
+  it { should have_home_directory '/root' }
+end
+```
+
+### have\_login\_shell
+
+In order to test a user have a given login shell, you should use **have\_login\_shell** matcher.
+
+```ruby
+describe 'root' do
+  it { should have_login_shell '/bin/bash' }
+end
+```
+
+### have\_gid
+
+In order to test a group have a given gid, you should use **have\_gid** matcher.
+
+```ruby
+describe 'root' do
+  it { should have_gid 0 }
+end
+```
