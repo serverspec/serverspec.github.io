@@ -15,7 +15,7 @@ title: matchers
 | [Ports](#ports)
 | [SELinux](#selinux)
 | [Services](#services)
-| [Users and Groups](#user_and_groups)
+| [Users and Groups](#users_and_groups)
 </nav>
 
 ### <a name="cron">Cron</a>
