@@ -5,6 +5,10 @@ title: changes
 
 ## Changes
 
+### 0.2.18
+ * [Fix command syntax error](https://github.com/mizzy/serverspec/pull/74)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.17...v0.2.18)
+
 ### 0.2.17
  * [Support have\_uid, have\_home\_directory, have\_login\_shell and have\_gid matchers](https://github.com/mizzy/serverspec/pull/71)
  * [Override check\_file\_contain\_within() for Solaris](https://github.com/mizzy/serverspec/pull/72)
