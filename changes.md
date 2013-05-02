@@ -56,7 +56,7 @@ title: changes
 
 ### 0.2.7
  * [Support have\_ipnat\_rule matcher for Solaris](https://github.com/mizzy/serverspec/pull/54)
- * [Support have\_svcprop and have\_svcprops matchers for Solaris)(https://github.com/mizzy/serverspec/pull/55)
+ * [Support have\_svcprop and have\_svcprops matchers for Solaris](https://github.com/mizzy/serverspec/pull/55)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.6...v0.2.7)
 
 
