@@ -19,3 +19,6 @@ title: contributors
  * [Sho Hashimoto](https://github.com/sho-h)
  * [FUJIWARA Shunichiro](https://github.com/fujiwara)
  * [kenjiskywalker](https://github.com/kenjiskywalker)
+ * [Toshiaki Baba](https://github.com/netmarkjp)
+ * [Takatoshi Maeda](https://github.com/TakatoshiMaeda)
+
