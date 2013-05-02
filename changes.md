@@ -5,6 +5,16 @@ title: changes
 
 ## Changes
 
+### 0.2.19
+ * [Support have\_authorized\_key matcher](https://github.com/mizzy/serverspec/pull/75)
+ * [Support check_gid for Solaris](https://github.com/mizzy/serverspec/pull/77)
+ * [Support check\_login\_shell for Solaris](https://github.com/mizzy/serverspec/pull/78)
+ * [Support check\_home\_directory for Solaris](https://github.com/mizzy/serverspec/pull/79)
+ * [Change sysctl's path to fullpath for CentOS5](https://github.com/mizzy/serverspec/pull/80)
+ * [Use getent instead of /etc/passwd](https://github.com/mizzy/serverspec/pull/81)
+ * [Support check_running for gentoo](https://github.com/mizzy/serverspec/pull/82)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.18...v0.2.19)
+
 ### 0.2.18
  * [Fix command syntax error](https://github.com/mizzy/serverspec/pull/74)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.17...v0.2.18)
