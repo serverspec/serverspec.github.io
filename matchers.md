@@ -502,6 +502,16 @@ describe 'root' do
 end
 ```
 
+### have\_authorized\_key
+
+In order to test a have have a given authorized key, you should use **have\_authorized\_key** matcher.
+
+```ruby
+describe 'root' do
+  it { should have_authorized_key 'ssh-rsa ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGH foo@bar.local' }
+end
+```
+
 ### have\_gid
 
 In order to test a group have a given gid, you should use **have\_gid** matcher.
@@ -511,3 +521,4 @@ describe 'root' do
   it { should have_gid 0 }
 end
 ```
+
