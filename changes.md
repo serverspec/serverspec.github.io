@@ -5,6 +5,12 @@ title: changes
 
 ## Changes
 
+### 0.2.20
+
+ * [Support be\_mounted and be\_resolvable matchers](https://github.com/mizzy/serverspec/pull/76)
+ * [Support with and only\_with chains with be\_mounted matchers](https://github.com/mizzy/serverspec/pull/84)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.19...v0.2.20)
+
 ### 0.2.19
  * [Support have\_authorized\_key matcher](https://github.com/mizzy/serverspec/pull/75)
  * [Support check_gid for Solaris](https://github.com/mizzy/serverspec/pull/77)
