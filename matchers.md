@@ -9,8 +9,8 @@ title: matchers
   [Cron](#cron)
 | [Commands](#commands)
 | [Files and Directories](#files_and_directories)
-| [Iptables](#iptables)
 | [Linux kernel parameters](#linux_kernel_parameters)
+| [Networks](#networks)
 | [Packages](#packages)
 | [Ports](#ports)
 | [SELinux](#selinux)
@@ -258,29 +258,42 @@ describe '/etc/sudoers' do
 end
 ```
 
-----
+#### be_mounted
 
-### <a name="iptables">Iptables</a>
-
-Matchers for testing iptables.
-
-#### have\_iptables\_rule
-
-In order to test iptables has a given rule, you should use **have\_iptables\_rule** matcher.
+In order to test a directory is mounted, you should use **be\_mounted** matcher.
 
 ```ruby
-describe 'iptables' do
-  it { should have_iptables_rule('-P INPUT ACCEPT') }
+describe '/' do
+  it { should be_mounted }
 end
 ```
 
-You can give a table name and a chain name like this.
+You can also test a directory is mounted with correct attributes.
 
 ```ruby
-describe 'iptables' do
-  it { should have_iptables_rule('-P INPUT ACCEPT').with_table('mangle').with_chain('INPUT') }
+describe '/' do
+  it { should be_mounted.with( :type => 'ext4' ) }
+end
+
+describe '/' do
+  it { should be_mounted.with( :options => { :rw => true } ) }
+end
+
+describe '/' do
+  it do
+    should be_mounted.only_with(
+      :device  => '/dev/mapper/VolGroup-lv_root',
+      :type    => 'ext4',
+      :options => {
+        :rw   => true,
+        :mode => 620,
+      }
+    )
+  end
 end
 ```
+
+``only_with`` needs all attributes of the mounted directory.
 
 ----
 
@@ -311,7 +324,47 @@ describe 'Linux kernel parameters' do
   end
 end
 ```
+----
 
+### <a name="networks">Networks</a>
+
+Matchers for testing network related settings.
+
+#### have\_iptables\_rule
+
+In order to test iptables has a given rule, you should use **have\_iptables\_rule** matcher.
+
+```ruby
+describe 'iptables' do
+  it { should have_iptables_rule('-P INPUT ACCEPT') }
+end
+```
+
+You can give a table name and a chain name like this.
+
+```ruby
+describe 'iptables' do
+  it { should have_iptables_rule('-P INPUT ACCEPT').with_table('mangle').with_chain('INPUT') }
+end
+```
+
+### be_resolvable
+
+In order to test a host is resolvable on the target host, you should use **be_resolvable** matcher.
+
+```ruby
+describe 'serverspec.org' do
+  it { should be_resolvable }
+end
+
+describe 'serverspec.org' do
+  it { should be_resolvable.by('hosts') }
+end
+
+describe 'serverspec.org' do
+  it { should be_resolvable.by('dns') }
+end
+```
 
 ----
 
