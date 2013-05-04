@@ -22,3 +22,5 @@ title: contributors
  * [Toshiaki Baba](https://github.com/netmarkjp)
  * [Takatoshi Maeda](https://github.com/TakatoshiMaeda)
  * [wubel](https://github.com/wubel)
+ * [Manabu Matsuzaki](https://github.com/matsumana)
+
