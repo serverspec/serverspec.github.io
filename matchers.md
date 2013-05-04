@@ -348,7 +348,7 @@ describe 'iptables' do
 end
 ```
 
-### be_resolvable
+#### be_resolvable
 
 In order to test a host is resolvable on the target host, you should use **be_resolvable** matcher.
 
@@ -525,7 +525,7 @@ describe 'apache' do
 end
 ```
 
-### have_uid
+#### have_uid
 
 In order to test a user have a given uid, you should use **have_uid** matcher.
 
@@ -535,7 +535,7 @@ describe 'root' do
 end
 ```
 
-### have\_home\_directory
+#### have\_home\_directory
 
 In order to test a user have a given home directory, you should use **have\_home\_directory** matcher.
 
@@ -545,7 +545,7 @@ describe 'root' do
 end
 ```
 
-### have\_login\_shell
+#### have\_login\_shell
 
 In order to test a user have a given login shell, you should use **have\_login\_shell** matcher.
 
@@ -555,7 +555,7 @@ describe 'root' do
 end
 ```
 
-### have\_authorized\_key
+#### have\_authorized\_key
 
 In order to test a have have a given authorized key, you should use **have\_authorized\_key** matcher.
 
@@ -565,7 +565,7 @@ describe 'root' do
 end
 ```
 
-### have\_gid
+#### have\_gid
 
 In order to test a group have a given gid, you should use **have\_gid** matcher.
 
@@ -574,4 +574,3 @@ describe 'root' do
   it { should have_gid 0 }
 end
 ```
-
