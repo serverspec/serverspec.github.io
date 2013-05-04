@@ -5,6 +5,11 @@ title: changes
 
 ## Changes
 
+### 0.2.21
+
+ * [Support Amazon Linux with Helper::DetectOS](https://github.com/mizzy/serverspec/pull/85)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.20...v0.2.21)
+
 ### 0.2.20
 
  * [Support be\_mounted and be\_resolvable matchers](https://github.com/mizzy/serverspec/pull/76)
