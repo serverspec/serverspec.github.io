@@ -377,11 +377,11 @@ describe 'target.example.jp' do
   # tcp port 22
   it { should be_reachable.with( :port => 22 ) }
   # set protocol explicitly
-  it { should be_reachable.wuth( :port => 22, :proto => 'tcp' ) }
+  it { should be_reachable.with( :port => 22, :proto => 'tcp' ) }
   # udp port 53
-  it { should be_reachable.wuth( :port => 53, :proto => 'udp' ) }
+  it { should be_reachable.with( :port => 53, :proto => 'udp' ) }
   # timeout setting (default is 5 seconds)
-  it { should be_reachable.wuth( :port => 22, :proto => 'tcp', :timeou => 1 ) }
+  it { should be_reachable.with( :port => 22, :proto => 'tcp', :timeou => 1 ) }
 end
 ```
 
