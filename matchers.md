@@ -366,6 +366,25 @@ describe 'serverspec.org' do
 end
 ```
 
+#### be_reachable
+
+In order to test a given host is network reachable, you should use **be_reachable** matcher.
+
+```ruby
+describe 'target.example.jp' do
+  # ping
+  it { should be_reachable }
+  # tcp port 22
+  it { should be_reachable.with( :port => 22 ) }
+  # set protocol explicitly
+  it { should be_reachable.wuth( :port => 22, :proto => 'tcp' ) }
+  # udp port 53
+  it { should be_reachable.wuth( :port => 53, :proto => 'udp' ) }
+  # timeout setting (default is 5 seconds)
+  it { should be_reachable.wuth( :port => 22, :proto => 'tcp', :timeou => 1 ) }
+end
+```
+
 ----
 
 ### <a name="packages">Packages</a>
