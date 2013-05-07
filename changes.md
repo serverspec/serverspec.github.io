@@ -5,6 +5,14 @@ title: changes
 
 ## Changes
 
+### 0.2.23
+
+ * [Escape shell command arguments](https://github.com/mizzy/serverspec/pull/87)
+ * [Show the command and its stdout message when should fails](https://github.com/mizzy/serverspec/pull/88)
+ * [Add commands/linux.rb and move linux specific commands from base.rb to linux.rb](https://github.com/mizzy/serverspec/pull/89)
+* [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.22...v0.2.23)
+
+
 ### 0.2.22
 
  * [Support be_reachable matcher](https://github.com/mizzy/serverspec/pull/86)
