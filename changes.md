@@ -5,7 +5,7 @@ title: changes
 
 ## Changes
 
-### 0.2.26
+### 0.2.22
 
  * [Support be_reachable matcher](https://github.com/mizzy/serverspec/pull/86)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.21...v0.2.22)
