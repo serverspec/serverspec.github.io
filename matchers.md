@@ -381,7 +381,7 @@ describe 'target.example.jp' do
   # udp port 53
   it { should be_reachable.with( :port => 53, :proto => 'udp' ) }
   # timeout setting (default is 5 seconds)
-  it { should be_reachable.with( :port => 22, :proto => 'tcp', :timeou => 1 ) }
+  it { should be_reachable.with( :port => 22, :proto => 'tcp', :timeout => 1 ) }
 end
 ```
 
