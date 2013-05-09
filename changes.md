@@ -5,6 +5,12 @@ title: changes
 
 ## Changes
 
+### 0.2.25
+
+ * [Support Darwin(Mac OS X)](https://github.com/mizzy/serverspec/pull/95)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.24...v0.2.25)
+
+
 ### 0.2.24
 
  * [Fix bug of be_mounted matcher](https://github.com/mizzy/serverspec/pull/91)
