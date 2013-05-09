@@ -23,4 +23,5 @@ title: contributors
  * [Takatoshi Maeda](https://github.com/TakatoshiMaeda)
  * [wubel](https://github.com/wubel)
  * [Manabu Matsuzaki](https://github.com/matsumana)
-
+ * [Dan Shultz](https://github.com/danshultz)
+ * [Atsushi Matsuo](https://github.com/matsuo)
