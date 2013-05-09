@@ -5,7 +5,7 @@ title: changes
 
 ## Changes
 
-### 0.2.23
+### 0.2.24
 
  * [Fix bug of be_mounted matcher](https://github.com/mizzy/serverspec/pull/91)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.23...v0.2.24)
