@@ -295,6 +295,16 @@ end
 
 ``only_with`` needs all attributes of the mounted directory.
 
+#### match_md5checksum
+
+In order to test a file's md5 checksum matches a given value, you should use **match_md5checksum** matcher.
+
+```ruby
+describe '/etc/services' do
+  it { should match_md5checksum '35435ea447c19f0ea5ef971837ab9ced' }
+end
+```
+
 ----
 
 ### <a name="linux_kernel_parameters">Linux kernel parameters</a>
