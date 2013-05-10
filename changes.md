@@ -5,6 +5,11 @@ title: changes
 
 ## Changes
 
+### 0.2.26
+
+ * [Support match_md5checksum matcher](https://github.com/mizzy/serverspec/pull/97)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.25...v0.2.26)
+
 ### 0.2.25
 
  * [Support Darwin (Mac OS X)](https://github.com/mizzy/serverspec/pull/95)
