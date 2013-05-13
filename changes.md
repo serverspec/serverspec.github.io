@@ -5,6 +5,16 @@ title: changes
 
 ## Changes
 
+### 0.2.28
+
+ * [Make runuser redhat-specific and use generic 'su' in other linuxes](https://github.com/mizzy/serverspec/pull/100)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.27...v0.2.28)
+
+### 0.2.27
+
+ * [Support checking read/write/execute access rights by a specific user](https://github.com/mizzy/serverspec/pull/99)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.26...v0.2.27)
+
 ### 0.2.26
 
  * [Support match_md5checksum matcher](https://github.com/mizzy/serverspec/pull/97)
