@@ -5,6 +5,13 @@ title: changes
 
 ## Changes
 
+### 0.3.0
+
+ * [Support the mechanism for handling host attributes](https://github.com/mizzy/serverspec/pull/98)
+ * [Fix match_md5checksum matcher on Darwin (OS X)](https://github.com/mizzy/serverspec/pull/101)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.2.28...v0.3.0)
+
+
 ### 0.2.28
 
  * [Make runuser redhat-specific and use generic 'su' in other linuxes](https://github.com/mizzy/serverspec/pull/100)
