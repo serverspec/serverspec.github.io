@@ -25,3 +25,4 @@ title: contributors
  * [Manabu Matsuzaki](https://github.com/matsumana)
  * [Dan Shultz](https://github.com/danshultz)
  * [Atsushi Matsuo](https://github.com/matsuo)
+ * [Francisco A. Lozano](https://github.com/flozano)
