@@ -208,13 +208,14 @@ describe '/etc/sudoers' do
 end
 ```
 
-You can also test a subject is readable by owner, group members or others.
+You can also test a subject is readable by owner, group members, others or a specific user.
 
 ```ruby
 describe '/etc/sudoers' do
   it { should be_readable.by('owner') }
   it { should be_readable.by('group') }
   it { should be_readable.by('others') }
+  it { should be_readable.by_user('apache') }
 end
 ```
 
@@ -228,13 +229,14 @@ describe '/etc/sudoers' do
 end
 ```
 
-You can also test a subject is writable by owner, group members or others.
+You can also test a subject is writable by owner, group members, others or a specific user.
 
 ```ruby
 describe '/etc/sudoers' do
   it { should be_writable.by('owner') }
   it { should be_writable.by('group') }
   it { should be_writable.by('others') }
+  it { should be_writable.by_user('apache') }
 end
 ```
 
@@ -248,13 +250,14 @@ describe '/etc/sudoers' do
 end
 ```
 
-You can also test a subject is executable by owner, group members or others.
+You can also test a subject is executable by owner, group members, others or a specific user.
 
 ```ruby
 describe '/etc/sudoers' do
   it { should be_executable.by('owner') }
   it { should be_executable.by('group') }
   it { should be_executable.by('others') }
+  it { should be_executable.by_user('httpd') }
 end
 ```
 
