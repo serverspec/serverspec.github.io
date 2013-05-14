@@ -398,6 +398,35 @@ describe 'target.example.jp' do
 end
 ```
 
+#### have_entry
+
+In order to test a routing table has a given entry, you should use **have_entry** matcher.
+
+```ruby
+describe 'routing table' do
+  it do
+    should have_entry(
+      :destination => '192.168.100.0/24',
+      :interface   => 'eth1',
+      :gateway     => '192.168.10.1',
+    )
+  end
+end
+```
+
+#### be_default_gateway
+
+In order to test an IP address is set up as a default gateway, you should use **be_default_gateway** matcher.
+
+```ruby
+describe '192.168.10.1' do
+  it { should be_default_gateway }
+
+  # Or you can check the gateway is tied with a specific interfarce
+  it { should be_default_gateway.with_interface('eth0') }
+end
+```
+
 ----
 
 ### <a name="packages">Packages</a>
