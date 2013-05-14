@@ -7,6 +7,11 @@ title: changes
 
 ### 0.3.1
 
+ * [Fix be_mode, be_executable, be_owned_by and be_grouped_into matcher on Darwin (OS X)](https://github.com/mizzy/serverspec/pull/103)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.3.1...v0.3.2)
+
+### 0.3.1
+
  * [Support have_entry and be_default_gateway matchers for checking a routing table](https://github.com/mizzy/serverspec/pull/92)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.3.0...v0.3.1)
 
