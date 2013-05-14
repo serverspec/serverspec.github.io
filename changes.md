@@ -5,6 +5,11 @@ title: changes
 
 ## Changes
 
+### 0.3.1
+
+ * [Support have_entry and be_default_gateway matchers for checking a routing table](https://github.com/mizzy/serverspec/pull/92)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.3.0...v0.3.1)
+
 ### 0.3.0
 
  * [Support the mechanism for handling host attributes](https://github.com/mizzy/serverspec/pull/98)
