@@ -414,9 +414,9 @@ describe 'routing table' do
 end
 ```
 
-#### be_default_gateway
+#### be\_default\_gateway
 
-In order to test an IP address is set up as a default gateway, you should use **be_default_gateway** matcher.
+In order to test an IP address is set up as a default gateway, you should use **be\_default\_gateway** matcher.
 
 ```ruby
 describe '192.168.10.1' do
