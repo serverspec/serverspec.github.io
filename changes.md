@@ -5,7 +5,7 @@ title: changes
 
 ## Changes
 
-### 0.3.1
+### 0.3.2
 
  * [Fix be_mode, be_executable, be_owned_by and be_grouped_into matcher on Darwin (OS X)](https://github.com/mizzy/serverspec/pull/103)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.3.1...v0.3.2)
