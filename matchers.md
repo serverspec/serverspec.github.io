@@ -527,9 +527,16 @@ Matchers for testing services.
 In order to test a given service is enabled(automatically start when OS booting up), you should use **be_enabled** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'ntpd' do
   it { should be_enabled }
 end
+
+# You should use this syntax with v0.4.0 and later
+describe service('ntpd') do
+  it { should be_enabled }
+end
+
 ```
 
 #### be_running
@@ -537,7 +544,13 @@ end
 In order to test a given service/process is running, you should use **be_running** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'ntpd' do
+  it { should be_running }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe service('ntpd') do
   it { should be_running }
 end
 ```
@@ -545,7 +558,13 @@ end
 You can test a given service/process is running under [supervisor](http://supervisord.org/).
 
 ```ruby
+# This syntax will be deprecated
 describe 'ntpd' do
+  it { should be_running.under('supervisor') }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe service('ntpd') do
   it { should be_running.under('supervisor') }
 end
 ```
