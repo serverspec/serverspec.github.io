@@ -5,6 +5,13 @@ title: changes
 
 ## Changes
 
+### 0.4.0
+
+ * [Update gemspec](https://github.com/mizzy/serverspec/pull/106)
+ * [Support explicit subject type of service](https://github.com/mizzy/serverspec/pull/105)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.3.2...v0.4.0)
+
+
 ### 0.3.2
 
  * [Fix be_mode, be_executable, be_owned_by and be_grouped_into matcher on Darwin (OS X)](https://github.com/mizzy/serverspec/pull/103)
