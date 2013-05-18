@@ -5,10 +5,19 @@ title: changes
 
 ## Changes
 
+
+
+### 0.4.1
+
+ * [Support explicit package subject type](https://github.com/mizzy/serverspec/pull/107)
+ * [Support explicit port subject type](https://github.com/mizzy/serverspec/pull/108)
+ * [Support explicit file subject type](https://github.com/mizzy/serverspec/pull/109)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.0...v0.4.1)
+
 ### 0.4.0
 
  * [Update gemspec](https://github.com/mizzy/serverspec/pull/106)
- * [Support explicit subject type of service](https://github.com/mizzy/serverspec/pull/105)
+ * [Support explicit service subject type](https://github.com/mizzy/serverspec/pull/105)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.3.2...v0.4.0)
 
 
