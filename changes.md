@@ -5,6 +5,14 @@ title: changes
 
 ## Changes
 
+### 0.4.5
+
+ * [Support explicit zfs subject type](https://github.com/mizzy/serverspec/pull/119)
+ * [Support explicit ipnat subject type](https://github.com/mizzy/serverspec/pull/120)
+ * [Support explicit ipfilter subject type](https://github.com/mizzy/serverspec/pull/121)
+ * [Support have_propety with service type for Solaris](https://github.com/mizzy/serverspec/pull/122)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.4...v0.4.5)
+
 ### 0.4.4
 
  * [Support explicit selinux subject type](https://github.com/mizzy/serverspec/pull/117)
