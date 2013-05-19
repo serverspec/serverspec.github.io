@@ -5,12 +5,20 @@ title: changes
 
 ## Changes
 
+### 0.4.3
+
+ * [Support explicit linux kernel parameter subject type](https://github.com/mizzy/serverspec/pull/112)
+ * [Support explicit iptables subject type](https://github.com/mizzy/serverspec/pull/113)
+ * [Support explicit host subject type](https://github.com/mizzy/serverspec/pull/114)
+ * [Support explicit routing table subject type](https://github.com/mizzy/serverspec/pull/115)
+ * [Support explicit default gateway subject type](https://github.com/mizzy/serverspec/pull/116)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.2...v0.4.3)
+
 ### 0.4.2
 
- * [Support explicit command subject type](https://github.com/mizzy/serverspec/pull/110)
- * [Support explicit cron subject type](https://github.com/mizzy/serverspec/pull/111)
+ * [Support explicit cron subject type](https://github.com/mizzy/serverspec/pull/110)
+ * [Support explicit command subject type](https://github.com/mizzy/serverspec/pull/111)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.1...v0.4.2)
-
 
 ### 0.4.1
 
