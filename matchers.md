@@ -29,7 +29,7 @@ In order to test cron have a given entry exists, you should use **have_cron_entr
 ```ruby
 # You should use this syntax with v0.4.0 and later
 describe cron do
-  it { should have_cron_entry '* * * * * /usr/local/bin/foo' }
+  it { should have_entry '* * * * * /usr/local/bin/foo' }
 end
 
 # This syntax will be deprecated
