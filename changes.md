@@ -5,6 +5,12 @@ title: changes
 
 ## Changes
 
+### 0.4.4
+
+ * [Support explicit selinux subject type](https://github.com/mizzy/serverspec/pull/117)
+ * [Support explicit user and group subject types](https://github.com/mizzy/serverspec/pull/118)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.3...v0.4.4)
+
 ### 0.4.3
 
  * [Support explicit linux kernel parameter subject type](https://github.com/mizzy/serverspec/pull/112)
