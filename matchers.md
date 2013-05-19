@@ -27,7 +27,13 @@ Matchers for testing cron.
 In order to test cron have a given entry exists, you should use **have_cron_entry** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'cron' do
+  it { should have_cron_entry '* * * * * /usr/local/bin/foo' }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe cron do
   it { should have_cron_entry '* * * * * /usr/local/bin/foo' }
 end
 ```
@@ -35,7 +41,13 @@ end
 You can test a given user has the cron entry like this.
 
 ```ruby
+# This syntax will be deprecated
 describe 'cron' do
+  it { should have_cron_entry('* * * * * /usr/local/bin/foo').with_user('mizzy') }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe cron do
   it { should have_cron_entry('* * * * * /usr/local/bin/foo').with_user('mizzy') }
 end
 ```
@@ -51,7 +63,13 @@ Matchers for testing executing command result.
 In order to test a given command returns correct stdout, you should use **return_stdout** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'whoami' do
+  it { should return_stdout 'root' }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe command('whoami') do
   it { should return_stdout 'root' }
 end
 ```
@@ -59,7 +77,13 @@ end
 You can also use a regular expression.
 
 ```ruby
+# This syntax will be deprecated
 describe 'cat /etc/resolv.conf' do
+  it { should return_stdout /8\.8\.8\.8/ }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe command('cat /etc/resolv.conf') do
   it { should return_stdout /8\.8\.8\.8/ }
 end
 ```
@@ -69,7 +93,13 @@ end
 In order to test a given command returns correct stderr, you should use **return_stderr** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'ls /foo' do
+  it { should return_stderr 'ls: /foo: No such file or directory' }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe command('ls /foo') do
   it { should return_stderr 'ls: /foo: No such file or directory' }
 end
 ```
@@ -77,7 +107,13 @@ end
 You can also use a regular expression.
 
 ```ruby
+# This syntax will be deprecated
 describe 'ls /foo' do
+  it { should return_stderr /No such file or directory/ }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe command('ls /foo') do
   it { should return_stderr /No such file or directory/ }
 end
 ```
@@ -87,7 +123,13 @@ end
 In order to test a given command returns correct exit status, you should use **return\_exit\_status** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'ls /tmp' do
+  it { should return_exit_status 0 }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe command('ls /tmp') do
   it { should return_exit_status 0 }
 end
 ```
