@@ -5,6 +5,11 @@ title: changes
 
 ## Changes
 
+### 0.4.6
+
+ * [Show obsolete warning when using a string as a subject](https://github.com/mizzy/serverspec/pull/123)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.5...v0.4.6)
+
 ### 0.4.5
 
  * [Support explicit zfs subject type](https://github.com/mizzy/serverspec/pull/119)
