@@ -5,6 +5,11 @@ title: changes
 
 ## Changes
 
+### 0.4.2
+
+ * [Support explicit command subject type](https://github.com/mizzy/serverspec/pull/110)
+ * [Support explicit cron subject type](https://github.com/mizzy/serverspec/pull/111)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.1...v0.4.2)
 
 
 ### 0.4.1
