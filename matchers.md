@@ -117,7 +117,7 @@ describe command('ls /foo') do
   it { should return_stderr /No such file or directory/ }
 end
 ```
-
+    
 #### return\_exit\_status
 
 In order to test a given command returns correct exit status, you should use **return\_exit\_status** matcher.
@@ -493,6 +493,7 @@ end
 You can test Linux kernel parameters like this.
 
 ```ruby
+# These syntaxes will be deprecated
 describe 'Linux kernel parameters' do
   context 'net.ipv4.tcp_syncookies' do 
     its(:value) { should eq 1 }
@@ -514,6 +515,29 @@ describe 'Linux kernel parameters' do
     its(:value) { should match /4096\t16384\t4194304/ }
   end
 end
+
+# You should use these syntaxes with v0.4.0 and later
+describe 'Linux kernel parameters' do
+  context linux_kernel_parameter('net.ipv4.tcp_syncookies') do 
+    its(:value) { should eq 1 }
+  end
+
+  context linux_kernel_parameter('kernel.shmall') do
+    its(:value) { should be >= 4294967296 }
+  end
+
+  context linux_kernel_parameter('kernel.shmmax') do
+    its(:value) { should be <= 68719476736 }
+  end
+
+  context linux_kernel_parameter('kernel.osrelease') do
+    its(:value) { should eq '2.6.32-131.0.15.el6.x86_64' }
+  end
+
+  context linux_kernel_parameter('net.ipv4.tcp_wmem') do
+    its(:value) { should match /4096\t16384\t4194304/ }
+  end
+end
 ```
 ----
 
@@ -526,16 +550,28 @@ Matchers for testing network related settings.
 In order to test iptables has a given rule, you should use **have\_iptables\_rule** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'iptables' do
   it { should have_iptables_rule('-P INPUT ACCEPT') }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe iptables do
+  it { should have_rule('-P INPUT ACCEPT') }
 end
 ```
 
 You can give a table name and a chain name like this.
 
 ```ruby
+# This syntax will be deprecated
 describe 'iptables' do
   it { should have_iptables_rule('-P INPUT ACCEPT').with_table('mangle').with_chain('INPUT') }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe iptables do
+  it { should have_rule('-P INPUT ACCEPT').with_table('mangle').with_chain('INPUT') }
 end
 ```
 
@@ -544,6 +580,7 @@ end
 In order to test a host is resolvable on the target host, you should use **be_resolvable** matcher.
 
 ```ruby
+# These syntaxes will be deprecated
 describe 'serverspec.org' do
   it { should be_resolvable }
 end
@@ -555,6 +592,19 @@ end
 describe 'serverspec.org' do
   it { should be_resolvable.by('dns') }
 end
+
+# You should use these syntaxes with v0.4.0 and later
+describe host('serverspec.org') do
+  it { should be_resolvable }
+end
+
+describe host('serverspec.org') do
+  it { should be_resolvable.by('hosts') }
+end
+
+describe host('serverspec.org') do
+  it { should be_resolvable.by('dns') }
+end
 ```
 
 #### be_reachable
@@ -562,7 +612,22 @@ end
 In order to test a given host is network reachable, you should use **be_reachable** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'target.example.jp' do
+  # ping
+  it { should be_reachable }
+  # tcp port 22
+  it { should be_reachable.with( :port => 22 ) }
+  # set protocol explicitly
+  it { should be_reachable.with( :port => 22, :proto => 'tcp' ) }
+  # udp port 53
+  it { should be_reachable.with( :port => 53, :proto => 'udp' ) }
+  # timeout setting (default is 5 seconds)
+  it { should be_reachable.with( :port => 22, :proto => 'tcp', :timeout => 1 ) }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe host('target.example.jp') do
   # ping
   it { should be_reachable }
   # tcp port 22
@@ -581,7 +646,19 @@ end
 In order to test a routing table has a given entry, you should use **have_entry** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'routing table' do
+  it do
+    should have_entry(
+      :destination => '192.168.100.0/24',
+      :interface   => 'eth1',
+      :gateway     => '192.168.10.1',
+    )
+  end
+end
+
+# You should use this syntax with v0.4.0 and later
+describe routing_table do
   it do
     should have_entry(
       :destination => '192.168.100.0/24',
@@ -597,12 +674,20 @@ end
 In order to test an IP address is set up as a default gateway, you should use **be\_default\_gateway** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe '192.168.10.1' do
   it { should be_default_gateway }
 
   # Or you can check the gateway is tied with a specific interfarce
   it { should be_default_gateway.with_interface('eth0') }
 end
+
+# You should use this syntax with v0.4.0 and later
+describe default_gateway do
+  its(:ipaddress) { should eq '192.168.10.1' }
+  its(:interface) { should eq 'br0'          }
+end
+
 ```
 
 ----
