@@ -760,18 +760,35 @@ Matchers for testing SELinux.
 In order to test SELinux is a given mode, you should use **be\_disabled, be\_enforcing and be\_permissinve** matchers.
 
 ```ruby
-### SELinux should be disabled
+### This syntax will be deprecated
+# SELinux should be disabled
 describe 'selinux' do
   it { should be_disabled }
 end
 
-### SELinux should be enforcing
+# SELinux should be enforcing
 describe 'selinux' do
   it { should be_enforcing }
 end
 
-### SELinux should be permissive
+# SELinux should be permissive
 describe 'selinux' do
+  it { should be_permissive }
+end
+
+### You should use this syntax with v0.4.0 and later
+# SELinux should be disabled
+describe selinux do
+  it { should be_disabled }
+end
+
+# SELinux should be enforcing
+describe selinux do
+  it { should be_enforcing }
+end
+
+# SELinux should be permissive
+describe selinux do
   it { should be_permissive }
 end
 ```
@@ -840,8 +857,14 @@ Matchers for testing users and groups.
 In order to test a subject exists as a user, you should use **be_user** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'root' do
   it { should be_user }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe user('root') do
+  it { should exist }
 end
 ```
 
@@ -850,8 +873,14 @@ end
 In order to test a subject exists as a group, you should use **be_group** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'wheel' do
   it { should be_group }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe group('wheel') do
+  it { should exist }
 end
 ```
 
@@ -861,7 +890,13 @@ end
 In order to test a user belongs to a given group, you should use **belong\_to\_group** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'apache' do
+  it { should belong_to_group 'apache' }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe user('apache') do
   it { should belong_to_group 'apache' }
 end
 ```
@@ -871,7 +906,13 @@ end
 In order to test a user have a given uid, you should use **have_uid** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'root' do
+  it { should have_uid 0 }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe user('root') do
   it { should have_uid 0 }
 end
 ```
@@ -881,7 +922,13 @@ end
 In order to test a user have a given home directory, you should use **have\_home\_directory** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'root' do
+  it { should have_home_directory '/root' }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe user('root') do
   it { should have_home_directory '/root' }
 end
 ```
@@ -891,7 +938,13 @@ end
 In order to test a user have a given login shell, you should use **have\_login\_shell** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'root' do
+  it { should have_login_shell '/bin/bash' }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe user('root') do
   it { should have_login_shell '/bin/bash' }
 end
 ```
@@ -901,7 +954,13 @@ end
 In order to test a have have a given authorized key, you should use **have\_authorized\_key** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'root' do
+  it { should have_authorized_key 'ssh-rsa ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGH foo@bar.local' }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe user('root') do
   it { should have_authorized_key 'ssh-rsa ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGH foo@bar.local' }
 end
 ```
@@ -911,7 +970,13 @@ end
 In order to test a group have a given gid, you should use **have\_gid** matcher.
 
 ```ruby
+# This syntax will be deprecated
 describe 'root' do
+  it { should have_gid 0 }
+end
+
+# You should use this syntax with v0.4.0 and later
+describe group('root') do
   it { should have_gid 0 }
 end
 ```
