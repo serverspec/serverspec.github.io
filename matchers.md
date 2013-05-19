@@ -27,13 +27,13 @@ Matchers for testing cron.
 In order to test cron have a given entry exists, you should use **have_cron_entry** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'cron' do
+# You should use this syntax with v0.4.0 and later
+describe cron do
   it { should have_cron_entry '* * * * * /usr/local/bin/foo' }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe cron do
+# This syntax will be deprecated
+describe 'cron' do
   it { should have_cron_entry '* * * * * /usr/local/bin/foo' }
 end
 ```
@@ -41,13 +41,13 @@ end
 You can test a given user has the cron entry like this.
 
 ```ruby
-# This syntax will be deprecated
-describe 'cron' do
+# You should use this syntax with v0.4.0 and later
+describe cron do
   it { should have_cron_entry('* * * * * /usr/local/bin/foo').with_user('mizzy') }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe cron do
+# This syntax will be deprecated
+describe 'cron' do
   it { should have_cron_entry('* * * * * /usr/local/bin/foo').with_user('mizzy') }
 end
 ```
@@ -63,13 +63,13 @@ Matchers for testing executing command result.
 In order to test a given command returns correct stdout, you should use **return_stdout** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'whoami' do
+# You should use this syntax with v0.4.0 and later
+describe command('whoami') do
   it { should return_stdout 'root' }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe command('whoami') do
+# This syntax will be deprecated
+describe 'whoami' do
   it { should return_stdout 'root' }
 end
 ```
@@ -77,13 +77,13 @@ end
 You can also use a regular expression.
 
 ```ruby
-# This syntax will be deprecated
-describe 'cat /etc/resolv.conf' do
+# You should use this syntax with v0.4.0 and later
+describe command('cat /etc/resolv.conf') do
   it { should return_stdout /8\.8\.8\.8/ }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe command('cat /etc/resolv.conf') do
+# This syntax will be deprecated
+describe 'cat /etc/resolv.conf' do
   it { should return_stdout /8\.8\.8\.8/ }
 end
 ```
@@ -93,13 +93,13 @@ end
 In order to test a given command returns correct stderr, you should use **return_stderr** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'ls /foo' do
+# You should use this syntax with v0.4.0 and later
+describe command('ls /foo') do
   it { should return_stderr 'ls: /foo: No such file or directory' }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe command('ls /foo') do
+# This syntax will be deprecated
+describe 'ls /foo' do
   it { should return_stderr 'ls: /foo: No such file or directory' }
 end
 ```
@@ -107,13 +107,13 @@ end
 You can also use a regular expression.
 
 ```ruby
-# This syntax will be deprecated
-describe 'ls /foo' do
+# You should use this syntax with v0.4.0 and later
+describe command('ls /foo') do
   it { should return_stderr /No such file or directory/ }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe command('ls /foo') do
+# This syntax will be deprecated
+describe 'ls /foo' do
   it { should return_stderr /No such file or directory/ }
 end
 ```
@@ -123,13 +123,13 @@ end
 In order to test a given command returns correct exit status, you should use **return\_exit\_status** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'ls /tmp' do
+# You should use this syntax with v0.4.0 and later
+describe command('ls /tmp') do
   it { should return_exit_status 0 }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe command('ls /tmp') do
+# This syntax will be deprecated
+describe 'ls /tmp' do
   it { should return_exit_status 0 }
 end
 ```
@@ -159,13 +159,13 @@ Matchers for testing files and directories.
 In order to test a subject exists as a file, you should use **be_file** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe '/etc/passwd' do
+# You should use this syntax with v0.4.0 and later
+describe file('/etc/passwd') do
   it { should be_file }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/etc/passwd') do
+# This syntax will be deprecated
+describe '/etc/passwd' do
   it { should be_file }
 end
 ```
@@ -175,13 +175,13 @@ end
 In order to test a subject exists as a directory, you should use **be_directory** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe '/var/log/httpd' do
+# You should use this syntax with v0.4.0 and later
+describe file('/var/log/httpd') do
   it { should be_directory }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/var/log/httpd') do
+# This syntax will be deprecated
+describe '/var/log/httpd' do
   it { should be_directory }
 end
 ```
@@ -191,13 +191,13 @@ end
 In order to test a file contains a given string, you should use **contain** mathcer.
 
 ```ruby
-# This syntax will be deprecated
-describe '/etc/httpd/conf/httpd.conf' do
+# You should use this syntax with v0.4.0 and later
+describe file('/etc/httpd/conf/httpd.conf') do
   it { should contain 'ServerName www.example.jp' }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/etc/httpd/conf/httpd.conf') do
+# This syntax will be deprecated
+describe '/etc/httpd/conf/httpd.conf' do
   it { should contain 'ServerName www.example.jp' }
 end
 ```
@@ -205,18 +205,6 @@ end
 You can test a file contains a given string within a given range.
 
 ```ruby
-# This syntax will be deprecated
-describe 'Gemfile' do
-  # test 'rspec' exists between "group :test do" and "end".
-  it { should contain('rspec').from(/^group :test do/).to(/^end/) }
-
-  # test 'rspec' exists after "group :test do".
-  it { should contain('rspec').after(/^group :test do/) }
-
-  # test 'rspec' exists before "end".
-  it { should contain('rspec').before(/^end/) }
-end
-
 # You should use this syntax with v0.4.0 and later
 describe file('Gemfile') do
   # test 'rspec' exists between "group :test do" and "end".
@@ -229,6 +217,17 @@ describe file('Gemfile') do
   it { should contain('rspec').before(/^end/) }
 end
 
+# This syntax will be deprecated
+describe 'Gemfile' do
+  # test 'rspec' exists between "group :test do" and "end".
+  it { should contain('rspec').from(/^group :test do/).to(/^end/) }
+
+  # test 'rspec' exists after "group :test do".
+  it { should contain('rspec').after(/^group :test do/) }
+
+  # test 'rspec' exists before "end".
+  it { should contain('rspec').before(/^end/) }
+end
 ```
 
 #### be_mode
@@ -236,13 +235,13 @@ end
 In order to test a subject is set to given mode, you should use **be_mode** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe '/etc/sudoers' do
+# You should use this syntax with v0.4.0 and later
+describe file('/etc/sudoers') do
   it { should be_mode 440 }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/etc/sudoers') do
+# This syntax will be deprecated
+describe '/etc/sudoers' do
   it { should be_mode 440 }
 end
 ```
@@ -252,13 +251,13 @@ end
 In order to test a subject is owned by a given user, you should use **be\_owned\_by** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe '/etc/sudoers' do
+# You should use this syntax with v0.4.0 and later
+describe file('/etc/sudoers') do
   it { should be_owned_by 'root' }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/etc/sudoers') do
+# This syntax will be deprecated
+describe '/etc/sudoers' do
   it { should be_owned_by 'root' }
 end
 ```
@@ -268,13 +267,13 @@ end
 In order to test a subject is grouped into a given group, you should use **be\_grouped\_into** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe '/etc/sudoers' do
+# You should use this syntax with v0.4.0 and later
+describe file('/etc/sudoers') do
   it { should be_grouped_into 'wheel' }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/etc/sudoers') do
+# This syntax will be deprecated
+describe '/etc/sudoers' do
   it { should be_grouped_into 'wheel' }
 end
 ```
@@ -284,13 +283,13 @@ end
 In order to test a subject is linked to a given file or directory, you should use **be\_linked\_to** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe '/etc/system-release' do
+# You should use this syntax with v0.4.0 and later
+describe file('/etc/system-release') do
   it { should be_linked_to '/etc/redhat-release' }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/etc/system-release') do
+# This syntax will be deprecated
+describe '/etc/system-release' do
   it { should be_linked_to '/etc/redhat-release' }
 end
 ```
@@ -300,13 +299,13 @@ end
 In order to test a subject is readable, you should use **be\_readable** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe '/etc/sudoers' do
+# You should use this syntax with v0.4.0 and later
+describe file('/etc/sudoers') do
   it { should be_readable }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/etc/sudoers') do
+# This syntax will be deprecated
+describe '/etc/sudoers' do
   it { should be_readable }
 end
 ```
@@ -314,16 +313,16 @@ end
 You can also test a subject is readable by owner, group members, others or a specific user.
 
 ```ruby
-# This syntax will be deprecated
-describe '/etc/sudoers' do
+# You should use this syntax with v0.4.0 and later
+describe file('/etc/sudoers') do
   it { should be_readable.by('owner') }
   it { should be_readable.by('group') }
   it { should be_readable.by('others') }
   it { should be_readable.by_user('apache') }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/etc/sudoers') do
+# This syntax will be deprecated
+describe '/etc/sudoers' do
   it { should be_readable.by('owner') }
   it { should be_readable.by('group') }
   it { should be_readable.by('others') }
@@ -336,13 +335,13 @@ end
 In order to test a subject is writable, you should use **be\_writable** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe '/etc/sudoers' do
+# You should use this syntax with v0.4.0 and later
+describe file('/etc/sudoers') do
   it { should be_writable }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/etc/sudoers') do
+# This syntax will be deprecated
+describe '/etc/sudoers' do
   it { should be_writable }
 end
 ```
@@ -350,16 +349,16 @@ end
 You can also test a subject is writable by owner, group members, others or a specific user.
 
 ```ruby
-# This syntax will be deprecated
-describe '/etc/sudoers' do
+# You should use this syntax with v0.4.0 and later
+describe file('/etc/sudoers') do
   it { should be_writable.by('owner') }
   it { should be_writable.by('group') }
   it { should be_writable.by('others') }
   it { should be_writable.by_user('apache') }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/etc/sudoers') do
+# This syntax will be deprecated
+describe '/etc/sudoers' do
   it { should be_writable.by('owner') }
   it { should be_writable.by('group') }
   it { should be_writable.by('others') }
@@ -372,13 +371,13 @@ end
 In order to test a subject is executable, you should use **be\_executable** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe '/etc/sudoers' do
+# You should use this syntax with v0.4.0 and later
+describe file('/etc/sudoers') do
   it { should be_executable }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/etc/sudoers') do
+# This syntax will be deprecated
+describe '/etc/sudoers' do
   it { should be_executable }
 end
 ```
@@ -386,16 +385,16 @@ end
 You can also test a subject is executable by owner, group members, others or a specific user.
 
 ```ruby
-# This syntax will be deprecated
-describe '/etc/sudoers' do
+# You should use this syntax with v0.4.0 and later
+describe file('/etc/sudoers') do
   it { should be_executable.by('owner') }
   it { should be_executable.by('group') }
   it { should be_executable.by('others') }
   it { should be_executable.by_user('httpd') }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/etc/sudoers') do
+# This syntax will be deprecated
+describe '/etc/sudoers' do
   it { should be_executable.by('owner') }
   it { should be_executable.by('group') }
   it { should be_executable.by('others') }
@@ -408,13 +407,13 @@ end
 In order to test a directory is mounted, you should use **be\_mounted** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe '/' do
+# You should use this syntax with v0.4.0 and later
+describe file('/') do
   it { should be_mounted }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/') do
+# This syntax will be deprecated
+describe '/' do
   it { should be_mounted }
 end
 ```
@@ -422,16 +421,16 @@ end
 You can also test a directory is mounted with correct attributes.
 
 ```ruby
-# This syntax will be deprecated
-describe '/' do
+# You should use this syntax with v0.4.0 and later
+describe file('/') do
   it { should be_mounted.with( :type => 'ext4' ) }
 end
 
-describe '/' do
+describe file('/') do
   it { should be_mounted.with( :options => { :rw => true } ) }
 end
 
-describe '/' do
+describe file('/') do
   it do
     should be_mounted.only_with(
       :device  => '/dev/mapper/VolGroup-lv_root',
@@ -444,16 +443,16 @@ describe '/' do
   end
 end
 
-# You should use this syntax with v0.4.0 and later
-describe file('/') do
+# This syntax will be deprecated
+describe '/' do
   it { should be_mounted.with( :type => 'ext4' ) }
 end
 
-describe file('/') do
+describe '/' do
   it { should be_mounted.with( :options => { :rw => true } ) }
 end
 
-describe file('/') do
+describe '/' do
   it do
     should be_mounted.only_with(
       :device  => '/dev/mapper/VolGroup-lv_root',
@@ -474,16 +473,15 @@ end
 In order to test a file's md5 checksum matches a given value, you should use **match_md5checksum** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe '/etc/services' do
-  it { should match_md5checksum '35435ea447c19f0ea5ef971837ab9ced' }
-end
-
 # You should use this syntax with v0.4.0 and later
 describe file('/etc/services') do
   it { should match_md5checksum '35435ea447c19f0ea5ef971837ab9ced' }
 end
 
+# This syntax will be deprecated
+describe '/etc/services' do
+  it { should match_md5checksum '35435ea447c19f0ea5ef971837ab9ced' }
+end
 ```
 
 ----
@@ -493,29 +491,6 @@ end
 You can test Linux kernel parameters like this.
 
 ```ruby
-# These syntaxes will be deprecated
-describe 'Linux kernel parameters' do
-  context 'net.ipv4.tcp_syncookies' do 
-    its(:value) { should eq 1 }
-  end
-
-  context 'kernel.shmall' do
-    its(:value) { should be >= 4294967296 }
-  end
-
-  context 'kernel.shmmax' do
-    its(:value) { should be <= 68719476736 }
-  end
-
-  context 'kernel.osrelease' do
-    its(:value) { should eq '2.6.32-131.0.15.el6.x86_64' }
-  end
-
-  context 'net.ipv4.tcp_wmem' do
-    its(:value) { should match /4096\t16384\t4194304/ }
-  end
-end
-
 # You should use these syntaxes with v0.4.0 and later
 describe 'Linux kernel parameters' do
   context linux_kernel_parameter('net.ipv4.tcp_syncookies') do 
@@ -538,6 +513,29 @@ describe 'Linux kernel parameters' do
     its(:value) { should match /4096\t16384\t4194304/ }
   end
 end
+
+# These syntaxes will be deprecated
+describe 'Linux kernel parameters' do
+  context 'net.ipv4.tcp_syncookies' do 
+    its(:value) { should eq 1 }
+  end
+
+  context 'kernel.shmall' do
+    its(:value) { should be >= 4294967296 }
+  end
+
+  context 'kernel.shmmax' do
+    its(:value) { should be <= 68719476736 }
+  end
+
+  context 'kernel.osrelease' do
+    its(:value) { should eq '2.6.32-131.0.15.el6.x86_64' }
+  end
+
+  context 'net.ipv4.tcp_wmem' do
+    its(:value) { should match /4096\t16384\t4194304/ }
+  end
+end
 ```
 ----
 
@@ -550,28 +548,28 @@ Matchers for testing network related settings.
 In order to test iptables has a given rule, you should use **have\_iptables\_rule** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'iptables' do
-  it { should have_iptables_rule('-P INPUT ACCEPT') }
-end
-
 # You should use this syntax with v0.4.0 and later
 describe iptables do
   it { should have_rule('-P INPUT ACCEPT') }
+end
+
+# This syntax will be deprecated
+describe 'iptables' do
+  it { should have_iptables_rule('-P INPUT ACCEPT') }
 end
 ```
 
 You can give a table name and a chain name like this.
 
 ```ruby
-# This syntax will be deprecated
-describe 'iptables' do
-  it { should have_iptables_rule('-P INPUT ACCEPT').with_table('mangle').with_chain('INPUT') }
-end
-
 # You should use this syntax with v0.4.0 and later
 describe iptables do
   it { should have_rule('-P INPUT ACCEPT').with_table('mangle').with_chain('INPUT') }
+end
+
+# This syntax will be deprecated
+describe 'iptables' do
+  it { should have_iptables_rule('-P INPUT ACCEPT').with_table('mangle').with_chain('INPUT') }
 end
 ```
 
@@ -580,19 +578,6 @@ end
 In order to test a host is resolvable on the target host, you should use **be_resolvable** matcher.
 
 ```ruby
-# These syntaxes will be deprecated
-describe 'serverspec.org' do
-  it { should be_resolvable }
-end
-
-describe 'serverspec.org' do
-  it { should be_resolvable.by('hosts') }
-end
-
-describe 'serverspec.org' do
-  it { should be_resolvable.by('dns') }
-end
-
 # You should use these syntaxes with v0.4.0 and later
 describe host('serverspec.org') do
   it { should be_resolvable }
@@ -605,6 +590,19 @@ end
 describe host('serverspec.org') do
   it { should be_resolvable.by('dns') }
 end
+
+# These syntaxes will be deprecated
+describe 'serverspec.org' do
+  it { should be_resolvable }
+end
+
+describe 'serverspec.org' do
+  it { should be_resolvable.by('hosts') }
+end
+
+describe 'serverspec.org' do
+  it { should be_resolvable.by('dns') }
+end
 ```
 
 #### be_reachable
@@ -612,8 +610,8 @@ end
 In order to test a given host is network reachable, you should use **be_reachable** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'target.example.jp' do
+# You should use this syntax with v0.4.0 and later
+describe host('target.example.jp') do
   # ping
   it { should be_reachable }
   # tcp port 22
@@ -626,8 +624,8 @@ describe 'target.example.jp' do
   it { should be_reachable.with( :port => 22, :proto => 'tcp', :timeout => 1 ) }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe host('target.example.jp') do
+# This syntax will be deprecated
+describe 'target.example.jp' do
   # ping
   it { should be_reachable }
   # tcp port 22
@@ -646,8 +644,8 @@ end
 In order to test a routing table has a given entry, you should use **have_entry** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'routing table' do
+# You should use this syntax with v0.4.0 and later
+describe routing_table do
   it do
     should have_entry(
       :destination => '192.168.100.0/24',
@@ -657,8 +655,8 @@ describe 'routing table' do
   end
 end
 
-# You should use this syntax with v0.4.0 and later
-describe routing_table do
+# This syntax will be deprecated
+describe 'routing table' do
   it do
     should have_entry(
       :destination => '192.168.100.0/24',
@@ -674,6 +672,12 @@ end
 In order to test an IP address is set up as a default gateway, you should use **be\_default\_gateway** matcher.
 
 ```ruby
+# You should use this syntax with v0.4.0 and later
+describe default_gateway do
+  its(:ipaddress) { should eq '192.168.10.1' }
+  its(:interface) { should eq 'br0'          }
+end
+
 # This syntax will be deprecated
 describe '192.168.10.1' do
   it { should be_default_gateway }
@@ -681,13 +685,6 @@ describe '192.168.10.1' do
   # Or you can check the gateway is tied with a specific interfarce
   it { should be_default_gateway.with_interface('eth0') }
 end
-
-# You should use this syntax with v0.4.0 and later
-describe default_gateway do
-  its(:ipaddress) { should eq '192.168.10.1' }
-  its(:interface) { should eq 'br0'          }
-end
-
 ```
 
 ----
@@ -701,13 +698,13 @@ Matchers for testing packages.
 In order to test a package is installed, you should use **be_installed** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'httpd' do
+# You should use this syntax with v0.4.0 and later
+describe package('httpd') do
   it { should be_installed }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe package('httpd') do
+# This syntax will be deprecated
+describe 'httpd' do
   it { should be_installed }
 end
 ```
@@ -715,14 +712,13 @@ end
 You can also test a given version of gem is installed.
 
 ```ruby
-# This syntax will be deprecated
-
-describe 'jekyll' do
+# You should use this syntax with v0.4.0 and later
+describe package('jekyll') do
   it { should be_installed.by('gem').with_version('0.12.1') }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe package('jekyll') do
+# This syntax will be deprecated
+describe 'jekyll' do
   it { should be_installed.by('gem').with_version('0.12.1') }
 end
 ```
@@ -739,13 +735,13 @@ Matchers fo testing packages.
 In order to test a given port is listening, you should use **be_listening** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'port 80' do
+# You should use this syntax with v0.4.0 and later
+describe port(80) do
   it { should be_listening }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe port(80) do
+# This syntax will be deprecated
+describe 'port 80' do
   it { should be_listening }
 end
 ```
@@ -760,22 +756,6 @@ Matchers for testing SELinux.
 In order to test SELinux is a given mode, you should use **be\_disabled, be\_enforcing and be\_permissinve** matchers.
 
 ```ruby
-### This syntax will be deprecated
-# SELinux should be disabled
-describe 'selinux' do
-  it { should be_disabled }
-end
-
-# SELinux should be enforcing
-describe 'selinux' do
-  it { should be_enforcing }
-end
-
-# SELinux should be permissive
-describe 'selinux' do
-  it { should be_permissive }
-end
-
 ### You should use this syntax with v0.4.0 and later
 # SELinux should be disabled
 describe selinux do
@@ -789,6 +769,22 @@ end
 
 # SELinux should be permissive
 describe selinux do
+  it { should be_permissive }
+end
+
+### This syntax will be deprecated
+# SELinux should be disabled
+describe 'selinux' do
+  it { should be_disabled }
+end
+
+# SELinux should be enforcing
+describe 'selinux' do
+  it { should be_enforcing }
+end
+
+# SELinux should be permissive
+describe 'selinux' do
   it { should be_permissive }
 end
 ```
@@ -805,16 +801,15 @@ Matchers for testing services.
 In order to test a given service is enabled(automatically start when OS booting up), you should use **be_enabled** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'ntpd' do
-  it { should be_enabled }
-end
-
 # You should use this syntax with v0.4.0 and later
 describe service('ntpd') do
   it { should be_enabled }
 end
 
+# This syntax will be deprecated
+describe 'ntpd' do
+  it { should be_enabled }
+end
 ```
 
 #### be_running
@@ -822,13 +817,13 @@ end
 In order to test a given service/process is running, you should use **be_running** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'ntpd' do
+# You should use this syntax with v0.4.0 and later
+describe service('ntpd') do
   it { should be_running }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe service('ntpd') do
+# This syntax will be deprecated
+describe 'ntpd' do
   it { should be_running }
 end
 ```
@@ -836,13 +831,13 @@ end
 You can test a given service/process is running under [supervisor](http://supervisord.org/).
 
 ```ruby
-# This syntax will be deprecated
-describe 'ntpd' do
+# You should use this syntax with v0.4.0 and later
+describe service('ntpd') do
   it { should be_running.under('supervisor') }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe service('ntpd') do
+# This syntax will be deprecated
+describe 'ntpd' do
   it { should be_running.under('supervisor') }
 end
 ```
@@ -857,14 +852,14 @@ Matchers for testing users and groups.
 In order to test a subject exists as a user, you should use **be_user** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'root' do
-  it { should be_user }
-end
-
 # You should use this syntax with v0.4.0 and later
 describe user('root') do
   it { should exist }
+end
+
+# This syntax will be deprecated
+describe 'root' do
+  it { should be_user }
 end
 ```
 
@@ -873,14 +868,14 @@ end
 In order to test a subject exists as a group, you should use **be_group** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'wheel' do
-  it { should be_group }
-end
-
 # You should use this syntax with v0.4.0 and later
 describe group('wheel') do
   it { should exist }
+end
+
+# This syntax will be deprecated
+describe 'wheel' do
+  it { should be_group }
 end
 ```
 
@@ -890,13 +885,13 @@ end
 In order to test a user belongs to a given group, you should use **belong\_to\_group** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'apache' do
+# You should use this syntax with v0.4.0 and later
+describe user('apache') do
   it { should belong_to_group 'apache' }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe user('apache') do
+# This syntax will be deprecated
+describe 'apache' do
   it { should belong_to_group 'apache' }
 end
 ```
@@ -906,13 +901,13 @@ end
 In order to test a user have a given uid, you should use **have_uid** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'root' do
+# You should use this syntax with v0.4.0 and later
+describe user('root') do
   it { should have_uid 0 }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe user('root') do
+# This syntax will be deprecated
+describe 'root' do
   it { should have_uid 0 }
 end
 ```
@@ -922,13 +917,13 @@ end
 In order to test a user have a given home directory, you should use **have\_home\_directory** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'root' do
+# You should use this syntax with v0.4.0 and later
+describe user('root') do
   it { should have_home_directory '/root' }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe user('root') do
+# This syntax will be deprecated
+describe 'root' do
   it { should have_home_directory '/root' }
 end
 ```
@@ -938,13 +933,13 @@ end
 In order to test a user have a given login shell, you should use **have\_login\_shell** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'root' do
+# You should use this syntax with v0.4.0 and later
+describe user('root') do
   it { should have_login_shell '/bin/bash' }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe user('root') do
+# This syntax will be deprecated
+describe 'root' do
   it { should have_login_shell '/bin/bash' }
 end
 ```
@@ -954,13 +949,13 @@ end
 In order to test a have have a given authorized key, you should use **have\_authorized\_key** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'root' do
+# You should use this syntax with v0.4.0 and later
+describe user('root') do
   it { should have_authorized_key 'ssh-rsa ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGH foo@bar.local' }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe user('root') do
+# This syntax will be deprecated
+describe 'root' do
   it { should have_authorized_key 'ssh-rsa ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGH foo@bar.local' }
 end
 ```
@@ -970,13 +965,13 @@ end
 In order to test a group have a given gid, you should use **have\_gid** matcher.
 
 ```ruby
-# This syntax will be deprecated
-describe 'root' do
+# You should use this syntax with v0.4.0 and later
+describe group('root') do
   it { should have_gid 0 }
 end
 
-# You should use this syntax with v0.4.0 and later
-describe group('root') do
+# This syntax will be deprecated
+describe 'root' do
   it { should have_gid 0 }
 end
 ```
