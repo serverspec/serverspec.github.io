@@ -37,7 +37,7 @@ See details on [Matchers](/matchers.html).
 
 #### <a name="multi_os_support">Multi OS support</a>
 
-Serverspec is supporting Red Hat based OS, Debian based OS, Gentoo and Solaris now.
+Serverspec is supporting Red Hat based OS, Debian based OS, Gentoo, Solaris and Darwin based OS now.
 
 Serverspec can detect target host's OS automatically.
 
@@ -48,11 +48,10 @@ require 'serverspec'
 require 'pathname'
 require 'net/ssh'
 
+include Serverspec::Helper::Ssh
+include Serverspec::Helper::Debian
+
 RSpec.configure do |c|
-  # Include backend helper
-  c.include(Serverspec::Helper::Ssh)
-  # Include OS helper
-  c.include(Serverspec::Helper::Debian)
   # Add SSH before hook in case you use the SSH backend
   # (not required for the Exec backend)
   c.before do
@@ -68,7 +67,7 @@ RSpec.configure do |c|
 end
 ```
 
-You can select **Serverspec::Helper::RedHat**, **Serverspec::Helper::Debian**, **Serverspec::Helper::Gentoo** or **Serverspec::Helper::Solaris**.
+You can select **Serverspec::Helper::RedHat**, **Serverspec::Helper::Debian**, **Serverspec::Helper::Gentoo** , **Serverspec::Helper::Solaris** or **Serverspec::Helper::Darwin**.
 
 ----
 
