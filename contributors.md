@@ -26,3 +26,4 @@ title: contributors
  * [Dan Shultz](https://github.com/danshultz)
  * [Atsushi Matsuo](https://github.com/matsuo)
  * [Francisco A. Lozano](https://github.com/flozano)
+ * [Naoya Ito](https://github.com/naoya)
