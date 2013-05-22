@@ -5,6 +5,12 @@ title: changes
 
 ## Changes
 
+### 0.4.9
+
+ * [Match gem version when multiple versions installed](https://github.com/mizzy/serverspec/pull/125)
+ * [Precise version checking of installed by gem](https://github.com/mizzy/serverspec/pull/126)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.8...v0.4.9)
+
 ### 0.4.8
 
  * [Specify the absolute path of /sbin commands](https://github.com/mizzy/serverspec/pull/124)
