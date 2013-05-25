@@ -5,6 +5,11 @@ title: changes
 
 ## Changes
 
+### 0.4.10
+
+ * [Fix commands.check_mode and commands.get_mode for compatibility with Mac OS X v10.4](https://github.com/mizzy/serverspec/pull/127)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.9...v0.4.10)
+
 ### 0.4.9
 
  * [Match gem version when multiple versions installed](https://github.com/mizzy/serverspec/pull/125)
