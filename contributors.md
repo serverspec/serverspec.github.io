@@ -28,4 +28,5 @@ title: contributors
  * [Francisco A. Lozano](https://github.com/flozano)
  * [Naoya Ito](https://github.com/naoya)
  * [johanek](https://github.com/johanek)
+ * [Stephen Johnson](https://github.com/stephenrjohnson)
 
