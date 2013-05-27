@@ -5,6 +5,11 @@ title: changes
 
 ## Changes
 
+### 0.4.12
+
+ * [Change command path to relative](https://github.com/mizzy/serverspec/pull/129)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.11...v0.4.12)
+
 ### 0.4.11
 
  * [Add vagrant instance support](https://github.com/mizzy/serverspec/pull/128)
