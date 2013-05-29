@@ -5,6 +5,11 @@ title: changes
 
 ## Changes
 
+### 0.4.13
+
+ * [Add custom path to the command and remove default PATH setting](https://github.com/mizzy/serverspec/pull/133)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.12...v0.4.13)
+
 ### 0.4.12
 
  * [Change command path to relative](https://github.com/mizzy/serverspec/pull/129)
