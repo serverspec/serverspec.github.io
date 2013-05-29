@@ -5,6 +5,11 @@ title: changes
 
 ## Changes
 
+### 0.4.14
+
+ * [Add npm to package provider](https://github.com/mizzy/serverspec/pull/132)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.13...v0.4.14)
+
 ### 0.4.13
 
  * [Add custom path to the command and remove default PATH setting](https://github.com/mizzy/serverspec/pull/133)
