@@ -1,4 +1,4 @@
-### <a name="linux_kernel_parameter">linux_kernel_parameter</a>
+### <a name="linux_kernel_parameter">linux\_kernel\_parameter</a>
 
 Linux kernel parameter resource type.
 
