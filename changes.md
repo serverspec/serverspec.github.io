@@ -5,6 +5,26 @@ title: changes
 
 ## Changes
 
+### 0.4.14
+
+ * [Add npm to package provider](https://github.com/mizzy/serverspec/pull/132)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.13...v0.4.14)
+
+### 0.4.13
+
+ * [Add custom path to the command and remove default PATH setting](https://github.com/mizzy/serverspec/pull/133)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.12...v0.4.13)
+
+### 0.4.12
+
+ * [Change command path to relative](https://github.com/mizzy/serverspec/pull/129)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.11...v0.4.12)
+
+### 0.4.11
+
+ * [Add vagrant instance support](https://github.com/mizzy/serverspec/pull/128)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.10...v0.4.11)
+
 ### 0.4.10
 
  * [Fix commands.check\_mode and commands.get\_mode for compatibility with Mac OS X v10.4](https://github.com/mizzy/serverspec/pull/127)
