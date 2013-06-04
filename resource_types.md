@@ -1,6 +1,6 @@
 ---
 layout: layout
-title: resource types
+title: Resource Types
 ---
 
 ## Resource Types

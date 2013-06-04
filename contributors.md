@@ -1,6 +1,6 @@
 ---
 layout: layout
-title: contributors
+title: Contributors
 ---
 
 ## Contributors

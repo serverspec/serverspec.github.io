@@ -1,6 +1,6 @@
 ---
 layout: layout
-title: home
+title: Home
 ---
 
 ## About
