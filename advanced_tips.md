@@ -107,6 +107,85 @@ RSpec.configure do |c|
 end
 ```
 
+----
+
+## How to use host specific attributes
+
+Serverspec supports a simple mechanism to handle host specific attributes.
+
+This example assumes that host specific attributes are in YAML file.
+
+```yaml
+db001.example.jp:
+  :roles:
+    - base
+    - db
+  :server_id: 101
+db002.example.jp:
+  :roles:
+    - base
+    - db
+  :server_id: 102
+```
+
+You can write Rakefile for role separeted tests like this with the YAML file.
+
+```ruby
+require 'rake'
+require 'rspec/core/rake_task'
+require 'yaml'
+ 
+attributes = YAML.load_file('attributes.yml')
+ 
+desc "Run serverspec to all hosts"
+task :serverspec => 'serverspec:all'
+ 
+namespace :serverspec do
+  task :all => attributes.keys.map {|key| 'serverspec:' + key.split('.')[0] }
+  attributes.keys.each do |key|
+    desc "Run serverspec to #{key}"
+    RSpec::Core::RakeTask.new(key.split('.')[0].to_sym) do |t|
+      ENV['TARGET_HOST'] = key
+      t.pattern = 'spec/{' + attributes[key][:roles].join(',') + '}/*_spec.rb'
+    end
+  end
+end
+```
+
+You can write spec_helper.rb to set host specific attributes with ``attr_set``.
+
+```
+require 'serverspec'
+require 'pathname'
+require 'net/ssh'
+require 'yaml'
+ 
+include Serverspec::Helper::Ssh
+include Serverspec::Helper::DetectOS
+include Serverspec::Helper::Attributes
+ 
+attributes = YAML.load_file('attributes.yml')
+ 
+RSpec.configure do |c|
+  c.host  = ENV['TARGET_HOST']
+  attr_set attributes[c.host]
+  options = Net::SSH::Config.for(c.host)
+  user    = options[:user] || Etc.getlogin
+  c.ssh   = Net::SSH.start(c.host, user, options)
+  c.os    = backend(Serverspec::Commands::Base).check_os
+end
+```
+
+And you can use host specific attributes with ``attr`` like this.
+
+```ruby
+require 'spec_helper'
+ 
+describe file('/etc/my.cnf') do
+  it { should contain "server-id = #{attr[:server_id]}" }
+end
+```
+
 
 ----
 
