@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.5.1
+
+ * [Check both current status and setting in the config file of SELinux](https://github.com/mizzy/serverspec/pull/136)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.14...v0.5.0)
+
 ### 0.5.0
 
  * [\[EXPERIMENTAL\] Dynamic path and pre_command by let](https://github.com/mizzy/serverspec/pull/134)
