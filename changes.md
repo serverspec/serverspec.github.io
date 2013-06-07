@@ -5,10 +5,15 @@ title: Changes
 
 ## Changes
 
+### 0.5.2
+
+ * [More strict checking for SELinux](https://github.com/mizzy/serverspec/pull/137)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.5.1...v0.5.2)
+
 ### 0.5.1
 
  * [Check both current status and setting in the config file of SELinux](https://github.com/mizzy/serverspec/pull/136)
- * [View Diff](https://github.com/mizzy/serverspec/compare/v0.4.14...v0.5.0)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.5.0...v0.5.1)
 
 ### 0.5.0
 
