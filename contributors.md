@@ -31,4 +31,4 @@ title: Contributors
  * [Stephen Johnson](https://github.com/stephenrjohnson)
  * [linyows](https://github.com/linyows)
  * [youyo](https://github.com/youyo)
-
+ * [Ryota Arai](https://github.com/ryotarai)
