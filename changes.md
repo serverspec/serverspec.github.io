@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.5.3
+
+ * [Fix a bug of check_installed on Debian squeeze](https://github.com/mizzy/serverspec/pull/138)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.5.2...v0.5.3)
+
 ### 0.5.2
 
  * [More strict checking for SELinux](https://github.com/mizzy/serverspec/pull/137)
