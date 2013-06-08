@@ -32,3 +32,4 @@ title: Contributors
  * [linyows](https://github.com/linyows)
  * [youyo](https://github.com/youyo)
  * [Ryota Arai](https://github.com/ryotarai)
+ * [tatsuyafw](https://github.com/tatsuyafw)
