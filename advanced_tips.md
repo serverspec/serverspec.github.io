@@ -154,7 +154,7 @@ end
 
 You can write spec_helper.rb to set host specific attributes with ``attr_set``.
 
-```
+```ruby
 require 'serverspec'
 require 'pathname'
 require 'net/ssh'
