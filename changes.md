@@ -5,6 +5,13 @@ title: Changes
 
 ## Changes
 
+### 0.5.4
+
+ * [Make backend class singleton](https://github.com/mizzy/serverspec/pull/139)
+ * [Pass example object to backend in before filter, not in matchers and types](https://github.com/mizzy/serverspec/pull/140)
+ * [Add custom failure message for should_not](https://github.com/mizzy/serverspec/pull/141)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.5.3...v0.5.4)
+
 ### 0.5.3
 
  * [Fix a bug of check_installed on Debian squeeze](https://github.com/mizzy/serverspec/pull/138)
