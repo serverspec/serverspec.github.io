@@ -5,6 +5,12 @@ title: Changes
 
 ## Changes
 
+### 0.5.6
+
+ * [Use Commands::Base without OS detection](https://github.com/mizzy/serverspec/pull/143)
+ * [OS detection doesn't check RSpec.configuration.os now](https://github.com/mizzy/serverspec/pull/144)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.5.5...v0.5.6)
+
 ### 0.5.5
 
  * [Use Comands::Base automatically before OS detection](https://github.com/mizzy/serverspec/pull/142)
