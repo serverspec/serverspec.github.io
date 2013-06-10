@@ -103,7 +103,7 @@ RSpec.configure do |c|
   options = Net::SSH::Config.for(c.host)
   user    = options[:user] || Etc.getlogin
   c.ssh   = Net::SSH.start(c.host, user, options)
-  c.os    = backend(Serverspec::Commands::Base).check_os
+  c.os    = backend.check_os
 end
 ```
 
@@ -172,7 +172,7 @@ RSpec.configure do |c|
   options = Net::SSH::Config.for(c.host)
   user    = options[:user] || Etc.getlogin
   c.ssh   = Net::SSH.start(c.host, user, options)
-  c.os    = backend(Serverspec::Commands::Base).check_os
+  c.os    = backend.check_os
 end
 ```
 
