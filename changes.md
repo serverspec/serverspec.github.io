@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.5.5
+
+ * [Use Comands::Base automatically before OS detection](https://github.com/mizzy/serverspec/pull/142)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.5.4...v0.5.5)
+
 ### 0.5.4
 
  * [Make backend class singleton](https://github.com/mizzy/serverspec/pull/139)
