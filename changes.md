@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.5.7
+
+ * [Fix the bug of duplicating sudo with Backend::Ssh](https://github.com/mizzy/serverspec/pull/146)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.5.6...v0.5.7)
+
 ### 0.5.6
 
  * [Use Commands::Base without OS detection](https://github.com/mizzy/serverspec/pull/143)
