@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.5.8
+
+ * [Add env in front of PATH](https://github.com/mizzy/serverspec/pull/147)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.5.7...v0.5.8)
+
 ### 0.5.7
 
  * [Fix the bug of duplicating sudo with Backend::Ssh](https://github.com/mizzy/serverspec/pull/146)
