@@ -2,7 +2,7 @@
 
 Cron resource type.
 
-#### have\_cron\_entry
+#### have\_entry
 
 In order to test cron have a given entry exists, you should use **have_cron_entry** matcher.
 
