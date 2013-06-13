@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.6.0
+
+ * [Remove obsoleted syntaxes, Puppet backend ans so on](https://github.com/mizzy/serverspec/pull/148)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.5.8...v0.6.0)
+
 ### 0.5.8
 
  * [Add env in front of PATH](https://github.com/mizzy/serverspec/pull/147)
