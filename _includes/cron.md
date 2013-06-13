@@ -4,7 +4,7 @@ Cron resource type.
 
 #### have\_entry
 
-In order to test cron have a given entry exists, you should use **have_cron_entry** matcher.
+In order to test cron have a given entry exists, you should use **have_entry** matcher.
 
 ```ruby
 describe cron do
