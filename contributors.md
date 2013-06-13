@@ -34,4 +34,6 @@ title: Contributors
  * [Ryota Arai](https://github.com/ryotarai)
  * [tatsuyafw](https://github.com/tatsuyafw)
  * [Hayato](https://github.com/hayato1980)
+ * [kotakanbe](https://github.com/kotakanbe)
+ * [cs-travis](https://github.com/cs-travis)
 
