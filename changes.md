@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.6.2
+
+ * [Add OS type caching to Helper::DetectOS](https://github.com/mizzy/serverspec/pull/151)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.1...v0.6.2)
+
 ### 0.6.1
 
  * [Fix Debian service detection](https://github.com/mizzy/serverspec/pull/130)
