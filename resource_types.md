@@ -15,6 +15,7 @@ title: Resource Types
 | [ipfilter](#ipfilter)
 | [ipnat](#ipnat)
 | [iptables](#iptables)
+| [kernel_module](#kernel_module)
 | [linux\_kernel\_parameter](#linux_kernel_parameter)
 | [package](#package)
 | [port](#port)
@@ -69,6 +70,11 @@ title: Resource Types
 
 {% capture iptables %}{% include iptables.md %}{% endcapture %}
 {{ iptables | markdownify }}
+
+----
+
+{% capture kernel_module %}{% include kernel_module.md %}{% endcapture %}
+{{ kernel_module | markdownify }}
 
 ----
 
