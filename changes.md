@@ -5,6 +5,12 @@ title: Changes
 
 ## Changes
 
+### 0.6.3
+
+ * [Abort if sudo password is not set when using Backend::Ssh and user is not root](https://github.com/mizzy/serverspec/pull/152)
+ * [Show the message of exception object when test fails](https://github.com/mizzy/serverspec/pull/153)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.2...v0.6.3)
+
 ### 0.6.2
 
  * [Add OS type caching to Helper::DetectOS](https://github.com/mizzy/serverspec/pull/151)
