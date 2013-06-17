@@ -1,4 +1,4 @@
-### <a name="default_gateway">default_gatewy</a>
+### <a name="default_gateway">default_gateway</a>
 
 Default gateway resource type.
 
