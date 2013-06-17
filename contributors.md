@@ -36,4 +36,5 @@ title: Contributors
  * [Hayato](https://github.com/hayato1980)
  * [kotakanbe](https://github.com/kotakanbe)
  * [cs-travis](https://github.com/cs-travis)
+ * [hiboma](https://github.com/hiboma)
 
