@@ -22,6 +22,16 @@ describe file('/var/log/httpd') do
 end
 ```
 
+#### be_socket
+
+In order to test a subject exists as a socket, you should use **be_scoket** matcher.
+
+```ruby
+describe file('/var/run/unicorn.sock') do
+  it { should be_socket }
+end
+```
+
 #### contain
 
 In order to test a file contains a given string, you should use **contain** mathcer.
