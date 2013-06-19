@@ -38,4 +38,5 @@ title: Contributors
  * [cs-travis](https://github.com/cs-travis)
  * [hiboma](https://github.com/hiboma)
  * [Keisuke KITA](https://github.com/kitak)
+ * [Takahiro OKUMURA](https://github.com/Tacahilo)
 
