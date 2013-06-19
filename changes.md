@@ -5,6 +5,16 @@ title: Changes
 
 ## Changes
 
+### 0.6.5
+
+ * [Add be_socket matcher](https://github.com/mizzy/serverspec/pull/15666666)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.4...v0.6.5)
+
+### 0.6.4
+
+ * [Update gemspec](https://github.com/mizzy/serverspec/pull/154)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.3...v0.6.4)
+
 ### 0.6.3
 
  * [Abort if sudo password is not set when using Backend::Ssh and user is not root](https://github.com/mizzy/serverspec/pull/152)
