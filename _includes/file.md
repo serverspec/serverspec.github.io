@@ -144,7 +144,7 @@ end
 In order to test a subject is executable, you should use **be\_executable** matcher.
 
 ```ruby
-describe file('/etc/sudoers') do
+describe file('/etc/init.d/httpd') do
   it { should be_executable }
 end
 ```
@@ -152,7 +152,7 @@ end
 You can also test a subject is executable by owner, group members, others or a specific user.
 
 ```ruby
-describe file('/etc/sudoers') do
+describe file('/etc/init.d/httpd') do
   it { should be_executable.by('owner') }
   it { should be_executable.by('group') }
   it { should be_executable.by('others') }
