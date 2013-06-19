@@ -26,7 +26,7 @@ You can write a test file like this.
 ```ruby
 require 'spec_helper'
 
-decribe '<name of the resource being tested>' do
+describe '<name of the resource being tested>' do
   # your tests ...
 end
 ```
