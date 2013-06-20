@@ -7,7 +7,12 @@ title: Changes
 
 ### 0.6.5
 
- * [Add be_socket matcher](https://github.com/mizzy/serverspec/pull/15666666)
+ * [Support be_installed.by('pecl')](https://github.com/mizzy/serverspec/pull/157)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.5...v0.6.6)
+
+### 0.6.5
+
+ * [Add be_socket matcher](https://github.com/mizzy/serverspec/pull/156)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.4...v0.6.5)
 
 ### 0.6.4
