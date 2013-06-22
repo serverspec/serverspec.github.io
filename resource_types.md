@@ -32,7 +32,7 @@ title: Resource Types
 
 Using ``expect`` syntax is recommended way because adding ``should`` to every object causes filures when used with BasicObject-subclassed proxy objects.
 
-But the one-liner syntax used with the examples in this page doesn't add ``should`` to any objects, so this syntax doen't cause the above problems.That's why I'm using the one-liner 'should' syntax.
+But the one-liner syntax used with the examples in this page doesn't add ``should`` to any objects, so this syntax doen't cause the above problems.That's why I'm using the one-liner ``should`` syntax.
 
 Please see [the document of rspec-expectations](https://github.com/rspec/rspec-expectations/blob/master/Should.md) if you'd like to know the detail of the issue.
 
