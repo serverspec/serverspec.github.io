@@ -5,7 +5,7 @@ title: Changes
 
 ## Changes
 
-### 0.6.5
+### 0.6.6
 
  * [Support be_installed.by('pecl')](https://github.com/mizzy/serverspec/pull/157)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.5...v0.6.6)
