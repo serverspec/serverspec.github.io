@@ -28,6 +28,16 @@ title: Resource Types
 
 ----
 
+**Note** In these examples, I'm using ``should`` syntax instead of ``expect`` syntax because I think ``should`` syntax is more readable than ``expect`` syntax and I like it.
+
+Using ``expect`` syntax is recommended way because adding ``should`` to every object causes filures when used with BasicObject-subclassed proxy objects.
+
+But the one-liner syntax used with the examples in this page doesn't add ``should`` to any object, so this syntax doen't cause the above problems.So I'm using this syntax.
+
+Please see [the document of rspec-expectations](https://github.com/rspec/rspec-expectations/blob/master/Should.md) if you'd like to know the detail of this issue.
+
+----
+
 {% capture command %}{% include command.md %}{% endcapture %}
 {{ command | markdownify }}
 
