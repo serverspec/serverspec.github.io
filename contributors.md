@@ -39,4 +39,4 @@ title: Contributors
  * [hiboma](https://github.com/hiboma)
  * [Keisuke KITA](https://github.com/kitak)
  * [Takahiro OKUMURA](https://github.com/Tacahilo)
-
+ * [Michael H. Oshita](https://github.com/ijin)
