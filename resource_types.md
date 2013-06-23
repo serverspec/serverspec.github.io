@@ -23,12 +23,13 @@ title: Resource Types
 | [selinux](#selinux)
 | [service](#service)
 | [user](#user)
+| [yumrepo](#yumrepo)
 | [zfs](#zfs)
 </nav>
 
 ----
 
-**Note** In these examples, I'm using ``should`` syntax instead of ``expect`` syntax because I think ``should`` syntax is more readable than ``expect`` syntax and I like it.
+**Note:** In these examples, I'm using ``should`` syntax instead of ``expect`` syntax because I think ``should`` syntax is more readable than ``expect`` syntax and I like it.
 
 Using ``expect`` syntax is recommended way because adding ``should`` to every object causes failures when used with BasicObject-subclassed proxy objects.
 
@@ -37,6 +38,11 @@ But the one-liner syntax used with the examples in this page doesn't add ``shoul
 Please see [the document of rspec-expectations](https://github.com/rspec/rspec-expectations/blob/master/Should.md) if you'd like to know the detail of the issue.
 
 ----
+
+*You can use more strict grammer syntax like ``be_a_file`` instead of ``be_file`` with all resource types.*
+
+----
+
 
 {% capture command %}{% include command.md %}{% endcapture %}
 {{ command | markdownify }}
@@ -120,6 +126,11 @@ Please see [the document of rspec-expectations](https://github.com/rspec/rspec-e
 
 {% capture user %}{% include user.md %}{% endcapture %}
 {{ user | markdownify }}
+
+----
+
+{% capture yumrepo %}{% include yumrepo.md %}{% endcapture %}
+{{ yumrepo | markdownify }}
 
 ----
 
