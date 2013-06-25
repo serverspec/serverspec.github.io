@@ -5,6 +5,12 @@ title: Changes
 
 ## Changes
 
+### 0.6.8
+
+ * [Fix check_yumrepo command](https://github.com/mizzy/serverspec/pull/163)
+ * [Support `with_version` chain with be_installed matcher without `by` chain (But currently supported only on Red Hat family)](https://github.com/mizzy/serverspec/pull/164)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.7...v0.6.8)
+
 ### 0.6.7
 
  * [Add alternative syntax tests for file resource type](https://github.com/mizzy/serverspec/pull/159)
