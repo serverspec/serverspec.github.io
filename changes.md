@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.6.9
+
+ * [Add check_reachable to Commands::Solaris](https://github.com/mizzy/serverspec/pull/165)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.8...v0.6.9)
+
 ### 0.6.8
 
  * [Fix check_yumrepo command](https://github.com/mizzy/serverspec/pull/163)
