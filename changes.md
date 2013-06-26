@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.6.11
+
+ * [Remove `-s sh` of check_access command](https://github.com/mizzy/serverspec/pull/168)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.10...v0.6.11)
+
 ### 0.6.10
 
  * [Support version checking with be_installed matcher for Solaris](https://github.com/mizzy/serverspec/pull/166)
