@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.6.10
+
+ * [Support version checking with be_installed matcher for Solaris](https://github.com/mizzy/serverspec/pull/166)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.9...v0.6.10)
+
 ### 0.6.9
 
  * [Add check_reachable to Commands::Solaris](https://github.com/mizzy/serverspec/pull/165)
