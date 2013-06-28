@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.6.12
+
+ * [Add interface resource type](https://github.com/mizzy/serverspec/pull/169)
+ * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.11...v0.6.12)
+
 ### 0.6.11
 
  * [Remove `-s sh` of check_access command](https://github.com/mizzy/serverspec/pull/168)
