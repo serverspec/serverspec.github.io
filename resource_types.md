@@ -12,6 +12,7 @@ title: Resource Types
 | [file](#file)
 | [group](#group)
 | [host](#host)
+| [interface](#interface)
 | [ipfilter](#ipfilter)
 | [ipnat](#ipnat)
 | [iptables](#iptables)
@@ -71,6 +72,11 @@ Please see [the document of rspec-expectations](https://github.com/rspec/rspec-e
 
 {% capture host %}{% include host.md %}{% endcapture %}
 {{ host | markdownify }}
+
+----
+
+{% capture interface %}{% include interface.md %}{% endcapture %}
+{{ interface | markdownify }}
 
 ----
 
