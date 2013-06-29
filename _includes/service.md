@@ -12,7 +12,7 @@ describe service('ntpd') do
 end
 ```
 
-You can test a service is enabled with a given level.(This works only with Red Hat and Debian family currently.)
+You can test a service is enabled with a given run level.(This works only with Red Hat and Debian family currently.)
 
 ```ruby
 describe service('ntpd') do
