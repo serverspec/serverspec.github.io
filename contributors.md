@@ -40,3 +40,4 @@ title: Contributors
  * [Keisuke KITA](https://github.com/kitak)
  * [Takahiro OKUMURA](https://github.com/Tacahilo)
  * [Michael H. Oshita](https://github.com/ijin)
+ * [Muddy Dixon](https://github.com/muddydixon)
