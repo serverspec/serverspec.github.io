@@ -7,17 +7,17 @@ title: Changes
 
 ### 0.6.15
 
- * [Fix be_enabled.with_level and add specs](https://github.com/mizzy/serverspec/pull/173)
+ * [Fix be\_enabled.with\_level and add specs](https://github.com/mizzy/serverspec/pull/173)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.14...v0.6.15)
 
 ### 0.6.14(yanked)
 
- * [Remove .with_level from be_running matcher](https://github.com/mizzy/serverspec/pull/172)
+ * [Remove .with\_level from be\_running matcher](https://github.com/mizzy/serverspec/pull/172)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.13...v0.6.14)
 
 ### 0.6.13
 
- * [Add with_level to be_enabled matcher](https://github.com/mizzy/serverspec/pull/171)
+ * [Add with\_level to be\_enabled matcher](https://github.com/mizzy/serverspec/pull/171)
  * [View Diff](https://github.com/mizzy/serverspec/compare/v0.6.12...v0.6.13)
 
 ### 0.6.12
