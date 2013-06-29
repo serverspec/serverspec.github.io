@@ -12,6 +12,14 @@ describe service('ntpd') do
 end
 ```
 
+You can test a service is enabled with a given level.(This works only with Red Hat and Debian family currently.)
+
+```ruby
+describe service('ntpd') do
+  it { should be_enabled.with_level(3) }
+end
+```
+
 #### be_running
 
 In order to test a given service/process is running, you should use **be_running** matcher.
