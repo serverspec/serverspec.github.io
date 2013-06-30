@@ -41,3 +41,4 @@ title: Contributors
  * [Takahiro OKUMURA](https://github.com/Tacahilo)
  * [Michael H. Oshita](https://github.com/ijin)
  * [Muddy Dixon](https://github.com/muddydixon)
+ * [sawanoboly](https://github.com/sawanoboly)
