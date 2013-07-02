@@ -5,6 +5,12 @@ title: Changes
 
 ## Changes
 
+### 0.6.17
+
+ * [Support be_running.under('upstart')](https://github.com/serverspec/serverspec/pull/186)
+ * [Add be\_monitored\_by to service type](https://github.com/serverspec/serverspec/pull/187)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.16...v0.6.17)
+
 ### 0.6.16
 
  * [Support SmartOS](https://github.com/serverspec/serverspec/pull/175)
