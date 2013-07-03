@@ -42,3 +42,5 @@ title: Contributors
  * [Michael H. Oshita](https://github.com/ijin)
  * [Muddy Dixon](https://github.com/muddydixon)
  * [sawanoboly](https://github.com/sawanoboly)
+ * [PeteMS](https://github.com/petems)
+
