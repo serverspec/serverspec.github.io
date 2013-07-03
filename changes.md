@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.6.20
+
+ * [Fix SmartOS detection](https://github.com/serverspec/serverspec/pull/193)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.19...v0.6.20)
+
 ### 0.6.19
 
  * [Fix check_os to detect Solaris](https://github.com/serverspec/serverspec/pull/192)
