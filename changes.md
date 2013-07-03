@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.6.18
+
+ * [serverspec-init reads Vagrantfile to generate settings](https://github.com/serverspec/serverspec/pull/191)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.17...v0.6.18)
+
 ### 0.6.17
 
  * [Support be_running.under('upstart')](https://github.com/serverspec/serverspec/pull/186)
