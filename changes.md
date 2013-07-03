@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.6.19
+
+ * [Fix check_os to detect Solaris](https://github.com/serverspec/serverspec/pull/192)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.18...v0.6.19)
+
 ### 0.6.18
 
  * [serverspec-init reads Vagrantfile to generate settings](https://github.com/serverspec/serverspec/pull/191)
