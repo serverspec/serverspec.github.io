@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.6.21
+
+ * [Fix a bug of file contain matcher](https://github.com/serverspec/serverspec/pull/197)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.20...v0.6.21)
+
 ### 0.6.20
 
  * [Fix SmartOS detection](https://github.com/serverspec/serverspec/pull/193)
