@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.6.23
+
+ * [Add be_installed.by('rpm') support](https://github.com/serverspec/serverspec/pull/203)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.22...v0.6.23)
+
 ### 0.6.22
 
  * [Fix check\_intalled and check\_running for Solaris family](https://github.com/serverspec/serverspec/pull/202)
