@@ -5,6 +5,23 @@ title: Changes
 
 ## Changes
 
+### 0.6.24
+
+ * [Add default run level in matcher definition](https://github.com/serverspec/serverspec/pull/206)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.23...v0.6.24)
+
+### 0.6.23
+
+ * [Add be_installed.by('rpm') support](https://github.com/serverspec/serverspec/pull/203)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.22...v0.6.23)
+
+### 0.6.22
+
+ * [Fix check\_intalled and check\_running for Solaris family](https://github.com/serverspec/serverspec/pull/202)
+ * [Add Solaris 11 support](https://github.com/serverspec/serverspec/pull/201)
+ * [Add be_listening.with(protocol) to port type](https://github.com/serverspec/serverspec/pull/200)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.21...v0.6.22)
+
 ### 0.6.21
 
  * [Fix a bug of file contain matcher](https://github.com/serverspec/serverspec/pull/197)

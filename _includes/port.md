@@ -11,3 +11,16 @@ describe port(80) do
   it { should be_listening }
 end
 ```
+
+You can also specify ``tcp`` or ``udp``.
+
+
+```ruby
+describe port(80) do
+  it { should be_listening.with('tcp') }
+end
+
+describe port(53) do
+  it { should be_listening.with('udp') }
+end
+```
