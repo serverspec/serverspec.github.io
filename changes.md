@@ -7,6 +7,11 @@ title: Changes
 
 ### 0.6.24
 
+ * [Add php_config resource type](https://github.com/serverspec/serverspec/pull/196)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.24...v0.6.25)
+
+### 0.6.24
+
  * [Add default run level in matcher definition](https://github.com/serverspec/serverspec/pull/206)
  * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.23...v0.6.24)
 
