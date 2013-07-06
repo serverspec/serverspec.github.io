@@ -19,6 +19,7 @@ title: Resource Types
 | [kernel_module](#kernel_module)
 | [linux\_kernel\_parameter](#linux_kernel_parameter)
 | [package](#package)
+| [php_config](#php_config)
 | [port](#port)
 | [routing_table](#routing_table)
 | [selinux](#selinux)
@@ -110,6 +111,11 @@ Please see [the document of rspec-expectations](https://github.com/rspec/rspec-e
 
 ----
 
+{% capture php_config %}{% include php_config.md %}{% endcapture %}
+{{ php_config | markdownify }}
+
+----
+
 {% capture port %}{% include port.md %}{% endcapture %}
 {{ port | markdownify }}
 
@@ -142,10 +148,3 @@ Please see [the document of rspec-expectations](https://github.com/rspec/rspec-e
 
 {% capture zfs %}{% include zfs.md %}{% endcapture %}
 {{ zfs | markdownify }}
-
-
-
-
-
-
-
