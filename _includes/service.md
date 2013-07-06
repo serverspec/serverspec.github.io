@@ -37,3 +37,13 @@ describe service('ntpd') do
   it { should be_running.under('supervisor') }
 end
 ```
+
+#### be\_monitored\_by
+
+In order to test a service/process is monitored by a given software, you should use **be\_monitored\_by** matcher.
+
+```ruby
+describe service('sshd') do
+  it { should be_monitored_by('monit') }
+end
+```
