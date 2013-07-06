@@ -43,4 +43,5 @@ title: Contributors
  * [Muddy Dixon](https://github.com/muddydixon)
  * [sawanoboly](https://github.com/sawanoboly)
  * [PeteMS](https://github.com/petems)
-
+ * [Yuichiro SAITO](https://github.com/koemu)
+ * [Adam Duke](https://github.com/adamvduke)
