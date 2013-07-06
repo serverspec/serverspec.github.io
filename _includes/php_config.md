@@ -17,4 +17,5 @@ describe 'PHP config parameters' do
   context php_config('mbstring.http_output_conv_mimetypes') do
     its(:value) { should match /application/ }
   end
+end
 ```
