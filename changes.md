@@ -5,6 +5,12 @@ title: Changes
 
 ## Changes
 
+### 0.6.28
+
+ * [Fix check_listening for Solaris](https://github.com/serverspec/serverspec/pull/214)
+ * [Fix check_listening_with_protocol for Solaris](https://github.com/serverspec/serverspec/pull/215)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.27...v0.6.28)
+
 ### 0.6.27
 
  * [Add be\_monitored\_by('god') for service resource type](https://github.com/serverspec/serverspec/pull/208)
