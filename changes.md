@@ -5,6 +5,12 @@ title: Changes
 
 ## Changes
 
+### 0.6.27
+
+ * [Add be\_monitored\_by('god') for service resource type](https://github.com/serverspec/serverspec/pull/208)
+ * [Add command test for be_running.under('supervisor')](https://github.com/serverspec/serverspec/pull/213)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.26...v0.6.27)
+
 ### 0.6.26
 
  * [Fix custom failure message duplication](https://github.com/serverspec/serverspec/pull/211)
