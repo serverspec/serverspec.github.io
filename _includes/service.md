@@ -46,4 +46,9 @@ In order to test a service/process is monitored by a given software, you should 
 describe service('sshd') do
   it { should be_monitored_by('monit') }
 end
+
+describe service('unicorn') do
+  it { should be_monitored_by('god') }
+end
+
 ```
