@@ -5,7 +5,13 @@ title: Changes
 
 ## Changes
 
-### 0.6.24
+### 0.6.26
+
+ * [Fix custom failure message duplication](https://github.com/serverspec/serverspec/pull/211)
+ * [Fix check\_running\_under\_supervisor](https://github.com/serverspec/serverspec/pull/210)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.25...v0.6.26)
+
+### 0.6.25
 
  * [Add php_config resource type](https://github.com/serverspec/serverspec/pull/196)
  * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.24...v0.6.25)
