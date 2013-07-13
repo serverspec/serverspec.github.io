@@ -45,3 +45,5 @@ title: Contributors
  * [PeteMS](https://github.com/petems)
  * [Yuichiro SAITO](https://github.com/koemu)
  * [Adam Duke](https://github.com/adamvduke)
+ * [Keiichiro Ui](https://github.com/kui)
+
