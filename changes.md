@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.6.29
+
+ * [Fix selinux resource type to work correctly even if selinux related files are not installed](https://github.com/serverspec/serverspec/pull/217)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.28...v0.6.29)
+
 ### 0.6.28
 
  * [Fix check_listening for Solaris](https://github.com/serverspec/serverspec/pull/214)
