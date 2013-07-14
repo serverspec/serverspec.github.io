@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.6.30
+
+ * [Omit brackets when be_permissive and be_enforcing of selinux resource type](https://github.com/serverspec/serverspec/pull/218)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.29...v0.6.30)
+
 ### 0.6.29
 
  * [Fix selinux resource type to work correctly even if selinux related files are not installed](https://github.com/serverspec/serverspec/pull/217)
