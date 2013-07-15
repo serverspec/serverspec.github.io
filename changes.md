@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.7.0
+
+ * [Add sudo and env PATH to each command](https://github.com/serverspec/serverspec/pull/219)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.30...v0.7.0)
+
 ### 0.6.30
 
  * [Omit brackets when be_permissive and be_enforcing of selinux resource type](https://github.com/serverspec/serverspec/pull/218)
