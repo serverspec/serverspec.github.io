@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.7.1
+
+ * [Fix regular expression for build_command()](https://github.com/serverspec/serverspec/pull/220)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.0...v0.7.1)
+
 ### 0.7.0
 
  * [Add sudo and env PATH to each command](https://github.com/serverspec/serverspec/pull/219)
