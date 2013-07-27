@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.7.2
+
+ * [Serverspec-init climbs up the directory tree to looking for the Vagrantfile](https://github.com/serverspec/serverspec/pull/221)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.1...v0.7.2)
+
 ### 0.7.1
 
  * [Fix regular expression for build_command()](https://github.com/serverspec/serverspec/pull/220)
