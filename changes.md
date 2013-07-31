@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.7.3
+
+ * [Add match_sha256checksum matcher of file type](https://github.com/serverspec/serverspec/pull/222)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.2...v0.7.3)
+
 ### 0.7.2
 
  * [Serverspec-init climbs up the directory tree to looking for the Vagrantfile](https://github.com/serverspec/serverspec/pull/221)
