@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.7.4
+
+ * [Fix regular expression for build_command()](https://github.com/serverspec/serverspec/pull/223)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.3...v0.7.4)
+
 ### 0.7.3
 
  * [Add match_sha256checksum matcher of file type](https://github.com/serverspec/serverspec/pull/222)
