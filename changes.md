@@ -5,6 +5,12 @@ title: Changes
 
 ## Changes
 
+### 0.7.5
+
+ * [Fix how to pass the argument to grep](https://github.com/serverspec/serverspec/pull/224)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.4...v0.7.5)
+
+
 ### 0.7.4
 
  * [Fix regular expression for build_command()](https://github.com/serverspec/serverspec/pull/223)
