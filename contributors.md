@@ -48,3 +48,4 @@ title: Contributors
  * [Keiichiro Ui](https://github.com/kui)
  * [a3no](https://github.com/a3no)
  * [dai](https://github.com/cl-lab-k)
+ * [Sohgo Takeuchi](https://github.com/sohgo)
