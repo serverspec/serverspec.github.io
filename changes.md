@@ -5,6 +5,12 @@ title: Changes
 
 ## Changes
 
+
+### 0.7.7
+
+ * [Get correct string from regexp in shell escape method](https://github.com/serverspec/serverspec/pull/227)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.6...v0.7.7)
+
 ### 0.7.6
 
  * [Specify /bin/sh explicitly for the users don't have valid login shell](https://github.com/serverspec/serverspec/pull/226)
