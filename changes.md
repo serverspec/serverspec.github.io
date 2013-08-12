@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.7.8
+
+ * [Add have\_ipv4\_address matcher to interface resource](https://github.com/serverspec/serverspec/pull/228)
+ * [Add capability to provide an alternate path for sudo](https://github.com/serverspec/serverspec/pull/229)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.7...v0.7.8)
 
 ### 0.7.7
 
