@@ -5,6 +5,12 @@ title: Changes
 
 ## Changes
 
+### 0.7.10
+
+ * [Add check_zfs to Linux commands](https://github.com/serverspec/serverspec/pull/231)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.9...v0.7.10)
+
+
 ### 0.7.9
 
  * [Add with\_version to be\_installed matcher for Debian](https://github.com/serverspec/serverspec/pull/230)
