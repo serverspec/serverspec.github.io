@@ -50,3 +50,4 @@ title: Contributors
  * [dai](https://github.com/cl-lab-k)
  * [Sohgo Takeuchi](https://github.com/sohgo)
  * [Patrick Podenski](https://github.com/podenski)
+ * [treydock](https://github.com/treydock)
