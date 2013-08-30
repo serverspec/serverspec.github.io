@@ -5,11 +5,15 @@ title: Changes
 
 ## Changes
 
+### 0.7.11
+
+ * [Also use -F option with grep](https://github.com/serverspec/serverspec/pull/233)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.10...v0.7.11)
+
 ### 0.7.10
 
  * [Add check_zfs to Linux commands](https://github.com/serverspec/serverspec/pull/231)
  * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.9...v0.7.10)
-
 
 ### 0.7.9
 
