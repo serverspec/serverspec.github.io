@@ -51,3 +51,4 @@ title: Contributors
  * [Sohgo Takeuchi](https://github.com/sohgo)
  * [Patrick Podenski](https://github.com/podenski)
  * [treydock](https://github.com/treydock)
+ * [YAMADA Tsuyoshi](https://github.com/minimum2scp)
