@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.7.12
+
+ * [Add pip to package provider](https://github.com/serverspec/serverspec/pull/237)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.11...v0.7.12)
+
 ### 0.7.11
 
  * [Also use -F option with grep](https://github.com/serverspec/serverspec/pull/233)
