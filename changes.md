@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.7.13
+
+ * [Fix check_link() for Darwin](https://github.com/serverspec/serverspec/pull/240)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.12...v0.7.13)
+
 ### 0.7.12
 
  * [Add pip to package provider](https://github.com/serverspec/serverspec/pull/237)
