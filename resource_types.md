@@ -18,6 +18,7 @@ title: Resource Types
 | [iptables](#iptables)
 | [kernel_module](#kernel_module)
 | [linux\_kernel\_parameter](#linux_kernel_parameter)
+| [mail\_alias](#mail_alias)
 | [package](#package)
 | [php_config](#php_config)
 | [port](#port)
@@ -103,6 +104,11 @@ Please see [the document of rspec-expectations](https://github.com/rspec/rspec-e
 
 {% capture linux_kernel_parameter %}{% include linux_kernel_parameter.md %}{% endcapture %}
 {{ linux_kernel_parameter | markdownify }}
+
+----
+
+{% capture mail_alias %}{% include mail_alias.md %}{% endcapture %}
+{{ mail_alias | markdownify }}
 
 ----
 
