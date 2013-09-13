@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.8.0
+
+ * [Add mail alias resource type](https://github.com/serverspec/serverspec/pull/241)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.13...v0.8.0)
+
 ### 0.7.13
 
  * [Fix check_link() for Darwin](https://github.com/serverspec/serverspec/pull/240)
