@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.8.1
+
+ * Fix a bug of check_mail_alias()
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.8.0...v0.8.1)
+
 ### 0.8.0
 
  * [Add mail alias resource type](https://github.com/serverspec/serverspec/pull/241)
