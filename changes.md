@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.9.4
+
+ * [Fix class name and specs for AIX](https://github.com/serverspec/serverspec/pull/247)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.3...v0.9.4)
+
 ### 0.9.3
 
  * [Support FreeBSD](https://github.com/serverspec/serverspec/pull/161)
