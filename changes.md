@@ -5,11 +5,15 @@ title: Changes
 
 ## Changes
 
+### 0.9.3
+
+ * [Support FreeBSD](https://github.com/serverspec/serverspec/pull/161)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.2...v0.9.3)
+
 ### 0.9.2
 
  * [Support AIX](https://github.com/serverspec/serverspec/pull/246)
  * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.1...v0.9.2)
-
 
 ### 0.9.1
 
