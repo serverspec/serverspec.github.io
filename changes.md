@@ -5,6 +5,16 @@ title: Changes
 
 ## Changes
 
+### 0.9.1
+
+ * Fix a bug of serverspec-init
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.0...v0.9.1)
+
+### 0.9.0
+
+ * [Support Windows OS](https://github.com/serverspec/serverspec/pull/244)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.8.1...v0.9.0)
+
 ### 0.8.1
 
  * Fix a bug of check_mail_alias()
