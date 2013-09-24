@@ -53,3 +53,4 @@ title: Contributors
  * [treydock](https://github.com/treydock)
  * [YAMADA Tsuyoshi](https://github.com/minimum2scp)
  * [Silvio Montanari](https://github.com/smontanari)
+ * [worldostugs](https://github.com/worldostugs)
