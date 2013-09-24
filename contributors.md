@@ -52,3 +52,4 @@ title: Contributors
  * [Patrick Podenski](https://github.com/podenski)
  * [treydock](https://github.com/treydock)
  * [YAMADA Tsuyoshi](https://github.com/minimum2scp)
+ * [Silvio Montanari](https://github.com/smontanari)
