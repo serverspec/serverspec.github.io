@@ -54,3 +54,4 @@ title: Contributors
  * [YAMADA Tsuyoshi](https://github.com/minimum2scp)
  * [Silvio Montanari](https://github.com/smontanari)
  * [worldostugs](https://github.com/worldostugs)
+ * [Ryosuke Hamaji](https://github.com/aibou)
