@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.9.6
+
+ * [Fix a typo](https://github.com/serverspec/serverspec/pull/258)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.5...v0.9.6)
+
 ### 0.9.5
 
  * [Enable to configure a sudo prompt](https://github.com/serverspec/serverspec/pull/256)
