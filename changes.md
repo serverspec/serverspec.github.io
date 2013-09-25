@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.9.5
+
+ * [Enable to configure a sudo prompt](https://github.com/serverspec/serverspec/pull/256)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.4...v0.9.5)
+
 ### 0.9.4
 
  * [Fix class name and specs for AIX](https://github.com/serverspec/serverspec/pull/247)
