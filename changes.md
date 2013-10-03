@@ -9,7 +9,7 @@ title: Changes
 
  * [Add be\_installed.by('cpan')](https://github.com/serverspec/serverspec/pull/260)
  * [Add be\_installed.by('pear')](https://github.com/serverspec/serverspec/pull/261)
- * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.5...v0.9.7)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.6...v0.9.7)
 
 ### 0.9.6
 
