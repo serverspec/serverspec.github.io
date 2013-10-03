@@ -5,6 +5,12 @@ title: Changes
 
 ## Changes
 
+### 0.9.7
+
+ * [Add be\_installed.by('cpan')](https://github.com/serverspec/serverspec/pull/260)
+ * [Add be\_installed.by('pear')](https://github.com/serverspec/serverspec/pull/261)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.5...v0.9.7)
+
 ### 0.9.6
 
  * [Fix a typo](https://github.com/serverspec/serverspec/pull/258)
