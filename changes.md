@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.9.8
+
+ * [Fix to return correct exit status](https://github.com/serverspec/serverspec/pull/262)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.7...v0.9.8)
+
 ### 0.9.7
 
  * [Add be\_installed.by('cpan')](https://github.com/serverspec/serverspec/pull/260)
