@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.10.0
+
+ * [Fix how to check service running](https://github.com/serverspec/serverspec/pull/266)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.8...v0.10.0)
+
 ### 0.9.8
 
  * [Fix to return correct exit status](https://github.com/serverspec/serverspec/pull/262)
