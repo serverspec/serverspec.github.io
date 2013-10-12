@@ -5,6 +5,13 @@ title: Changes
 
 ## Changes
 
+### 0.10.1
+
+ * [Consider \r optional in the return of ip route command](https://github.com/serverspec/serverspec/pull/272)
+ * [Add check_mode for FreeBSD](https://github.com/serverspec/serverspec/pull/271)
+ * [Use pkg_info istead of pkg_version](https://github.com/serverspec/serverspec/pull/270)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.0...v0.10.1)
+
 ### 0.10.0
 
  * [Fix how to check service running](https://github.com/serverspec/serverspec/pull/266)
