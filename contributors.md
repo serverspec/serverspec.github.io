@@ -56,3 +56,4 @@ title: Contributors
  * [worldostugs](https://github.com/worldostugs)
  * [Ryosuke Hamaji](https://github.com/aibou)
  * [Kaneko Tatsuya](https://github.com/catatsuy)
+ * [Tomotaka Sakuma](https://github.com/tmtk75)
