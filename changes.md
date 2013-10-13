@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.10.3
+
+ * [Ignore case of monit result](https://github.com/serverspec/serverspec/pull/274)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.2...v0.10.3)
+
 ### 0.10.2
 
  * [Support Plamo Linux](https://github.com/serverspec/serverspec/pull/273)
