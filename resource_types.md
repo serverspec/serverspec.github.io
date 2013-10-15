@@ -6,7 +6,8 @@ title: Resource Types
 ## Resource Types
 
 <nav>
-  [command](#command)
+  [cgroup](#cgroup)
+| [command](#command)
 | [cron](#cron)
 | [default_gateway](#default_gateway)
 | [file](#file)
@@ -46,6 +47,10 @@ Please see [the document of rspec-expectations](https://github.com/rspec/rspec-e
 
 ----
 
+{% capture cgroup %}{% include cgroup.md %}{% endcapture %}
+{{ cgroup | markdownify }}
+
+----
 
 {% capture command %}{% include command.md %}{% endcapture %}
 {{ command | markdownify }}
