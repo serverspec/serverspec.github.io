@@ -5,6 +5,16 @@ title: Changes
 
 ## Changes
 
+### 0.10.5
+
+ * [Add cgroup resource type](https://github.com/serverspec/serverspec/pull/279)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.4...v0.10.5)
+
+### 0.10.4
+
+ * [Fix how to find a service name and add some specs for Windows support](https://github.com/serverspec/serverspec/pull/275)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.3...v0.10.4)
+
 ### 0.10.3
 
  * [Ignore case of monit result](https://github.com/serverspec/serverspec/pull/274)
