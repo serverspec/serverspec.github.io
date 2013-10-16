@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.10.6
+
+ * [Command type returns stdout, so you can use any matchers you like to the stdout](https://github.com/serverspec/serverspec/pull/280)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.5...v0.10.6)
+
 ### 0.10.5
 
  * [Add cgroup resource type](https://github.com/serverspec/serverspec/pull/279)
