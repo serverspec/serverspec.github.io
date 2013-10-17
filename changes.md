@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.10.8
+
+ * [Support its(:content) for file resource type](https://github.com/serverspec/serverspec/pull/281)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.7...v0.10.8)
+
 ### 0.10.7
 
  * [Windows: support for testing commands, plus a fix around windows registry key](https://github.com/serverspec/serverspec/pull/282)
