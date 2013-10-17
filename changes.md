@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.10.7
+
+ * [Windows: support for testing commands, plus a fix around windows registry key](https://github.com/serverspec/serverspec/pull/282)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.6...v0.10.7)
+
 ### 0.10.6
 
  * [Command type returns stdout, so you can use any matchers you like to the stdout](https://github.com/serverspec/serverspec/pull/280)
