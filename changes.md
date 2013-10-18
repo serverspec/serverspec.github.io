@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.10.9
+
+ * [Replace CRLF with LF of STDOUT when SSH](https://github.com/serverspec/serverspec/pull/284)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.8...v0.10.9)
+
 ### 0.10.8
 
  * [Support its(:content) for file resource type](https://github.com/serverspec/serverspec/pull/281)
