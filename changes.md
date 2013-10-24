@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.10.10
+
+ * [Support LXC](https://github.com/serverspec/serverspec/pull/285)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.9...v0.10.10)
+
 ### 0.10.9
 
  * [Replace CRLF with LF of STDOUT when SSH](https://github.com/serverspec/serverspec/pull/284)
