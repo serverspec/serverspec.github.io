@@ -58,4 +58,5 @@ title: Contributors
  * [Kaneko Tatsuya](https://github.com/catatsuy)
  * [Tomotaka Sakuma](https://github.com/tmtk75)
  * [TenForward](https://github.com/tenforward)
+ * [Naoto Takai](https://github.com/takai)
 
