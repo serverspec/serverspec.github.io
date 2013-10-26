@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.10.11
+
+ * [Use IO#gets instead of Kernel#gets in serverspec-init](https://github.com/serverspec/serverspec/pull/287)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.10...v0.10.11)
+
 ### 0.10.10
 
  * [Support LXC](https://github.com/serverspec/serverspec/pull/285)
