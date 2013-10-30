@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.10.12
+
+ * [Include tcp6 & udp6 as port protocol](https://github.com/serverspec/serverspec/pull/288)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.11...v0.10.12)
+
 ### 0.10.11
 
  * [Use IO#gets instead of Kernel#gets in serverspec-init](https://github.com/serverspec/serverspec/pull/287)
