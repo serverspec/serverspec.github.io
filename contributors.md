@@ -60,4 +60,5 @@ title: Contributors
  * [TenForward](https://github.com/tenforward)
  * [Naoto Takai](https://github.com/takai)
  * [Johan Haals](https://github.com/JHaals)
+ * [darklore](https://github.com/darklore)
 
