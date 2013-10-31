@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.10.13
+
+ * [Allow to use '_' and '-' as vagrant machine name](https://github.com/serverspec/serverspec/pull/290)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.12...v0.10.13)
+
 ### 0.10.12
 
  * [Include tcp6 & udp6 as port protocol](https://github.com/serverspec/serverspec/pull/288)
