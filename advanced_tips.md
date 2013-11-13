@@ -109,11 +109,11 @@ end
 
 ----
 
-## How to use host specific attributes
+## How to use host specific properties
 
-Serverspec supports a simple mechanism to handle host specific attributes.
+Serverspec supports a simple mechanism to handle host specific properties.
 
-This example assumes that host specific attributes are in YAML file.
+This example assumes that host specific properties are in YAML file.
 
 ```yaml
 db001.example.jp:
@@ -135,24 +135,24 @@ require 'rake'
 require 'rspec/core/rake_task'
 require 'yaml'
  
-attributes = YAML.load_file('attributes.yml')
+properties = YAML.load_file('properties.yml')
  
 desc "Run serverspec to all hosts"
 task :serverspec => 'serverspec:all'
  
 namespace :serverspec do
-  task :all => attributes.keys.map {|key| 'serverspec:' + key.split('.')[0] }
-  attributes.keys.each do |key|
+  task :all => properties.keys.map {|key| 'serverspec:' + key.split('.')[0] }
+  properties.keys.each do |key|
     desc "Run serverspec to #{key}"
     RSpec::Core::RakeTask.new(key.split('.')[0].to_sym) do |t|
       ENV['TARGET_HOST'] = key
-      t.pattern = 'spec/{' + attributes[key][:roles].join(',') + '}/*_spec.rb'
+      t.pattern = 'spec/{' + properties[key][:roles].join(',') + '}/*_spec.rb'
     end
   end
 end
 ```
 
-You can write spec_helper.rb to set host specific attributes with ``attr_set``.
+You can write spec_helper.rb to set host specific properties with ``set_property``.
 
 ```ruby
 require 'serverspec'
@@ -162,13 +162,13 @@ require 'yaml'
  
 include Serverspec::Helper::Ssh
 include Serverspec::Helper::DetectOS
-include Serverspec::Helper::Attributes
+include Serverspec::Helper::Properties
  
-attributes = YAML.load_file('attributes.yml')
+properties = YAML.load_file('properties.yml')
  
 RSpec.configure do |c|
   c.host  = ENV['TARGET_HOST']
-  attr_set attributes[c.host]
+  set_property properties[c.host]
   options = Net::SSH::Config.for(c.host)
   user    = options[:user] || Etc.getlogin
   c.ssh   = Net::SSH.start(c.host, user, options)
@@ -176,13 +176,13 @@ RSpec.configure do |c|
 end
 ```
 
-And you can use host specific attributes with ``attr`` like this.
+And you can use host specific properties with ``property`` like this.
 
 ```ruby
 require 'spec_helper'
  
 describe file('/etc/my.cnf') do
-  it { should contain "server-id = #{attr[:server_id]}" }
+  it { should contain "server-id = #{property[:server_id]}" }
 end
 ```
 
