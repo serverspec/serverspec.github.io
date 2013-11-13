@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.11.0
+
+ * [Introduce property instead of attr](https://github.com/serverspec/serverspec/pull/293)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.13...v0.11.0)
+
 ### 0.10.13
 
  * [Allow to use '_' and '-' as vagrant machine name](https://github.com/serverspec/serverspec/pull/290)
