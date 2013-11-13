@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.11.1
+
+ * [Don't set HostName gotten by vagrant ssh-config to c.host](https://github.com/serverspec/serverspec/pull/294)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.11.0...v0.11.1)
+
 ### 0.11.0
 
  * [Introduce property instead of attr](https://github.com/serverspec/serverspec/pull/293)
