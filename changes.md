@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.11.2
+
+ * [check_os returns os release (but currently support redhat only)](https://github.com/serverspec/serverspec/pull/295)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.11.1...v0.11.2)
+
 ### 0.11.1
 
  * [Don't set HostName gotten by vagrant ssh-config to c.host](https://github.com/serverspec/serverspec/pull/294)
