@@ -5,6 +5,16 @@ title: Changes
 
 ## Changes
 
+### 0.11.4
+
+ * [Add Solaris 10 capability to serverspec](https://github.com/serverspec/serverspec/pull/298)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.11.3...v0.11.4)
+
+### 0.11.3
+
+ * Delete OS type cache by mistake, so recover it
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.11.2...v0.11.3)
+
 ### 0.11.2
 
  * [check_os returns os release (but currently support redhat only)](https://github.com/serverspec/serverspec/pull/295)
