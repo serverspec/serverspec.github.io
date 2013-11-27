@@ -61,4 +61,5 @@ title: Contributors
  * [Naoto Takai](https://github.com/takai)
  * [Johan Haals](https://github.com/JHaals)
  * [darklore](https://github.com/darklore)
+ * [Fletcher Nichol](https://github.com/fnichol)
 
