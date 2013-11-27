@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.11.5
+
+ * [Ensure no Ruby envvars are present when running command](https://github.com/serverspec/serverspec/pull/300)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.11.4...v0.11.5)
+
 ### 0.11.4
 
  * [Add Solaris 10 capability to serverspec](https://github.com/serverspec/serverspec/pull/298)
