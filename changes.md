@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.12.0
+
+ * [Use specinfra.Specinfra is a common layer of serverspec and configspec.](https://github.com/serverspec/serverspec/pull/301)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.11.5...v0.12.0)
+
 ### 0.11.5
 
  * [Ensure no Ruby envvars are present when running command](https://github.com/serverspec/serverspec/pull/300)
