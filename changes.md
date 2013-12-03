@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.13.1
+
+ * [Revert Serverspec::Commands::Base for backward compatibility](https://github.com/serverspec/serverspec/pull/303)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.0...v0.13.1)
+
 ### 0.13.0
 
  * [Move Serverspec::Commands::* to SpecInfra::Command::*](https://github.com/serverspec/serverspec/pull/302)
