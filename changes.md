@@ -5,6 +5,11 @@ title: Changes
 
 ## Changes
 
+### 0.13.0
+
+ * [Move Serverspec::Commands::* to SpecInfra::Command::*](https://github.com/serverspec/serverspec/pull/302)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.12.0...v0.13.0)
+
 ### 0.12.0
 
  * [Use specinfra.Specinfra is a common layer of serverspec and configspec.](https://github.com/serverspec/serverspec/pull/301)
