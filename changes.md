@@ -3,7 +3,14 @@ layout: layout
 title: Changes
 ---
 
+Core parts of serverspec are separeted into [specinfra](https://github.com/serverspec/specinfra).So changes of specinfra are also listed here.
+
 ## Changes
+
+### specinfra v0.0.7
+
+ * [Fix checking for service started status on Debian](https://github.com/serverspec/specinfra/pull/6)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.0.6...v0.0.7)
 
 ### 0.13.1
 
