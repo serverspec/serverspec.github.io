@@ -7,6 +7,11 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### serverspec v0.13.2
+
+ * [pathname is not required when backend type is exec](https://github.com/serverspec/serverspec/pull/304)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.1...v0.13.2)
+
 ### specinfra v0.0.7
 
  * [Fix checking for service started status on Debian](https://github.com/serverspec/specinfra/pull/6)
