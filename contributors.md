@@ -62,4 +62,5 @@ title: Contributors
  * [Johan Haals](https://github.com/JHaals)
  * [darklore](https://github.com/darklore)
  * [Fletcher Nichol](https://github.com/fnichol)
+ * [presto53](https://github.com/presto53)
 
