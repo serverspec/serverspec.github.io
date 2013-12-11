@@ -7,6 +7,12 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### specinfra v0.0.10
+
+ * [Add FreeBSD specific get_mode method](https://github.com/serverspec/specinfra/pull/14)
+ * [Fix get_file_content method](https://github.com/serverspec/specinfra/pull/16)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.0.9...v0.0.10)
+
 ### serverspec v0.13.2
 
  * [pathname is not required when backend type is exec](https://github.com/serverspec/serverspec/pull/304)
