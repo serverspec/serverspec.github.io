@@ -7,6 +7,11 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### serverspec v0.13.3
+
+ * [Revert Serverspec::Helper::Properties for backward compatibility](https://github.com/serverspec/serverspec/pull/308)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.2...v0.13.3)
+
 ### specinfra v0.0.10
 
  * [Add FreeBSD specific get_mode method](https://github.com/serverspec/specinfra/pull/14)
