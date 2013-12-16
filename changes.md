@@ -7,6 +7,16 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### serverspec v0.13.4
+
+ * [Add version method to package type for testing package version](https://github.com/serverspec/serverspec/pull/311)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.3...v0.13.4)
+
+### specinfra v0.0.14
+
+ * [Add get_package_version command for RedHat](https://github.com/serverspec/specinfra/pull/23)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.0.13...v0.0.14)
+
 ### serverspec v0.13.3
 
  * [Revert Serverspec::Helper::Properties for backward compatibility](https://github.com/serverspec/serverspec/pull/308)
