@@ -24,7 +24,7 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ### specinfra v0.0.14
 
- * [Add get_package_version command for RedHat](https://github.com/serverspec/specinfra/pull/23)
+ * [Add get\_package\_version command for RedHat](https://github.com/serverspec/specinfra/pull/23)
  * [View Diff](https://github.com/serverspec/specinfra/compare/v0.0.13...v0.0.14)
 
 ### serverspec v0.13.3
