@@ -63,4 +63,6 @@ title: Contributors
  * [darklore](https://github.com/darklore)
  * [Fletcher Nichol](https://github.com/fnichol)
  * [presto53](https://github.com/presto53)
+ * [Vincent Bernat](https://github.com/vincentbernat)
+ * [doc75](https://github.com/doc75)
 
