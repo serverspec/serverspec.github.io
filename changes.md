@@ -7,6 +7,11 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### serverspec v0.13.6
+
+ * [package: fix version comparison](https://github.com/serverspec/serverspec/pull/316)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.5...v0.13.6)
+
 ### serverspec v0.13.5
 
  * [Support comparing versions of package](https://github.com/serverspec/serverspec/pull/315)
