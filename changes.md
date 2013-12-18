@@ -7,6 +7,12 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### serverspec v0.13.7
+
+ * [Refactor Serverspec::Type::Package::Version](https://github.com/serverspec/serverspec/pull/317)
+ * [Use "?~" unless "~".ord is available](https://github.com/serverspec/serverspec/pull/318)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.6...v0.13.7)
+
 ### specinfra v0.0.16
 
  * [Fix issue on Ubuntu with check_running for courier-imap service](https://github.com/serverspec/specinfra/pull/21)
