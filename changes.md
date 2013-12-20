@@ -7,6 +7,11 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### specinfra v0.0.17
+
+ * [Fix misspelled :disable_sudo and remove it from specinfra.rb](https://github.com/serverspec/specinfra/pull/25)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.0.16...v0.0.17)
+
 ### serverspec v0.13.7
 
  * [Refactor Serverspec::Type::Package::Version](https://github.com/serverspec/serverspec/pull/317)
