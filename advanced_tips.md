@@ -335,4 +335,8 @@ describe command('whoami') do
   let(:disable_sudo) { true }
   it { should return_stdout 'vagrant' }
 end
+
+describe command('whoami') do
+  it { should return_stdout 'root' }
+end
 ```
