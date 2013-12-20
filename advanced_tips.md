@@ -284,3 +284,55 @@ end
 ```
 
 [xpool]: https://github.com/robgleeson/xpool "xpool: lightweight process pool"
+
+----
+
+## How to control sudo
+
+You can disable sudo completely like this.
+
+```ruby
+# In spec_helper.rb
+RSpec.configure do |c|
+  c.disable_sudo = true
+  ...
+```
+
+----
+
+Or you can disable sudo temporary like this.
+
+```ruby
+# In spec_helper.rb
+RSpec.configure do |c|
+  c.around :each, sudo: false do |example|
+    c.disable_sudo = true
+    example.run
+    c.disable_sudo = false
+  end
+  ...
+```
+
+----
+
+```ruby
+# In xxxxx_spec.rb
+describe command('whoami'), :sudo => false do
+  it { should return_stdout 'vagrant' }
+end
+
+describe command('whoami') do
+  it { should return_stdout 'root' }
+end
+```
+
+----
+
+Another way to disable sudo temporary.
+
+```ruby
+describe command('whoami') do
+  let(:disable_sudo) { true }
+  it { should return_stdout 'vagrant' }
+end
+```
