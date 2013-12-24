@@ -7,6 +7,16 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### serverspec v0.14.0
+
+ * [Allow to test process parameters](https://github.com/serverspec/serverspec/pull/321)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.7...v0.14.0)
+
+### specinfra v0.1.0
+
+ * [Add a method to get a process parameter](https://github.com/serverspec/specinfra/pull/27)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.0.17...v0.1.0)
+
 ### specinfra v0.0.17
 
  * [Fix misspelled :disable_sudo and remove it from specinfra.rb](https://github.com/serverspec/specinfra/pull/25)
