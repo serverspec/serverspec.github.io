@@ -7,6 +7,11 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### serverspec v0.14.1
+
+ * Bump up dependent version of specinfra
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.14.0...v0.14.1)
+
 ### serverspec v0.14.0
 
  * [Allow to test process parameters](https://github.com/serverspec/serverspec/pull/321)
