@@ -7,6 +7,16 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### specinfra v0.1.1
+
+ * [Delete CR(carriage return) from check_routing_table](https://github.com/serverspec/specinfra/pull/29)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.1.0...v0.1.1)
+
+### serverspec v0.14.2
+
+ * [Quick fix for #324](https://github.com/serverspec/serverspec/pull/325)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.14.1...v0.14.2)
+
 ### serverspec v0.14.1
 
  * Bump up dependent version of specinfra
