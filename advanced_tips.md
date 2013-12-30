@@ -76,13 +76,24 @@ end
  
 desc "Run serverspec to all hosts"
 task :serverspec => 'serverspec:all'
+
+class ServerspecTask < RSpec::Core::RakeTask
+
+  attr_accessor :target
+
+  def spec_command
+    cmd = super
+    "env TARGET_HOST=#{target} #{cmd}"
+  end
+
+end
  
 namespace :serverspec do
   task :all => hosts.map {|h| 'serverspec:' + h[:short_name] }
   hosts.each do |host|
     desc "Run serverspec to #{host[:name]}"
-    RSpec::Core::RakeTask.new(host[:short_name].to_sym) do |t|
-      ENV['TARGET_HOST'] = host[:name]
+    ServerspecTask.new(host[:short_name].to_sym) do |t|
+      t.target = host[:name]
       t.pattern = 'spec/{' + host[:roles].join(',') + '}/*_spec.rb'
     end
   end
