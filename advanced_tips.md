@@ -76,13 +76,24 @@ end
  
 desc "Run serverspec to all hosts"
 task :serverspec => 'serverspec:all'
+
+class ServerspecTask < RSpec::Core::RakeTask
+
+  attr_accessor :target
+
+  def spec_command
+    cmd = super
+    "env TARGET_HOST=#{target} #{cmd}"
+  end
+
+end
  
 namespace :serverspec do
   task :all => hosts.map {|h| 'serverspec:' + h[:short_name] }
   hosts.each do |host|
     desc "Run serverspec to #{host[:name]}"
-    RSpec::Core::RakeTask.new(host[:short_name].to_sym) do |t|
-      ENV['TARGET_HOST'] = host[:name]
+    ServerspecTask.new(host[:short_name].to_sym) do |t|
+      t.target = host[:name]
       t.pattern = 'spec/{' + host[:roles].join(',') + '}/*_spec.rb'
     end
   end
@@ -238,52 +249,8 @@ In this case, a command is expanded to ``source ~/.zshrc && service httpd status
 ## Parallel execution
 
 If you have a lot of hosts, running tests on all of them can take some
-time. To speed up tests, they can be executed in parallel using a
-process pool. One way is to use [xpool][]. Here is a minimal
-``Rakefile`` that will maintain a pool of 10 processes to run tests:
-
-```ruby
-require 'rake'
-require 'rspec/core/rake_task'
-require 'xpool'
-
-$PARALLEL = 10                  # How many parallel tasks should we run?
-
-class BackgroundServerspecTask
-
-  def run(verbose, command)
-    puts command if verbose
-    status = system(command)
-    # Error handling can be done here
-  end
-
-end
-
-class ServerspecTask < RSpec::Core::RakeTask
-
-  @@pool = XPool.new $PARALLEL
-
-  def self.shutdown
-    @@pool.shutdown
-  end
-
-  def run_task(verbose)
-    command = spec_command
-    @@pool.schedule BackgroundServerspecTask.new, verbose, command
-  end
-
-end
-
-ServerspecTask.new(:spec) do |t|
-  t.pattern = 'spec/*/*_spec.rb'
-end
-
-Kernel.at_exit do
-  ServerspecTask.shutdown
-end
-```
-
-[xpool]: https://github.com/robgleeson/xpool "xpool: lightweight process pool"
+time. To speed up tests, they can be executed in parallel by passing
+`-j 10` and `-m` flags to `rake`.
 
 ----
 
