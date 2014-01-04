@@ -75,7 +75,7 @@ hosts = hosts.map do |host|
 end
  
 desc "Run serverspec to all hosts"
-task :serverspec => 'serverspec:all'
+task :spec => 'serverspec:all'
 
 class ServerspecTask < RSpec::Core::RakeTask
 
@@ -149,7 +149,7 @@ require 'yaml'
 properties = YAML.load_file('properties.yml')
  
 desc "Run serverspec to all hosts"
-task :serverspec => 'serverspec:all'
+task :spec => 'serverspec:all'
  
 namespace :serverspec do
   task :all => properties.keys.map {|key| 'serverspec:' + key.split('.')[0] }
