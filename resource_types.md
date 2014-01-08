@@ -45,7 +45,7 @@ Please see [the document of rspec-expectations](https://github.com/rspec/rspec-e
 
 ----
 
-*You can use more strict grammer syntax like ``be_a_file`` instead of ``be_file`` with all resource types.*
+*You can use more strict grammar syntax like ``be_a_file`` instead of ``be_file`` with all resource types.*
 
 ----
 
