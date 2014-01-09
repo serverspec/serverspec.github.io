@@ -7,9 +7,14 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### specinfra v0.2.0
+
+ * [Support RSpec 3](https://github.com/serverspec/specinfra/pull/30)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.1.1...v0.2.0)
+
 ### specinfra v0.1.1
 
- * [Delete CR(carriage return) from check_routing_table](https://github.com/serverspec/specinfra/pull/29)
+ * [Delete CR(carriage return) from check\_routing\_table](https://github.com/serverspec/specinfra/pull/29)
  * [View Diff](https://github.com/serverspec/specinfra/compare/v0.1.0...v0.1.1)
 
 ### serverspec v0.14.2
