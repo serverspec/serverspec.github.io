@@ -7,6 +7,11 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### specinfra v0.2.1
+
+ * [Custmoizable sudo options](https://github.com/serverspec/specinfra/pull/31)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.2.0...v0.2.1)
+
 ### specinfra v0.2.0
 
  * [Support RSpec 3](https://github.com/serverspec/specinfra/pull/30)
