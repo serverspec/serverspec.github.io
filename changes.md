@@ -7,6 +7,11 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### serverspec v0.14.3
+
+ * [Define user and group methods explicitly in Serverspec::Type::Process](https://github.com/serverspec/serverspec/pull/330)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.14.2...v0.14.3)
+
 ### specinfra v0.2.1
 
  * [Custmoizable sudo options](https://github.com/serverspec/specinfra/pull/31)
