@@ -7,3 +7,6 @@ exclude:
 - 'README.md'
 - 'vender'
 - 'vendor'
+sass:
+  syntax: scss
+  style: compressed
