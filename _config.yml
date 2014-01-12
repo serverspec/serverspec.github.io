@@ -1,12 +1,3 @@
 markdown: redcarpet
-exclude:
-- 'config.rb'
-- 'Gemfile'
-- 'Gemfile.lock'
-- 'Rakefile'
-- 'README.md'
-- 'vender'
-- 'vendor'
-sass:
-  syntax: scss
-  style: compressed
+exclude: ['Rakefile', 'README.md', 'config.rb', 'vender', 'vendor']
+
