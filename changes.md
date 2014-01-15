@@ -7,6 +7,11 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### specinfra v0.4.0
+
+ * [Support Docker backend](https://github.com/serverspec/specinfra/pull/35)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.3.2...v0.4.0)
+
 ### serverspec v0.14.3
 
  * [Define user and group methods explicitly in Serverspec::Type::Process](https://github.com/serverspec/serverspec/pull/330)
