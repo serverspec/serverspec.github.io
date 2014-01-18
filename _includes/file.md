@@ -215,3 +215,12 @@ describe file('/etc/services') do
   it { should match_md5checksum '35435ea447c19f0ea5ef971837ab9ced' }
 end
 ```
+#### match_sha256checksum
+
+In order to test a file's sha256 checksum matches a given value, you should use **match_sha256checksum** matcher.
+
+```ruby
+describe file('/etc/services') do
+  it { should match_sha256checksum 'a861c49e9a76d64d0a756e1c9125ae3aa6b88df3f814a51cecffd3e89cce6210' }
+end
+```
