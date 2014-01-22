@@ -7,6 +7,16 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### serverspec v0.14.4
+
+ * [Change regex to match more vagrant machine names](https://github.com/serverspec/serverspec/pull/334)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.14.3...v0.14.4)
+
+### specinfra v0.4.1
+
+ * [Also use iptables-save for checking iptables rules](https://github.com/serverspec/specinfra/pull/36)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.4.0...v0.4.1)
+
 ### specinfra v0.4.0
 
  * [Support Docker backend](https://github.com/serverspec/specinfra/pull/35)
