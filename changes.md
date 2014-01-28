@@ -7,6 +7,17 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### serverspec v0.15.0
+
+ * [Fix to use SpecInfra::CommandResult](https://github.com/serverspec/serverspec/pull/338)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.14.4...v0.15.0)
+
+### specinfra v0.5.0
+
+ * [Add SpecInfra::CommandResult](https://github.com/serverspec/specinfra/pull/40)
+ * [Fix to use SpecInfra::CommandResult](https://github.com/serverspec/specinfra/pull/41)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.4.1...v0.5.0)
+
 ### serverspec v0.14.4
 
  * [Change regex to match more vagrant machine names](https://github.com/serverspec/serverspec/pull/334)
