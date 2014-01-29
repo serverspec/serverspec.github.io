@@ -7,6 +7,11 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### specinfra v0.5.1
+
+ * [Win32_Product call replaced with registry key search](https://github.com/serverspec/specinfra/pull/43)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.5.0...v0.5.1)
+
 ### serverspec v0.15.0
 
  * [Fix to use SpecInfra::CommandResult](https://github.com/serverspec/serverspec/pull/338)
