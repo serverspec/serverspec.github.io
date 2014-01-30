@@ -7,6 +7,11 @@ Core parts of serverspec are separeted into [specinfra](https://github.com/serve
 
 ## Changes
 
+### specinfra v0.5.2
+
+ * [find\_installed\_application.ps1 should search for "Displayname", not "name"](https://github.com/serverspec/specinfra/pull/45)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.5.1...v0.5.2)
+
 ### specinfra v0.5.1
 
  * [Win32_Product call replaced with registry key search](https://github.com/serverspec/specinfra/pull/43)
