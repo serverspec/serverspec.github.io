@@ -3,6 +3,10 @@ layout: layout
 title: Changes
 ---
 
+Please see [the releases of specinfra](https://github.com/serverspec/specinfra/releases) and [the releases of serverspec](https://github.com/serverspec/serverspec/releases).
+
+----
+
 Core parts of serverspec are separeted into [specinfra](https://github.com/serverspec/specinfra).So changes of specinfra are also listed here.
 
 ## Changes
