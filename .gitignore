@@ -1,5 +1,6 @@
 _site
 Gemfile.lock
 vender
+vendor
 .bundle
-
+.DS_Store
