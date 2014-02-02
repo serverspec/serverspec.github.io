@@ -34,7 +34,15 @@ end
 
 #### contain
 
-In order to test a file contains a given string, you should use **contain** mathcer.
+**Notice: Instead of ``contain``, you can use ``its(:content)`` and any standard rspec matchers. The matcher ``contain`` will be obsoleted.**
+
+```ruby
+describe file('/etc/httpd/conf/httpd.conf') do
+  its(:content) { should match /ServerName www.example.jp/ }
+end
+```
+
+In order to test a file contains a given string, you can use **contain** mathcer.
 
 ```ruby
 describe file('/etc/httpd/conf/httpd.conf') do
@@ -205,5 +213,14 @@ In order to test a file's md5 checksum matches a given value, you should use **m
 ```ruby
 describe file('/etc/services') do
   it { should match_md5checksum '35435ea447c19f0ea5ef971837ab9ced' }
+end
+```
+#### match_sha256checksum
+
+In order to test a file's sha256 checksum matches a given value, you should use **match_sha256checksum** matcher.
+
+```ruby
+describe file('/etc/services') do
+  it { should match_sha256checksum 'a861c49e9a76d64d0a756e1c9125ae3aa6b88df3f814a51cecffd3e89cce6210' }
 end
 ```

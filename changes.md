@@ -3,7 +3,420 @@ layout: layout
 title: Changes
 ---
 
+Core parts of serverspec are separeted into [specinfra](https://github.com/serverspec/specinfra).So changes of specinfra are also listed here.
+
 ## Changes
+
+Please see the latest changes at [the releases of specinfra](https://github.com/serverspec/specinfra/releases) and [the releases of serverspec](https://github.com/serverspec/serverspec/releases).
+
+### specinfra v0.5.2
+
+ * [find\_installed\_application.ps1 should search for "Displayname", not "name"](https://github.com/serverspec/specinfra/pull/45)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.5.1...v0.5.2)
+
+### specinfra v0.5.1
+
+ * [Win32_Product call replaced with registry key search](https://github.com/serverspec/specinfra/pull/43)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.5.0...v0.5.1)
+
+### serverspec v0.15.0
+
+ * [Fix to use SpecInfra::CommandResult](https://github.com/serverspec/serverspec/pull/338)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.14.4...v0.15.0)
+
+### specinfra v0.5.0
+
+ * [Add SpecInfra::CommandResult](https://github.com/serverspec/specinfra/pull/40)
+ * [Fix to use SpecInfra::CommandResult](https://github.com/serverspec/specinfra/pull/41)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.4.1...v0.5.0)
+
+### serverspec v0.14.4
+
+ * [Change regex to match more vagrant machine names](https://github.com/serverspec/serverspec/pull/334)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.14.3...v0.14.4)
+
+### specinfra v0.4.1
+
+ * [Also use iptables-save for checking iptables rules](https://github.com/serverspec/specinfra/pull/36)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.4.0...v0.4.1)
+
+### specinfra v0.4.0
+
+ * [Support Docker backend](https://github.com/serverspec/specinfra/pull/35)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.3.2...v0.4.0)
+
+### serverspec v0.14.3
+
+ * [Define user and group methods explicitly in Serverspec::Type::Process](https://github.com/serverspec/serverspec/pull/330)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.14.2...v0.14.3)
+
+### specinfra v0.2.1
+
+ * [Custmoizable sudo options](https://github.com/serverspec/specinfra/pull/31)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.2.0...v0.2.1)
+
+### specinfra v0.2.0
+
+ * [Support RSpec 3](https://github.com/serverspec/specinfra/pull/30)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.1.1...v0.2.0)
+
+### specinfra v0.1.1
+
+ * [Delete CR(carriage return) from check\_routing\_table](https://github.com/serverspec/specinfra/pull/29)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.1.0...v0.1.1)
+
+### serverspec v0.14.2
+
+ * [Quick fix for #324](https://github.com/serverspec/serverspec/pull/325)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.14.1...v0.14.2)
+
+### serverspec v0.14.1
+
+ * Bump up dependent version of specinfra
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.14.0...v0.14.1)
+
+### serverspec v0.14.0
+
+ * [Allow to test process parameters](https://github.com/serverspec/serverspec/pull/321)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.7...v0.14.0)
+
+### specinfra v0.1.0
+
+ * [Add a method to get a process parameter](https://github.com/serverspec/specinfra/pull/27)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.0.17...v0.1.0)
+
+### specinfra v0.0.17
+
+ * [Fix misspelled :disable_sudo and remove it from specinfra.rb](https://github.com/serverspec/specinfra/pull/25)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.0.16...v0.0.17)
+
+### serverspec v0.13.7
+
+ * [Refactor Serverspec::Type::Package::Version](https://github.com/serverspec/serverspec/pull/317)
+ * [Use "?~" unless "~".ord is available](https://github.com/serverspec/serverspec/pull/318)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.6...v0.13.7)
+
+### specinfra v0.0.16
+
+ * [Fix issue on Ubuntu with check_running for courier-imap service](https://github.com/serverspec/specinfra/pull/21)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.0.15...v0.0.16)
+
+### serverspec v0.13.6
+
+ * [package: fix version comparison](https://github.com/serverspec/serverspec/pull/316)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.5...v0.13.6)
+
+### serverspec v0.13.5
+
+ * [Support comparing versions of package](https://github.com/serverspec/serverspec/pull/315)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.4...v0.13.5)
+
+### specinfra v0.0.15
+
+ * [Debian: Return package version for installed packages](https://github.com/serverspec/specinfra/pull/24)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.0.14...v0.0.15)
+
+### serverspec v0.13.4
+
+ * [Add version method to package type for testing package version](https://github.com/serverspec/serverspec/pull/311)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.3...v0.13.4)
+
+### specinfra v0.0.14
+
+ * [Add get\_package\_version command for RedHat](https://github.com/serverspec/specinfra/pull/23)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.0.13...v0.0.14)
+
+### serverspec v0.13.3
+
+ * [Revert Serverspec::Helper::Properties for backward compatibility](https://github.com/serverspec/serverspec/pull/308)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.2...v0.13.3)
+
+### specinfra v0.0.10
+
+ * [Add FreeBSD specific get_mode method](https://github.com/serverspec/specinfra/pull/14)
+ * [Fix get_file_content method](https://github.com/serverspec/specinfra/pull/16)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.0.9...v0.0.10)
+
+### serverspec v0.13.2
+
+ * [pathname is not required when backend type is exec](https://github.com/serverspec/serverspec/pull/304)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.1...v0.13.2)
+
+### specinfra v0.0.7
+
+ * [Fix checking for service started status on Debian](https://github.com/serverspec/specinfra/pull/6)
+ * [View Diff](https://github.com/serverspec/specinfra/compare/v0.0.6...v0.0.7)
+
+### 0.13.1
+
+ * [Revert Serverspec::Commands::Base for backward compatibility](https://github.com/serverspec/serverspec/pull/303)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.13.0...v0.13.1)
+
+### 0.13.0
+
+ * [Move Serverspec::Commands::* to SpecInfra::Command::*](https://github.com/serverspec/serverspec/pull/302)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.12.0...v0.13.0)
+
+### 0.12.0
+
+ * [Use specinfra.Specinfra is a common layer of serverspec and configspec.](https://github.com/serverspec/serverspec/pull/301)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.11.5...v0.12.0)
+
+### 0.11.5
+
+ * [Ensure no Ruby envvars are present when running command](https://github.com/serverspec/serverspec/pull/300)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.11.4...v0.11.5)
+
+### 0.11.4
+
+ * [Add Solaris 10 capability to serverspec](https://github.com/serverspec/serverspec/pull/298)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.11.3...v0.11.4)
+
+### 0.11.3
+
+ * Delete OS type cache by mistake, so recover it
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.11.2...v0.11.3)
+
+### 0.11.2
+
+ * [check_os returns os release (but currently support redhat only)](https://github.com/serverspec/serverspec/pull/295)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.11.1...v0.11.2)
+
+### 0.11.1
+
+ * [Don't set HostName gotten by vagrant ssh-config to c.host](https://github.com/serverspec/serverspec/pull/294)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.11.0...v0.11.1)
+
+### 0.11.0
+
+ * [Introduce property instead of attr](https://github.com/serverspec/serverspec/pull/293)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.13...v0.11.0)
+
+### 0.10.13
+
+ * [Allow to use '_' and '-' as vagrant machine name](https://github.com/serverspec/serverspec/pull/290)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.12...v0.10.13)
+
+### 0.10.12
+
+ * [Include tcp6 & udp6 as port protocol](https://github.com/serverspec/serverspec/pull/288)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.11...v0.10.12)
+
+### 0.10.11
+
+ * [Use IO#gets instead of Kernel#gets in serverspec-init](https://github.com/serverspec/serverspec/pull/287)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.10...v0.10.11)
+
+### 0.10.10
+
+ * [Support LXC](https://github.com/serverspec/serverspec/pull/285)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.9...v0.10.10)
+
+### 0.10.9
+
+ * [Replace CRLF with LF of STDOUT when SSH](https://github.com/serverspec/serverspec/pull/284)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.8...v0.10.9)
+
+### 0.10.8
+
+ * [Support its(:content) for file resource type](https://github.com/serverspec/serverspec/pull/281)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.7...v0.10.8)
+
+### 0.10.7
+
+ * [Windows: support for testing commands, plus a fix around windows registry key](https://github.com/serverspec/serverspec/pull/282)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.6...v0.10.7)
+
+### 0.10.6
+
+ * [Command type returns stdout, so you can use any matchers you like to the stdout](https://github.com/serverspec/serverspec/pull/280)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.5...v0.10.6)
+
+### 0.10.5
+
+ * [Add cgroup resource type](https://github.com/serverspec/serverspec/pull/279)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.4...v0.10.5)
+
+### 0.10.4
+
+ * [Fix how to find a service name and add some specs for Windows support](https://github.com/serverspec/serverspec/pull/275)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.3...v0.10.4)
+
+### 0.10.3
+
+ * [Ignore case of monit result](https://github.com/serverspec/serverspec/pull/274)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.2...v0.10.3)
+
+### 0.10.2
+
+ * [Support Plamo Linux](https://github.com/serverspec/serverspec/pull/273)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.10.1...v0.10.2)
+
+### 0.10.0
+
+ * [Fix how to check service running](https://github.com/serverspec/serverspec/pull/266)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.8...v0.10.0)
+
+### 0.9.8
+
+ * [Fix to return correct exit status](https://github.com/serverspec/serverspec/pull/262)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.7...v0.9.8)
+
+### 0.9.7
+
+ * [Add be\_installed.by('cpan')](https://github.com/serverspec/serverspec/pull/260)
+ * [Add be\_installed.by('pear')](https://github.com/serverspec/serverspec/pull/261)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.6...v0.9.7)
+
+### 0.9.6
+
+ * [Fix a typo](https://github.com/serverspec/serverspec/pull/258)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.5...v0.9.6)
+
+### 0.9.5
+
+ * [Enable to configure a sudo prompt](https://github.com/serverspec/serverspec/pull/256)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.4...v0.9.5)
+
+### 0.9.4
+
+ * [Fix class name and specs for AIX](https://github.com/serverspec/serverspec/pull/247)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.3...v0.9.4)
+
+### 0.9.3
+
+ * [Support FreeBSD](https://github.com/serverspec/serverspec/pull/161)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.2...v0.9.3)
+
+### 0.9.2
+
+ * [Support AIX](https://github.com/serverspec/serverspec/pull/246)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.1...v0.9.2)
+
+### 0.9.1
+
+ * Fix a bug of serverspec-init
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.9.0...v0.9.1)
+
+### 0.9.0
+
+ * [Support Windows OS](https://github.com/serverspec/serverspec/pull/244)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.8.1...v0.9.0)
+
+### 0.8.1
+
+ * Fix a bug of check_mail_alias()
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.8.0...v0.8.1)
+
+### 0.8.0
+
+ * [Add mail alias resource type](https://github.com/serverspec/serverspec/pull/241)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.13...v0.8.0)
+
+### 0.7.13
+
+ * [Fix check_link() for Darwin](https://github.com/serverspec/serverspec/pull/240)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.12...v0.7.13)
+
+### 0.7.12
+
+ * [Add pip to package provider](https://github.com/serverspec/serverspec/pull/237)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.11...v0.7.12)
+
+### 0.7.11
+
+ * [Also use -F option with grep](https://github.com/serverspec/serverspec/pull/233)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.10...v0.7.11)
+
+### 0.7.10
+
+ * [Add check_zfs to Linux commands](https://github.com/serverspec/serverspec/pull/231)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.9...v0.7.10)
+
+### 0.7.9
+
+ * [Add with\_version to be\_installed matcher for Debian](https://github.com/serverspec/serverspec/pull/230)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.8...v0.7.9)
+
+### 0.7.8
+
+ * [Add have\_ipv4\_address matcher to interface resource](https://github.com/serverspec/serverspec/pull/228)
+ * [Add capability to provide an alternate path for sudo](https://github.com/serverspec/serverspec/pull/229)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.7...v0.7.8)
+
+### 0.7.7
+
+ * [Get correct string from regexp in shell escape method](https://github.com/serverspec/serverspec/pull/227)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.6...v0.7.7)
+
+### 0.7.6
+
+ * [Specify /bin/sh explicitly for the users don't have valid login shell](https://github.com/serverspec/serverspec/pull/226)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.5...v0.7.6)
+
+### 0.7.5
+
+ * [Fix how to pass the argument to grep](https://github.com/serverspec/serverspec/pull/224)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.4...v0.7.5)
+
+
+### 0.7.4
+
+ * [Fix regular expression for build_command()](https://github.com/serverspec/serverspec/pull/223)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.3...v0.7.4)
+
+### 0.7.3
+
+ * [Add match_sha256checksum matcher of file type](https://github.com/serverspec/serverspec/pull/222)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.2...v0.7.3)
+
+### 0.7.2
+
+ * [Serverspec-init climbs up the directory tree to looking for the Vagrantfile](https://github.com/serverspec/serverspec/pull/221)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.1...v0.7.2)
+
+### 0.7.1
+
+ * [Fix regular expression for build_command()](https://github.com/serverspec/serverspec/pull/220)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.7.0...v0.7.1)
+
+### 0.7.0
+
+ * [Add sudo and env PATH to each command](https://github.com/serverspec/serverspec/pull/219)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.30...v0.7.0)
+
+### 0.6.30
+
+ * [Omit brackets when be_permissive and be_enforcing of selinux resource type](https://github.com/serverspec/serverspec/pull/218)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.29...v0.6.30)
+
+### 0.6.29
+
+ * [Fix selinux resource type to work correctly even if selinux related files are not installed](https://github.com/serverspec/serverspec/pull/217)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.28...v0.6.29)
+
+### 0.6.28
+
+ * [Fix check_listening for Solaris](https://github.com/serverspec/serverspec/pull/214)
+ * [Fix check_listening_with_protocol for Solaris](https://github.com/serverspec/serverspec/pull/215)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.27...v0.6.28)
+
+### 0.6.27
+
+ * [Add be\_monitored\_by('god') for service resource type](https://github.com/serverspec/serverspec/pull/208)
+ * [Add command test for be_running.under('supervisor')](https://github.com/serverspec/serverspec/pull/213)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.26...v0.6.27)
+
+### 0.6.26
+
+ * [Fix custom failure message duplication](https://github.com/serverspec/serverspec/pull/211)
+ * [Fix check\_running\_under\_supervisor](https://github.com/serverspec/serverspec/pull/210)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.25...v0.6.26)
+
+### 0.6.25
+
+ * [Add php_config resource type](https://github.com/serverspec/serverspec/pull/196)
+ * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.24...v0.6.25)
 
 ### 0.6.24
 

@@ -75,14 +75,25 @@ hosts = hosts.map do |host|
 end
  
 desc "Run serverspec to all hosts"
-task :serverspec => 'serverspec:all'
+task :spec => 'serverspec:all'
+
+class ServerspecTask < RSpec::Core::RakeTask
+
+  attr_accessor :target
+
+  def spec_command
+    cmd = super
+    "env TARGET_HOST=#{target} #{cmd}"
+  end
+
+end
  
 namespace :serverspec do
   task :all => hosts.map {|h| 'serverspec:' + h[:short_name] }
   hosts.each do |host|
     desc "Run serverspec to #{host[:name]}"
-    RSpec::Core::RakeTask.new(host[:short_name].to_sym) do |t|
-      ENV['TARGET_HOST'] = host[:name]
+    ServerspecTask.new(host[:short_name].to_sym) do |t|
+      t.target = host[:name]
       t.pattern = 'spec/{' + host[:roles].join(',') + '}/*_spec.rb'
     end
   end
@@ -109,11 +120,11 @@ end
 
 ----
 
-## How to use host specific attributes
+## How to use host specific properties
 
-Serverspec supports a simple mechanism to handle host specific attributes.
+Serverspec supports a simple mechanism to handle host specific properties.
 
-This example assumes that host specific attributes are in YAML file.
+This example assumes that host specific properties are in YAML file.
 
 ```yaml
 db001.example.jp:
@@ -135,24 +146,24 @@ require 'rake'
 require 'rspec/core/rake_task'
 require 'yaml'
  
-attributes = YAML.load_file('attributes.yml')
+properties = YAML.load_file('properties.yml')
  
 desc "Run serverspec to all hosts"
-task :serverspec => 'serverspec:all'
+task :spec => 'serverspec:all'
  
 namespace :serverspec do
-  task :all => attributes.keys.map {|key| 'serverspec:' + key.split('.')[0] }
-  attributes.keys.each do |key|
+  task :all => properties.keys.map {|key| 'serverspec:' + key.split('.')[0] }
+  properties.keys.each do |key|
     desc "Run serverspec to #{key}"
     RSpec::Core::RakeTask.new(key.split('.')[0].to_sym) do |t|
       ENV['TARGET_HOST'] = key
-      t.pattern = 'spec/{' + attributes[key][:roles].join(',') + '}/*_spec.rb'
+      t.pattern = 'spec/{' + properties[key][:roles].join(',') + '}/*_spec.rb'
     end
   end
 end
 ```
 
-You can write spec_helper.rb to set host specific attributes with ``attr_set``.
+You can write spec_helper.rb to set host specific properties with ``set_property``.
 
 ```ruby
 require 'serverspec'
@@ -162,13 +173,13 @@ require 'yaml'
  
 include Serverspec::Helper::Ssh
 include Serverspec::Helper::DetectOS
-include Serverspec::Helper::Attributes
+include Serverspec::Helper::Properties
  
-attributes = YAML.load_file('attributes.yml')
+properties = YAML.load_file('properties.yml')
  
 RSpec.configure do |c|
   c.host  = ENV['TARGET_HOST']
-  attr_set attributes[c.host]
+  set_property properties[c.host]
   options = Net::SSH::Config.for(c.host)
   user    = options[:user] || Etc.getlogin
   c.ssh   = Net::SSH.start(c.host, user, options)
@@ -176,13 +187,13 @@ RSpec.configure do |c|
 end
 ```
 
-And you can use host specific attributes with ``attr`` like this.
+And you can use host specific properties with ``property`` like this.
 
 ```ruby
 require 'spec_helper'
  
 describe file('/etc/my.cnf') do
-  it { should contain "server-id = #{attr[:server_id]}" }
+  it { should contain "server-id = #{property[:server_id]}" }
 end
 ```
 
@@ -232,3 +243,67 @@ end
 ```
 
 In this case, a command is expanded to ``source ~/.zshrc && service httpd status``.
+
+----
+
+## Parallel execution
+
+If you have a lot of hosts, running tests on all of them can take some
+time. To speed up tests, they can be executed in parallel by passing
+`-j 10` and `-m` flags to `rake`.
+
+----
+
+## How to control sudo
+
+You can disable sudo completely like this.
+
+```ruby
+# In spec_helper.rb
+RSpec.configure do |c|
+  c.disable_sudo = true
+  ...
+```
+
+----
+
+Or you can disable sudo temporary like this.
+
+```ruby
+# In spec_helper.rb
+RSpec.configure do |c|
+  c.around :each, sudo: false do |example|
+    c.disable_sudo = true
+    example.run
+    c.disable_sudo = false
+  end
+  ...
+```
+
+----
+
+```ruby
+# In xxxxx_spec.rb
+describe command('whoami'), :sudo => false do
+  it { should return_stdout 'vagrant' }
+end
+
+describe command('whoami') do
+  it { should return_stdout 'root' }
+end
+```
+
+----
+
+Another way to disable sudo temporary.
+
+```ruby
+describe command('whoami') do
+  let(:disable_sudo) { true }
+  it { should return_stdout 'vagrant' }
+end
+
+describe command('whoami') do
+  it { should return_stdout 'root' }
+end
+```

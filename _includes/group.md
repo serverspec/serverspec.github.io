@@ -4,7 +4,7 @@ Group resource type.
 
 #### exist
 
-In order to test a group exists, you should use **exsist** matcher.
+In order to test a group exists, you should use **exist** matcher.
 
 ```ruby
 describe group('wheel') do

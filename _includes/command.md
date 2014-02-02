@@ -47,3 +47,18 @@ describe command('ls /tmp') do
   it { should return_exit_status 0 }
 end
 ```
+
+#### its(:stdout), its(:stderr)
+
+You can get the stdout and stderr, and can use any matchers rspec supports to them.
+
+```ruby
+describe command('ls -al /') do
+  its(:stdout) { should match /bin/ }
+end
+
+describe command('ls /foo') do
+  its(:stderr) { should match /No such file or directory/ }
+end
+
+```
