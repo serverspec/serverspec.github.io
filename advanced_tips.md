@@ -4,6 +4,8 @@ title: Advanced Tips
 ---
 ## How to use SSH password login
 
+Customize your spec_helper.rb like this.
+
 ```ruby
 require 'serverspec'
 require 'pathname'
