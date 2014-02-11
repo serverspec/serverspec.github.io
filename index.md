@@ -76,7 +76,7 @@ end
 
 describe file('/etc/httpd/conf/httpd.conf') do
   it { should be_file }
-  it { should contain "ServerName www.example.jp" }
+  its(:content) { should match /ServerName www.example.jp/ }
 end
 ```
 
