@@ -82,7 +82,7 @@ end
 
 You can write spec for testing servers like this.
 
-Serverspec with SSH backend logs in to target servers as a user configured in ``~/.ssh/config`` or a current user.If you'd like to change the user, please edit the below line in ``spec/spec_helper.rb``.
+Serverspec with SSH backend logs in to target servers as a user configured in ``~/.ssh/config`` or a current user. If you'd like to change the user, please edit the below line in ``spec/spec_helper.rb``.
 
 ```ruby
       user    = options[:user] || Etc.getlogin
