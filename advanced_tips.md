@@ -173,7 +173,7 @@ db002.example.jp:
   :server_id: 102
 ```
 
-You can write Rakefile for role separeted tests like this with the YAML file.
+You can write Rakefile for role separated tests like this with the YAML file.
 
 ```ruby
 require 'rake'
