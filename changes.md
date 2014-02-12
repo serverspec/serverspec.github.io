@@ -3,7 +3,7 @@ layout: layout
 title: Changes
 ---
 
-Core parts of serverspec are separeted into [specinfra](https://github.com/serverspec/specinfra).So changes of specinfra are also listed here.
+Core parts of serverspec are separated into [specinfra](https://github.com/serverspec/specinfra).So changes of specinfra are also listed here.
 
 ## Changes
 
@@ -430,7 +430,7 @@ Please see the latest changes at [the releases of specinfra](https://github.com/
 
 ### 0.6.22
 
- * [Fix check\_intalled and check\_running for Solaris family](https://github.com/serverspec/serverspec/pull/202)
+ * [Fix check\_installed and check\_running for Solaris family](https://github.com/serverspec/serverspec/pull/202)
  * [Add Solaris 11 support](https://github.com/serverspec/serverspec/pull/201)
  * [Add be_listening.with(protocol) to port type](https://github.com/serverspec/serverspec/pull/200)
  * [View Diff](https://github.com/serverspec/serverspec/compare/v0.6.21...v0.6.22)
@@ -651,7 +651,7 @@ Please see the latest changes at [the releases of specinfra](https://github.com/
  * [Support explicit zfs subject type](https://github.com/serverspec/serverspec/pull/119)
  * [Support explicit ipnat subject type](https://github.com/serverspec/serverspec/pull/120)
  * [Support explicit ipfilter subject type](https://github.com/serverspec/serverspec/pull/121)
- * [Support have_propety with service type for Solaris](https://github.com/serverspec/serverspec/pull/122)
+ * [Support have_property with service type for Solaris](https://github.com/serverspec/serverspec/pull/122)
  * [View Diff](https://github.com/serverspec/serverspec/compare/v0.4.4...v0.4.5)
 
 ### 0.4.4
@@ -845,7 +845,7 @@ Please see the latest changes at [the releases of specinfra](https://github.com/
 
 ### 0.2.2
  * [Add be_zfs matcher](https://github.com/serverspec/serverspec/pull/40)
- * [Support multiple properties with be_zfs mathcer](https://github.com/serverspec/serverspec/pull/41)
+ * [Support multiple properties with be_zfs matcher](https://github.com/serverspec/serverspec/pull/41)
  * [Fix stat commands for exact match](https://github.com/serverspec/serverspec/pull/43)
  * [View Diff](https://github.com/serverspec/serverspec/compare/v0.2.1...v0.2.2)
 
