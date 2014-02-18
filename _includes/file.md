@@ -24,7 +24,7 @@ end
 
 #### be_socket
 
-In order to test a subject exists as a socket, you should use **be_scoket** matcher.
+In order to test a subject exists as a socket, you should use **be_socket** matcher.
 
 ```ruby
 describe file('/var/run/unicorn.sock') do
@@ -42,7 +42,7 @@ describe file('/etc/httpd/conf/httpd.conf') do
 end
 ```
 
-In order to test a file contains a given string, you can use **contain** mathcer.
+In order to test a file contains a given string, you can use **contain** matcher.
 
 ```ruby
 describe file('/etc/httpd/conf/httpd.conf') do
