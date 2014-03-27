@@ -73,7 +73,7 @@ You can select **Serverspec::Helper::RedHat**, **Serverspec::Helper::Debian**, *
 
 #### <a name="sudo_password_support">Sudo password support</a>
 
-If you log into servers as non-root user, serverspec add "sudo" in front of the command.You can specify sudo password like this.
+If you log into servers as non-root user, serverspec add "sudo" in front of the command. You can specify sudo password like this.
 
 ```
 $ SUDO_PASSWORD=xxxxxxxx rake spec
@@ -87,4 +87,4 @@ $ ASK_SUDO_PASSWORD=1 rake spec
 
 If your ``spec/spec_helper.rb`` was created before the version supports sudo password, you should re-create ``spec/spec_helper.rb`` by executing ``rm spec/spec_helper.rb; serverspec-init``.
 
-If you'd like to give sudo password by another way, please customize spec_helper.rb.
+If you'd like to give sudo password by another way, please customize spec_helper.rb. Be aware that using ``sudo`` will merge stdout and stderr. Tests should only rely on stdout.
