@@ -38,3 +38,18 @@ describe host('target.example.jp') do
   it { should be_reachable.with( :port => 22, :proto => 'tcp', :timeout => 1 ) }
 end
 ```
+
+#### its(:ipaddress)
+
+You can get the ipaddress of the host,  and can use any matchers rspec supports to them.
+
+```ruby
+describe host('example.jp') do
+  its(:ipaddress) { should eq '1.2.3.4' }
+end
+
+describe host('example.jp') do
+  its(:ipaddress) { should match /1\.2\.3\./ }
+end
+
+```
