@@ -206,6 +206,16 @@ end
 
 ``only_with`` needs all attributes of the mounted directory.
 
+#### be_version
+
+In order to test a file's version using its metadata in Windows, you should use **be_version** matcher.
+
+```ruby
+describe file('C:\\Windows\\System32\\wuapi.dll') do
+  it { should be_version('7.6.7600.256') }
+end
+```
+
 #### match_md5checksum
 
 In order to test a file's md5 checksum matches a given value, you should use **match_md5checksum** matcher.

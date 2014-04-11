@@ -13,6 +13,8 @@ title: Resource Types
 | [file](#file)
 | [group](#group)
 | [host](#host)
+| [iis\_app\_pool](#iis_app_pool)
+| [iis\_website](#iis_website)
 | [interface](#interface)
 | [ipfilter](#ipfilter)
 | [ipnat](#ipnat)
@@ -29,6 +31,8 @@ title: Resource Types
 | [selinux](#selinux)
 | [service](#service)
 | [user](#user)
+| [windows\_feature](#windows_feature)
+| [windows\_registry\_key](#windows_registry_key)
 | [yumrepo](#yumrepo)
 | [zfs](#zfs)
 </nav>
@@ -81,6 +85,16 @@ Please see [the document of rspec-expectations](https://github.com/rspec/rspec-e
 
 {% capture host %}{% include host.md %}{% endcapture %}
 {{ host | markdownify }}
+
+----
+
+{% capture iis_app_pool %}{% include iis_app_pool.md %}{% endcapture %}
+{{ iis_app_pool | markdownify }}
+
+----
+
+{% capture iis_website %}{% include iis_website.md %}{% endcapture %}
+{{ iis_website | markdownify }}
 
 ----
 
@@ -161,6 +175,16 @@ Please see [the document of rspec-expectations](https://github.com/rspec/rspec-e
 
 {% capture user %}{% include user.md %}{% endcapture %}
 {{ user | markdownify }}
+
+----
+
+{% capture windows_feature %}{% include windows_feature.md %}{% endcapture %}
+{{ windows_feature | markdownify }}
+
+----
+
+{% capture windows_registry_key %}{% include windows_registry_key.md %}{% endcapture %}
+{{ windows_registry_key | markdownify }}
 
 ----
 

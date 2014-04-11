@@ -20,6 +20,18 @@ describe service('ntpd') do
 end
 ```
 
+#### be_installed
+
+In order to test a given service is installed, you should use **be_installed** matcher.
+
+*Currently only supported in Windows*
+
+```ruby
+describe service('DNS Client') do
+  it { should be_installed }
+end
+```
+
 #### be_running
 
 In order to test a given service/process is running, you should use **be_running** matcher.
@@ -51,4 +63,17 @@ describe service('unicorn') do
   it { should be_monitored_by('god') }
 end
 
+```
+
+
+#### have\_start\_mode
+
+In order to test a service's startup mode is correct, you should use **have\_start\_mode** matcher.
+
+*Currently only supported in Windows*
+
+```ruby
+describe service('DNS Client') do
+  it { should have_start_mode('Manual') }
+end
 ```
