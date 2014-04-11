@@ -1,4 +1,4 @@
-### <a name="iis_app_pool">iis_app_pool</a>
+### <a name="iis_app_pool">iis\_app\_pool</a>
 
 IIS Application Pool resource type.
 
@@ -12,7 +12,7 @@ describe iis_app_pool('Default App Pool') do
 end
 ```
 
-#### have_dotnet_version
+#### have\_dotnet\_version
 
 In order to test that an IIS app pool is using the correct .NET version, you should use **have_dotnet_version** matcher.
 
