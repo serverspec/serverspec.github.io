@@ -1,4 +1,4 @@
-### <a name="windows_registry_key">windows_registry_key</a>
+### <a name="windows_registry_key">windows\_registry\_key</a>
 
 Windows Registry Key resource type.
 
