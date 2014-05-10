@@ -341,3 +341,40 @@ describe command('whoami') do
   it { should return_stdout 'root' }
 end
 ```
+
+----
+
+## How to get OS information
+
+**Note: Current version of serverspec/specinfra return inappropreate OS family & release.For example, in the case of Solaris version 10, os[:family] is `Solaris10` and os[:release] is nil.It's caused by architectural problem of current version.I will improve this in version 2.0.**
+
+You can get OS information of the target host by `os` helper method.
+
+
+```ruby
+os[:family]  # RedHat, Ubuntu, Debian and so on
+os[:release] # OS release version
+os[:arch]    # i386 or x86_64
+```
+
+You can use this feature like this.
+
+```ruby
+if os[:family] == 'RedHat'
+  # RedHat bases OS related environment spec
+  if os[:arch] == 'i386'
+    # 32bit environment spec
+  else
+  end
+elsif ['Debian', 'Ubuntu'].include?(os[:family])
+  # debian related environment spec
+end
+```
+
+Or like this.
+
+```ruby
+describe file('/usr/lib64'), :if => os[:arch] == 'x86_64' do
+  it { should be_directory }
+end
+```
