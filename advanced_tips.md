@@ -346,7 +346,7 @@ end
 
 ## How to get OS information
 
-**Note: Current version of serverspec/specinfra return inappropreate OS family & release.For example, in the case of Solaris version 10, os[:family] is `Solaris10` and os[:release] is nil.It's caused by architectural problem of current version.I will improve this in version 2.0.**
+**Note: Current version of serverspec/specinfra return inappropriate OS family & release.For example, in the case of Solaris version 10, os[:family] is `Solaris10` and os[:release] is nil.It's caused by architectural problem of current version.I will improve this in version 2.0.**
 
 You can get OS information of the target host by `os` helper method.
 
