@@ -26,6 +26,7 @@ title: Resource Types
 | [package](#package)
 | [php_config](#php_config)
 | [port](#port)
+| [ppa](#ppa)
 | [process](#process)
 | [routing_table](#routing_table)
 | [selinux](#selinux)
@@ -150,6 +151,11 @@ Please see [the document of rspec-expectations](https://github.com/rspec/rspec-e
 
 {% capture port %}{% include port.md %}{% endcapture %}
 {{ port | markdownify }}
+
+----
+
+{% capture ppa %}{% include ppa.md %}{% endcapture %}
+{{ ppa | markdownify }}
 
 ----
 
