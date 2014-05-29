@@ -6,7 +6,7 @@ PPA resource type.
 
 In order to test a given ppa repository exists,  you should use **exist** matcher.
 
-You can specify ppa name which is got rid of `ppa:`.
+PPA resource type accepts both `ppa:username/reponame` and `username/reponame` style.
 
 ```ruby
 describe ppa('launchpad-username/ppa-name') do
