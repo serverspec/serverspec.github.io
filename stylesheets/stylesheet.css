@@ -127,6 +127,13 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
+#main_content a:before {
+    display: inline-block;
+    content: "";
+    height: 110px;
+    margin: -110px 0 0;
+}
+
 #main_content a:hover {
   color: #0069ba;
 }
@@ -374,7 +381,7 @@ Full-Width Styles
 }
 
 #main_content.fixed-resource-types {
-    padding-top: 160px;
+    padding-top: 135px;
 }
 
 .fixed-resource-types .resource-types {
