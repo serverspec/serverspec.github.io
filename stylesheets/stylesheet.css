@@ -367,7 +367,16 @@ Full-Width Styles
   background: #212121;
 }
 
+.resource-types {
+  background: white;
+  padding: 1em;
+  width: 1140px;
+}
 
+.fixed-resource-types {
+  position: fixed;
+  top: 0;
+}
 
 /*******************************************************************************
 Small Device Styles
