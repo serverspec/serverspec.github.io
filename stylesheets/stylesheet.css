@@ -373,7 +373,11 @@ Full-Width Styles
   width: 1140px;
 }
 
-.fixed-resource-types {
+#main_content.fixed-resource-types {
+    padding-top: 160px;
+}
+
+.fixed-resource-types .resource-types {
   position: fixed;
   top: 0;
 }
