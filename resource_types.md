@@ -6,7 +6,7 @@ title: Resource Types
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
   $(document).ready(function() {
-    var resource_types = $('nav.resource-types');
+    var resource_types = $('#main_content');
 
     $(document).on('scroll', function (event) {
       console.log(event);

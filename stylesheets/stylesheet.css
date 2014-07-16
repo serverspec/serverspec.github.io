@@ -127,6 +127,13 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
+#main_content a:before {
+    display: inline-block;
+    content: "";
+    height: 110px;
+    margin: -110px 0 0;
+}
+
 #main_content a:hover {
   color: #0069ba;
 }
@@ -373,7 +380,11 @@ Full-Width Styles
   width: 1140px;
 }
 
-.fixed-resource-types {
+#main_content.fixed-resource-types {
+    padding-top: 135px;
+}
+
+.fixed-resource-types .resource-types {
   position: fixed;
   top: 0;
 }
