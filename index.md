@@ -2,6 +2,9 @@
 layout: layout
 title: Home
 ---
+## About V2 beta
+
+**Serverspec/Specinfra v2 will be released at October 2014.** [See the document about v2 beta](changes-of-v2.html).
 
 ## About
 
