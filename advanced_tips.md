@@ -37,7 +37,7 @@ end
 
 ----
 
-## How to share serverspec tests among hosts
+## How to share Serverspec tests among hosts
 
 ``serverspec-init`` generates template files like this.
 

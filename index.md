@@ -5,7 +5,7 @@ title: Home
 
 ## About
 
-With serverspec, you can write RSpec tests for checking your servers are configured correctly.
+With Serverspec, you can write RSpec tests for checking your servers are configured correctly.
 
 Serverspec tests your servers' **actual state**  through **SSH access**, so you don't need to install any agent softwares on your servers and can use any configuration management tools, [Puppet](https://puppetlabs.com/), [Chef](http://www.opscode.com/chef/), [CFEngine](http://cfengine.com/) and so on.
 
