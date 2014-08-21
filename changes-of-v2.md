@@ -30,11 +30,37 @@ Serverspec v2 supports RSpec 3 and does not support RSpec 2 any more.
 ---
 ### Backward Compatibility
 
-Serverspec test code you wrote for v1 should  work with v2.
+Almost of Serverspec test code you wrote for v1 should  work with v2, but some matchers don't work.
 
 ---
 
 ### Backward Incompatibility
+
+#### Obsoleted matchers
+
+##### return_stdout, return_stderr, return_exit_status matchers are obsoleted
+
+You can't write test code like this anymore.
+
+```ruby
+describe command('ls /tmp') do
+  it { should return_stdout 'foo' }
+  it { should return_stderr 'bar' }
+  it { should return_exit_status 0 }
+end
+```
+
+Instead, you must write test code like this.
+
+```ruby
+describe command('ls /tmp') do
+  its(:stdout) { should eq 'foo' }
+  its(:stderr) { should match /bar/ }
+  its(:exit_status) { should eq 0 }
+end
+```
+
+
 
 #### spec_helper.rb incompatible
 
