@@ -40,21 +40,22 @@ Serverspec test code you wrote for v1 should  work with v2.
 
 spec\_helper.rb does not have backward compatibility. So you should re-generate spec\_helper.rb by serverspec-init and check it.
 
-#### SpecInfra::Helper::DetectOS has been removed
+#### Backend helper and DetectOS helper have been removed
 
-In version 1, you need to include `SpecInfra::Helper::DetectOS` to detect the os of target hosts like this.
+In version 1, you need to include `SpecInfra::Helper::_backend_type_` `SpecInfra::Helper::DetectOS` to detect the os of target hosts like this.
 
 ```ruby
-require 'spec_helper'
+require 'serverspec'
 include SpecInfra::Helper::Ssh
 include SpecInfra::Helper::DetectOS
 ```
 
-In version 2, auto detection is default behavior, so you don't need to include `Specinfra::Helper::DetectOS`. 
+In version 2, you can specify backend type with `set :backend, :type` and auto detection is default behavior, so don't include `SpecInfra::Helper::_backend_type_` and `Specinfra::Helper::DetectOS`. 
 
 ```ruby
-require 'spec_helper'
-include SpecInfra::Helper::Ssh
+require 'serverspec'
+# Set backend type
+set :backend, :ssh
 # Don't include Specinfra::Helper::DetectOS
 ```
 
