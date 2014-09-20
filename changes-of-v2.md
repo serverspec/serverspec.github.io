@@ -38,7 +38,7 @@ Almost of Serverspec test code you wrote for v1 should  work with v2, but some m
 
 #### Obsoleted matchers
 
-##### return_stdout, return_stderr, return_exit_status matchers are obsoleted
+##### match_md5checksum, match_sha256checksum, return_stdout, return_stderr, return_exit_status matchers are obsoleted
 
 You can't write test code like this anymore.
 
@@ -47,6 +47,13 @@ describe command('ls /tmp') do
   it { should return_stdout 'foo' }
   it { should return_stderr 'bar' }
   it { should return_exit_status 0 }
+end
+```
+
+```ruby
+describe file('/etc/services') do
+  it { should match_md5checksum('fdcb69b5c0e9beb7d392fbc458bc6beb')
+  it { should match_sha256sum('17feb8dc0817056a963c2861052d670b642c61f5625fae1fd59a2022be1dbb5b') }
 end
 ```
 
@@ -60,7 +67,12 @@ describe command('ls /tmp') do
 end
 ```
 
-
+```ruby
+describe file('/etc/services') do
+  its(:md5sum)    { should eq 'fdcb69b5c0e9beb7d392fbc458bc6beb' }
+  its(:sha256sum) { should eq '17feb8dc0817056a963c2861052d670b642c61f5625fae1fd59a2022be1dbb5b' }
+end
+```
 
 #### spec_helper.rb incompatible
 
