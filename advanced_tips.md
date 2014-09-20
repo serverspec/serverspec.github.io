@@ -152,6 +152,58 @@ RSpec.configure do |c|
 end
 ```
 
+---
+
+## How to use Serverspec tests as shared behaviors
+
+RSpec allows shared behaviors.  Using this allows an alternate method of writing specs that can 
+be run on multiple servers.
+
+First, create a directory to hold the shared examples...typically 'support' or 'shared'
+In that directory, create a subdirectory to hold like behaviors. For example, if you are using Puppet, Chef, etc
+and you want to write shared behavior for your 'database' module/recipe/whatever.
+
+```bash
+mkdir -p serverspec/shared/database
+```
+
+then serverspec/shared/database/init.rb:
+
+```ruby
+shared_examples 'db::init' do
+
+  describe package('mysql-community-server') do
+    it { should be_installed }
+  end
+    
+end
+```
+
+Now to use that shared behavior on multiple hosts, create some specs for each server:
+
+serverspec/specs/foo.bar.com_spec.rb:
+
+```ruby
+require 'spec_helper'
+
+describe 'foo.bar.com' do
+  include_examples 'database::init'
+end
+```
+
+and maybe bacon.bar.com also has apache:
+
+```ruby
+require 'spec_helper'
+
+describe 'foo.bar.com' do
+  include_examples 'database::init'
+  include_examples 'apache::init'
+end
+```
+
+You can see examples in [rubyisbeautiful/serverspec_examples](https://github.com/rubyisbeautiful/serverspec_examples)
+
 ----
 
 ## How to use host specific properties
