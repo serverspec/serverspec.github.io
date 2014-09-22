@@ -38,7 +38,7 @@ Almost of Serverspec test code you wrote for v1 should  work with v2, but some m
 
 #### Obsoleted matchers
 
-##### match_md5checksum, match_sha256checksum, return_stdout, return_stderr, return_exit_status matchers are obsoleted
+##### match\_md5checksum, match\_sha256checksum, return\_stdout, return\_stderr, return\_exit\_status matchers are obsoleted
 
 You can't write test code like this anymore.
 
