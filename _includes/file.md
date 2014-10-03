@@ -216,21 +216,21 @@ describe file('C:\\Windows\\System32\\wuapi.dll') do
 end
 ```
 
-#### match_md5checksum
+#### its(:md5sum)
 
-In order to test a file's md5 checksum matches a given value, you should use **match_md5checksum** matcher.
+In order to test a file's md5 checksum matches a given value, you should use **its(:md5sum)**.
 
 ```ruby
 describe file('/etc/services') do
-  it { should match_md5checksum '35435ea447c19f0ea5ef971837ab9ced' }
+  its(:md5sum) { should eq '35435ea447c19f0ea5ef971837ab9ced' }
 end
 ```
-#### match_sha256checksum
+#### its(:sha256sum)
 
-In order to test a file's sha256 checksum matches a given value, you should use **match_sha256checksum** matcher.
+In order to test a file's sha256 checksum matches a given value, you should use **its(:sha256sum)**.
 
 ```ruby
 describe file('/etc/services') do
-  it { should match_sha256checksum 'a861c49e9a76d64d0a756e1c9125ae3aa6b88df3f814a51cecffd3e89cce6210' }
+  its(:sha256sum) { should eq 'a861c49e9a76d64d0a756e1c9125ae3aa6b88df3f814a51cecffd3e89cce6210' }
 end
 ```

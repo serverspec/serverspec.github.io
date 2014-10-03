@@ -3,15 +3,7 @@ layout: layout
 title: Changes of Version 2
 ---
 
-This is the documentation of changes in Serverspec/Specinfra v2 beta. **Serverspec/Specinfra v2 will be released at October 2014.**
-
-## How to install version 2 beta
-
-Now Serverspec verion 2 is beta. You can install beta version with `--pre` option.
-
-```
-$ gem install serverspec --pre
-```
+This is the documentation of changes in Serverspec/Specinfra v2.
 
 ---
 

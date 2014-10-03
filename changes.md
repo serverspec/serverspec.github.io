@@ -3,7 +3,7 @@ layout: layout
 title: Changes
 ---
 
-Core parts of serverspec are separated into [specinfra](https://github.com/serverspec/specinfra).So changes of specinfra are also listed here.
+Core parts of serverspec are separated into [specinfra](https://github.com/serverspec/specinfra). So changes of specinfra are also listed here.
 
 ## Changes
 
