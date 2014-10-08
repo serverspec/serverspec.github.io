@@ -53,7 +53,7 @@ Instead, you must write test code like this.
 
 ```ruby
 describe command('ls /tmp') do
-  its(:stdout) { should eq 'foo' }
+  its(:stdout) { should eq "foo\n" }
   its(:stderr) { should match /bar/ }
   its(:exit_status) { should eq 0 }
 end
