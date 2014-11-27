@@ -32,6 +32,16 @@ describe file('/var/run/unicorn.sock') do
 end
 ```
 
+#### be_symlink
+
+In order to test a subject exists as a link, you should use **be_symlink** matcher.
+
+```ruby
+describe file('/etc/pam.d/system-auth') do
+  it { should be_symlink }
+end
+```
+
 #### contain
 
 **Notice: Instead of ``contain``, you can use ``its(:content)`` and any standard rspec matchers. The matcher ``contain`` will be obsoleted.**

@@ -2,7 +2,19 @@
 
 Network interface resource type.
 
-In order to test a network interface is set up correctly, you should use this syntax.
+### exist
+
+In order to test a interface exist, you shoud use **exist** matcher.
+
+```ruby
+describe interface('eth0') do
+  it { should exist }
+end
+```
+
+#### speed
+
+In order to test the speed of network interface is set up correctly, you should use this syntax.
 
 ```ruby
 describe interface('eth0') do

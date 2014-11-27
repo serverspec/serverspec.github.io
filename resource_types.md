@@ -19,7 +19,8 @@ title: Resource Types
 ## Resource Types
 
 <nav class="resource-types">
-  [cgroup](#cgroup)
+  [bridge](#bridge)
+| [cgroup](#cgroup)
 | [command](#command)
 | [cron](#cron)
 | [default_gateway](#default_gateway)
@@ -64,6 +65,11 @@ Please see [the document of rspec-expectations](https://github.com/rspec/rspec-e
 ----
 
 *You can use more strict grammar syntax like ``be_a_file`` instead of ``be_file`` with all resource types.*
+
+----
+
+{% capture bridge %}{% include bridge.md %}{% endcapture %}
+{{ bridge | markdownify }}
 
 ----
 
