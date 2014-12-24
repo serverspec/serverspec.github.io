@@ -42,7 +42,7 @@ describe service('ntpd') do
 end
 ```
 
-You can test a given service/process is running under [supervisor](http://supervisord.org/) and [upstart](https://launchpad.net/upstart).
+You can test a given service/process is running under [supervisor](http://supervisord.org/), [upstart](https://launchpad.net/upstart), and [daemontools](http://cr.yp.to/daemontools.html).
 
 ```ruby
 describe service('ntpd') do
@@ -51,6 +51,10 @@ end
 
 describe service('ntpd') do
   it { should be_running.under('upstart') }
+end
+
+describe service('ntpd') do
+  it { should be_running.under('daemontools') }
 end
 ```
 
