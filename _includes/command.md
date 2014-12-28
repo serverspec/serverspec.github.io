@@ -4,7 +4,7 @@ Command resource type.
 
 #### its(:stdout), its(:stderr), its(:exit_status)
 
-You can get the stdout, stderr ane exit status of the command result, and can use any matchers RSpec supports.
+You can get the stdout, stderr and exit status of the command result, and can use any matchers RSpec supports.
 
 ```ruby
 describe command('ls -al /') do
