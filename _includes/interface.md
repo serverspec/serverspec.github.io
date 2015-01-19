@@ -2,7 +2,7 @@
 
 Network interface resource type.
 
-### exist
+#### exist
 
 In order to test a interface exist, you shoud use **exist** matcher.
 

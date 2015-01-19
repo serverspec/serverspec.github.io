@@ -2,7 +2,7 @@
 
 SELinux resource type.
 
-#### be\_disabled/be\_enforcing/be\_permissive
+#### be\_disabled, be\_enforcing, be\_permissive
 
 In order to test SELinux is a given mode, you should use **be\_disabled, be\_enforcing and be\_permissive** matchers.
 
