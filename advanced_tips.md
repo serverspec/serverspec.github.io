@@ -269,7 +269,7 @@ set :disable_sudo, true
 
 ----
 
-Or you can disable sudo temporary like this.
+Or you can disable sudo temporarily like this.
 
 ```ruby
 # In spec_helper.rb
@@ -297,7 +297,7 @@ end
 
 ----
 
-Another way to disable sudo temporary.
+Another way to disable sudo temporarily.
 
 ```ruby
 describe command('whoami') do
