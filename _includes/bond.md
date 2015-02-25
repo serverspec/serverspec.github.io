@@ -18,7 +18,6 @@ In order to test a bond has a correct member, you should use **have_interface** 
 
 ```ruby
 describe bond('bond0') do
-  let(:stdout) { 'eth0' }
   it { should have_interface 'eth0' }
 end
 ```
