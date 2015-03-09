@@ -47,6 +47,8 @@ title: Resource Types
 | [selinux](#selinux)
 | [service](#service)
 | [user](#user)
+| [x509_certificate](#x509_certificate)
+| [x509_private_key](#x509_private_key)
 | [windows\_feature](#windows_feature)
 | [windows\_registry\_key](#windows_registry_key)
 | [yumrepo](#yumrepo)
@@ -206,6 +208,16 @@ Please see [the document of rspec-expectations](https://github.com/rspec/rspec-e
 
 {% capture user %}{% include user.md %}{% endcapture %}
 {{ user | markdownify }}
+
+----
+
+{% capture x509_certificate %}{% include x509_certificate.md %}{% endcapture %}
+{{ x509_certificate | markdownify }}
+
+----
+
+{% capture x509_private_key %}{% include x509_private_key.md %}{% endcapture %}
+{{ x509_private_key | markdownify }}
 
 ----
 
