@@ -55,13 +55,7 @@ title: Resource Types
 
 ----
 
-**Note:** In these examples, I'm using ``should`` syntax instead of ``expect`` syntax because I think ``should`` syntax is more readable than ``expect`` syntax and I like it.
-
-Using ``expect`` syntax is recommended way because adding ``should`` to every object causes failures when used with BasicObject-subclassed proxy objects.
-
-But the one-liner syntax used with the examples in this page doesn't add ``should`` to any objects, so this syntax doesn't cause the above problems.That's why I'm using the one-liner ``should`` syntax.
-
-Please see [the document of rspec-expectations](https://github.com/rspec/rspec-expectations/blob/master/Should.md) if you'd like to know the detail of the issue.
+**Note:** In the following examples, due to my preference I’m using `should` syntax, but Serverspec works well on `expect` syntax.
 
 ----
 
