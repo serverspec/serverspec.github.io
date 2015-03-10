@@ -1,6 +1,6 @@
-### <a name="x509_private_key">x509_private_key</a>
+### <a name="x509_private_key">x509\_private\_key</a>
 
-x509_private_key resource type
+x509\_private\_key resource type
 
 #### be_encrypted
 
@@ -22,7 +22,7 @@ describe x509_private_key('/my/private/server-key.pem') do
 end
 ```
 
-#### has_matching_certificate
+#### has\_matching\_certificate
 
 In order to ensure that the private key modulus is equal to modulus of given certificate, that is, certificate has been created from key. 
 

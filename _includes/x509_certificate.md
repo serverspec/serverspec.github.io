@@ -22,9 +22,9 @@ describe x509_certificate('some_cert.pem') do
 end
 ```
 
-#### validity_in_days
+#### validity\_in\_days
 
-In order to ensure that a certificate is valid for a certain amount of days, use **validity_in_days**.
+In order to ensure that a certificate is valid for a certain amount of days, use **validity\_in\_days**.
 
 ```ruby
 describe x509_certificate('some_cert.pem') do
