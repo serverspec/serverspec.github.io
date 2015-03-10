@@ -107,7 +107,6 @@ describe file('/etc/sudoers') do
 end
 ```
 
-
 #### be\_linked\_to
 
 In order to test a subject is linked to a given file or directory, you should use **be\_linked\_to** matcher.
