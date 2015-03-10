@@ -79,6 +79,8 @@ end
 
 In order to test a subject is set to given mode, you should use **be_mode** matcher.
 
+**Notice: ``be_mode``, supports 3 and 4 number octet matching in the format '755' and '2755'**
+
 ```ruby
 describe file('/etc/sudoers') do
   it { should be_mode 440 }
@@ -105,17 +107,6 @@ describe file('/etc/sudoers') do
 end
 ```
 
-#### be\_mode
-
-In order to test a subject has the correct file permissions, you should use **be\_mode** matcher.
-
-**Notice: ``be_mode``, supports 3 and 4 number octet matching in the format '755' and '2755'**
-
-```ruby
-describe file('/etc/sudoers') do
-  it { should be_mode '600' }
-end
-```
 
 #### be\_linked\_to
 
