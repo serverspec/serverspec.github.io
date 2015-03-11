@@ -2,7 +2,7 @@
 
 Network bridge resource type.
 
-### exist
+#### exist
 
 In order to test a bridge exists, you shoud use **exist** matcher.
 
