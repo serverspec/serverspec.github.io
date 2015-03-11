@@ -48,7 +48,7 @@ title: Resource Types
 | [service](#service)
 | [user](#user)
 | [x509_certificate](#x509_certificate)
-| [x509_private_key](#x509_private_key)
+| [x509\_private\_key](#x509_private_key)
 | [windows\_feature](#windows_feature)
 | [windows\_registry\_key](#windows_registry_key)
 | [yumrepo](#yumrepo)
