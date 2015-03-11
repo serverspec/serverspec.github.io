@@ -2,11 +2,12 @@
 
 Process resource type.
 
-You can test any process parameter available through the `ps` command like this:
+You can test any process parameter available (such as `user`, `group`, `args`...) through the `ps` command like this:
 
 ```ruby
 describe process("memcached") do
-    its(:args) { should match /-c 32000\b/ }
+  its(:user) { should eq "memcached" }
+  its(:args) { should match /-c 32000\b/ }
 end
 ```
 
