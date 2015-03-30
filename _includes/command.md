@@ -19,3 +19,28 @@ describe command('ls /foo') do
   its(:exit_status) { should eq 0 }
 end
 ```
+
+#### contain
+
+In order to test a command stdout/stderr a given string, you can use **contain** matcher.
+
+```ruby
+describe command('apachectl -M') do
+  its(:stdout) { should contain('proxy_module') }
+end
+```
+
+You can test a given string within a given range.
+
+```ruby
+describe command('apachectl -V') do
+  # test 'Prefork' exists between "Server MPM" and "Server compiled".
+  its(:stdout) { should contain('Prefork').from(/^Server MPM/).to(/^Server compiled/) }
+
+  # test 'conf/httpd.conf' exists after "SERVER_CONFIG_FILE".
+  its(:stdout) { should contain('conf/httpd.conf').after('SERVER_CONFIG_FILE') }
+
+  # test 'Apache/2.2.29' exists before "Server built".
+  its(:stdout) { should contain(' Apache/2.2.29').before('Server built') }
+end
+```
