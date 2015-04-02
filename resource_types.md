@@ -25,6 +25,8 @@ title: Resource Types
 | [command](#command)
 | [cron](#cron)
 | [default_gateway](#default_gateway)
+| [docker_container](#docker_container)
+| [docker_image](#docker_image)
 | [file](#file)
 | [group](#group)
 | [host](#host)
@@ -92,6 +94,16 @@ title: Resource Types
 
 {% capture default_gateway %}{% include default_gateway.md %}{% endcapture %}
 {{ default_gateway | markdownify }}
+
+----
+
+{% capture docker_container %}{% include docker_container.md %}{% endcapture %}
+{{ docker_container | markdownify }}
+
+----
+
+{% capture docker_image %}{% include docker_image.md %}{% endcapture %}
+{{ docker_image | markdownify }}
 
 ----
 
