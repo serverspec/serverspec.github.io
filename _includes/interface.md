@@ -4,7 +4,7 @@ Network interface resource type.
 
 #### exist
 
-In order to test a interface exist, you shoud use **exist** matcher.
+In order to test a interface exist, you should use **exist** matcher.
 
 ```ruby
 describe interface('eth0') do

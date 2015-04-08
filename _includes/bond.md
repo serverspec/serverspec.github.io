@@ -4,7 +4,7 @@ Network bond resource type.
 
 ### exist
 
-In order to test a bond exists, you shoud use **exist** matcher.
+In order to test a bond exists, you should use **exist** matcher.
 
 ```ruby
 describe bond('bond0') do
