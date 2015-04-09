@@ -4,7 +4,7 @@ Network bridge resource type.
 
 #### exist
 
-In order to test a bridge exists, you shoud use **exist** matcher.
+In order to test a bridge exists, you should use **exist** matcher.
 
 ```ruby
 describe bridge('br0') do
