@@ -10,7 +10,7 @@ title: Home
 
 With Serverspec, you can write RSpec tests for checking your servers are configured correctly.
 
-Serverspec tests your servers' **actual state** by **executing command locally, via SSH, via WinRM, via Docker API and so on**. So you don't need to install any agent softwares on your servers and can use any configuration management tools, [Puppet](https://puppetlabs.com/), [Chef](http://www.opscode.com/chef/), [CFEngine](http://cfengine.com/), [Itamae](http://itamae.kitchen) and so on.
+Serverspec tests your servers' **actual state** by **executing command locally, via SSH, via WinRM, via Docker API and so on**. So you don't need to install any agent softwares on your servers and can use any configuration management tools, [Puppet](https://puppetlabs.com/), [Ansible](http://www.ansible.com/), [CFEngine](http://cfengine.com/), [Itamae](http://itamae.kitchen) and so on.
 
 **But the true aim of Serverspec is to help refactoring infrastructure code.**
 

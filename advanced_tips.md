@@ -92,7 +92,7 @@ RSpec allows shared behaviors.  Using this allows an alternate method of writing
 be run on multiple servers.
 
 First, create a directory to hold the shared examples...typically 'support' or 'shared'
-In that directory, create a subdirectory to hold like behaviors. For example, if you are using Puppet, Chef, etc
+In that directory, create a subdirectory to hold like behaviors. For example, if you are using Puppet, Ansible, Itamae, etc
 and you want to write shared behavior for your 'database' module/recipe/whatever.
 
 ```bash
