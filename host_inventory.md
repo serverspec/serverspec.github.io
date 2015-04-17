@@ -5,7 +5,7 @@ title: Host Inventory
 
 ## Host Inventory
 
-You can get host inventory information like [Ohai](http://docs.chef.io/ohai.html) like this. (But does not have full compatibility with Ohai.)
+You can get host inventory information.
 
 ```ruby
 host_inventory['memory']['total']
