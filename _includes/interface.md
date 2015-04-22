@@ -24,11 +24,21 @@ end
 
 #### have\_ipv4\_address
 
-In order to test an interface has an ip address, you should use **have\_ipv4\_address** matcher.
+In order to test an interface has an IP address, you should use **have\_ipv4\_address** matcher.
 
 ```ruby
 describe interface('eth0') do
   it { should have_ipv4_address("192.168.10.10") }
   it { should have_ipv4_address("192.168.10.10/24") }
+end
+```
+#### have\_ipv6\_address
+
+In order to test an interface has an IPv6 address, you should use **have\_ipv6\_address** matcher.
+
+```ruby
+describe interface('eth0') do
+  it { should have_ipv6_address("fe80::1") }
+  it { should have_ipv6_address("fd00::1/48") }
 end
 ```
