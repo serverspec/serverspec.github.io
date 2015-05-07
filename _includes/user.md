@@ -64,3 +64,22 @@ describe user('root') do
 end
 ```
 
+#### minimum\_days\_between\_password\_change
+
+In order to test the minimum days that a user is allowed to change their password use **minimum\_days\_between\_password\_change** matcher.
+
+```ruby
+describe user('root') do
+  its(:minimum_days_between_password_change) { should eq 0 }
+end
+```
+
+#### maximum\_days\_between\_password\_change
+
+In order to test the maximum days that a user is allowed to change their password use **maximum\_days\_between\_password\_change** matcher.
+
+```ruby
+describe user('root') do
+  its(:maximum_days_between_password_change) { should eq 99999 }
+end
+```
