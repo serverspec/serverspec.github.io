@@ -12,6 +12,16 @@ describe interface('eth0') do
 end
 ```
 
+#### up
+
+In order to test an interface is up, you should use **be_up** matcher.
+
+```ruby
+describe interface('eth0') do
+  it { should be_up }
+end
+```
+
 #### speed
 
 In order to test the speed of network interface is set up correctly, you should use this syntax.
