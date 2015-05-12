@@ -312,6 +312,28 @@ end
 
 ----
 
+You can pass specific options to sudo.
+
+For example, run command under `appuser` with simulate initial login.
+
+```ruby
+# In spec_helper.rb
+set :sudo_options, [ '-u', 'appuser', '-i' ]  # By Array
+or
+set :sudo_options, '-u appuser -i'  # By String
+```
+
+Or only in a block scope.
+
+```ruby
+describe command('~/.rbenv/shims/gem list') do
+  let(:sudo_options) { '-u appuser -i' }
+  its(:stdout) { should contain('bundler') }
+end
+```
+
+----
+
 ## How to get OS information
 
 You can get OS information of the target host by `os` helper method.
