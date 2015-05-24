@@ -126,7 +126,7 @@ end
 
 # Or
 
-Specinfra.configuraion.path = '/sbin:/usr/local/sbin'
+Specinfra.configuration.path = '/sbin:/usr/local/sbin'
 ```
 
 In v2, you must set `$PATH` in path configuration.
