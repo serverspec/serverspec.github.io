@@ -102,7 +102,7 @@ mkdir -p serverspec/shared/database
 then serverspec/shared/database/init.rb:
 
 ```ruby
-shared_examples 'db::init' do
+shared_examples 'database::init' do
 
   describe package('mysql-community-server') do
     it { should be_installed }
@@ -128,7 +128,7 @@ and maybe bacon.bar.com also has apache:
 ```ruby
 require 'spec_helper'
 
-describe 'foo.bar.com' do
+describe 'bacon.bar.com' do
   include_examples 'database::init'
   include_examples 'apache::init'
 end
