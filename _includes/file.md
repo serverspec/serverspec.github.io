@@ -12,6 +12,16 @@ describe file('/etc/passwd') do
 end
 ```
 
+#### exist
+
+In order to test the presence of a file, you should use **exist** matcher.
+
+```ruby
+describe file('/etc/passwd') do
+  it { should exist }
+end
+```
+
 #### be_directory
 
 In order to test a subject exists as a directory, you should use **be_directory** matcher.
