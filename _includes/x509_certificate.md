@@ -4,7 +4,7 @@ x509_certificate resource type
 
 #### be_certificate
 
-In order to check wether a file is a certificate, use **be_certificate** matcher.
+In order to check whether a file is a certificate, use **be_certificate** matcher.
 
 ```ruby
 describe x509_certificate('some_cert.pem') do

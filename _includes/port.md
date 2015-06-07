@@ -33,7 +33,7 @@ describe port(53) do
 end
 ```
 
-You can specificy local binding address for port (this features requires `gem 'serverspec', '~> 2.0.0.beta8'`).
+You can specify local binding address for port (this features requires `gem 'serverspec', '~> 2.0.0.beta8'`).
 
 ```ruby
 describe port(80) do
