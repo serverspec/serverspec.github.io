@@ -126,4 +126,4 @@ Finished in 0.21091 seconds (files took 6.37 seconds to load)
 
 `serverspec` test suites are meant to be run against a single machine (or docker container). 
 
-In other words, you should not try to issue a single `rspec` command that would harvest and run tests against multiple machines or containers. You need to issue one `rspec`command for each of them.
+In other words, you should not try to issue a single `rspec` command that would harvest and run tests against multiple machines or containers. You need to issue one `rspec` command for each of them.
