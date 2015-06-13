@@ -22,9 +22,9 @@ describe file('/var/log/httpd') do
 end
 ```
 
-#### be_block_device
+#### be\_block\_device
 
-In order to test a subject exists as a block device, you should use **be_block_device** matcher.
+In order to test a subject exists as a block device, you should use **be\_block\_device** matcher.
 
 ```ruby
 describe file('/dev/disk0') do
@@ -32,9 +32,9 @@ describe file('/dev/disk0') do
 end
 ```
 
-#### be_character_device
+#### be\_character\_device
 
-In order to test a subject exists as a character device, you should use **be_character_device** matcher.
+In order to test a subject exists as a character device, you should use **be\_character\_device** matcher.
 
 ```ruby
 describe file('/dev/ttys0') do
