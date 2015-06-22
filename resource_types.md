@@ -40,6 +40,7 @@ title: Resource Types
 | [linux\_kernel\_parameter](#linux_kernel_parameter)
 | [lxc](#lxc)
 | [mail\_alias](#mail_alias)
+| [mysql\_config](#mysql_config)
 | [package](#package)
 | [php_config](#php_config)
 | [port](#port)
@@ -169,6 +170,11 @@ title: Resource Types
 
 {% capture mail_alias %}{% include mail_alias.md %}{% endcapture %}
 {{ mail_alias | markdownify }}
+
+----
+
+{% capture mysql_config %}{% include mysql_config.md %}{% endcapture %}
+{{ mysql_config | markdownify }}
 
 ----
 
