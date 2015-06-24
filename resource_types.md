@@ -17,7 +17,7 @@ title: Resource Types
 </script>
 
 ## Resource Types
-
+ 
 <nav class="resource-types">
   [bond](#bond)
 | [bridge](#bridge)
