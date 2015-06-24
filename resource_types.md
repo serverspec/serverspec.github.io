@@ -18,7 +18,8 @@ title: Resource Types
 
 ## Resource Types
 
-  [bond](#bond)
+<nav class="resource-types">
+[bond](#bond)
 | [bridge](#bridge)
 | [cgroup](#cgroup)
 | [command](#command)
@@ -55,7 +56,7 @@ title: Resource Types
 | [windows\_registry\_key](#windows_registry_key)
 | [yumrepo](#yumrepo)
 | [zfs](#zfs)
-
+</nav>
 
 ----
 
