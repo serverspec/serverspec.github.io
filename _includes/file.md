@@ -52,6 +52,16 @@ describe file('/dev/ttys0') do
 end
 ```
 
+#### be_pipe
+
+In order to test a subject exists as a name pipe, you should use the **be_pipe** matcher.
+
+```ruby
+describe file('/tmp/unicorn.fifo') do
+  it { should be_pipe }
+end
+```
+
 #### be_socket
 
 In order to test a subject exists as a socket, you should use **be_socket** matcher.
@@ -210,6 +220,16 @@ describe file('/etc/init.d/httpd') do
 end
 ```
 
+#### be_immutable
+
+In order to test a subject is immutable, you should use the **be\_immutable** matcher.
+
+```ruby
+describe file('/root/.ssh/authorized_keys') do
+  it { should be_immutable }
+end
+```
+
 #### be_mounted
 
 In order to test a directory is mounted, you should use **be\_mounted** matcher.
@@ -267,6 +287,17 @@ describe file('/etc/services') do
   its(:md5sum) { should eq '35435ea447c19f0ea5ef971837ab9ced' }
 end
 ```
+
+#### its(:selinux_label)
+
+In order to test a file's SELinux label matches a given value, you should use **its(:selinux_label)**.
+
+```ruby
+describe file('/etc/services') do
+  its(:selinux_label) { should eq 'system_u:object_r:etc_t:s0' } 
+end 
+```
+
 #### its(:sha256sum)
 
 In order to test a file's sha256 checksum matches a given value, you should use **its(:sha256sum)**.
@@ -274,5 +305,15 @@ In order to test a file's sha256 checksum matches a given value, you should use 
 ```ruby
 describe file('/etc/services') do
   its(:sha256sum) { should eq 'a861c49e9a76d64d0a756e1c9125ae3aa6b88df3f814a51cecffd3e89cce6210' }
+end
+```
+
+#### its(:size)
+
+In order to test a file's size matches a given value, you should use **its(:size)**. The file size is passed as bytes.
+
+```ruby
+describe file('/etc/services') do
+  its(:size) { should < 641021 }
 end
 ```
