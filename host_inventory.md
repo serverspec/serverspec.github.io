@@ -97,10 +97,17 @@ You can get file system information like this.
 ```ruby
 host_inventory['filesystem']['/dev/xvda1']['kb_size']       # => 8123812
 host_inventory['filesystem']['/dev/xvda1']['kb_used']       # => 1094944
-host_inventory['filesystem']['/dev/xvda1']['kb_available"'] # => 6928620
+host_inventory['filesystem']['/dev/xvda1']['kb_available']  # => 6928620
 host_inventory['filesystem']['/dev/xvda1']['percent_used']  # => 14%
 host_inventory['filesystem']['/dev/xvda1']['mount']         # => /
 
+```
+
+On Solaris there are multiple instances of the file system _swap_. To provide access to every instance an integer, starting at 0 and incrementing by 1, is appended to the name.
+
+```ruby 
+host_inventory['filesystem']['swap0']['mount']  # => /etc/svc/volatile
+host_inventory['filesystem']['swap1']['mount']  # => /tmp
 ```
 
 ----
