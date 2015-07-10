@@ -181,3 +181,12 @@ You can get OS version like this.
 host_inventory['platform_version'] # => 6.5
 ```
 
+----
+
+### virtualization
+
+To find out if the host is running on a virtualized platform or in a container use the _virtualization_ keyword. 
+
+```ruby
+host_inventory['virtualization'][:system] # => "docker" 
+```
