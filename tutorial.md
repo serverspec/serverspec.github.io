@@ -3,13 +3,13 @@ layout: layout
 title: tutorial
 ---
 
-<nav>
+## Tutorial
+
   [Writing tests](#writing_tests)
 | [Multi OS support](#multi_os_support)
 | [Sudo password support](#sudo_password_support)
-</nav>
 
-## Tutorial
+----
 
 ### <a name="writing_tests">Writing tests</a>
 
