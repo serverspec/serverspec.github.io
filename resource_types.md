@@ -47,6 +47,7 @@ title: Resource Types
 | [process](#process)
 | [routing_table](#routing_table)
 | [selinux](#selinux)
+| [selinux_module](#selinux_module)
 | [service](#service)
 | [user](#user)
 | [x509_certificate](#x509_certificate)
@@ -208,6 +209,11 @@ title: Resource Types
 
 {% capture selinux %}{% include selinux.md %}{% endcapture %}
 {{ selinux | markdownify }}
+
+----
+
+{% capture selinux_module %}{% include selinux_module.md %}{% endcapture %}
+{{ selinux_module | markdownify }}
 
 ----
 
