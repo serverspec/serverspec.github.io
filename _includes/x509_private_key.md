@@ -8,7 +8,7 @@ Checks if given file contains an encryption signature:
 
 ```ruby
 describe x509_private_key('/my/private/server-key.pem') do
-        it { should_not be_encrypted }
+  it { should_not be_encrypted }
 end
 ```
 
@@ -18,7 +18,7 @@ In order to check key integrity.
 
 ```ruby
 describe x509_private_key('/my/private/server-key.pem') do
-        it { should be_valid }
+  it { should be_valid }
 end
 ```
 
@@ -28,6 +28,6 @@ In order to ensure that the private key modulus is equal to modulus of given cer
 
 ```ruby
 describe x509_private_key('/my/private/server-key.pem') do
-        it { should have_matching_certificate('/my/certs/server-cert.pem') }
+  it { should have_matching_certificate('/my/certs/server-cert.pem') }
 end
 ```
