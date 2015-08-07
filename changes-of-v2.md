@@ -181,7 +181,7 @@ In v2, you can set SSH settings like this.
 
 ```ruby
 set :host, 'host.example.jp'
-set :ssh_options, :user => 'user', port => 2222
+set :ssh_options, :user => 'user', :port => 2222
 ```
 
 #### Environment Variables
