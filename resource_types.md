@@ -36,6 +36,7 @@ title: Resource Types
 | [ipnat](#ipnat)
 | [iptables](#iptables)
 | [kernel_module](#kernel_module)
+| [linux\_audit\_system](#linux_audit_system)
 | [linux\_kernel\_parameter](#linux_kernel_parameter)
 | [lxc](#lxc)
 | [mail\_alias](#mail_alias)
@@ -154,6 +155,11 @@ title: Resource Types
 
 {% capture kernel_module %}{% include kernel_module.md %}{% endcapture %}
 {{ kernel_module | markdownify }}
+
+----
+
+{% capture linux_audit_system %}{% include linux_audit_system.md %}{% endcapture %}
+{{ linux_audit_system | markdownify }}
 
 ----
 
