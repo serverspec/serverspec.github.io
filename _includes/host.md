@@ -41,7 +41,7 @@ end
 
 #### its(:ipaddress)
 
-You can get the ipaddress of the host,  and can use any matchers rspec supports to them.
+You can get the ipaddress of the host, and can use any matchers rspec supports to them.
 
 ```ruby
 describe host('example.jp') do
@@ -50,6 +50,37 @@ end
 
 describe host('example.jp') do
   its(:ipaddress) { should match /1\.2\.3\./ }
+end
+
+```
+On a dualstack host this may return an IPv6 address, notably Linux. Use _its(:ipv4\_address)_ or _its(:ipv6\_address)_ described below to get the desired address format. 
+
+#### its(:ipv4_address)
+
+Query the IPv4 ipaddress of a host and apply any rspec supported matchers.
+
+```ruby
+describe host('example.jp') do
+  its(:ipv4_address) { should eq '1.2.3.4' }
+end
+
+describe host('example.jp') do
+  its(:ipv4_address) { should match /1\.2\.3\./ }
+end
+
+```
+
+#### its(:ipv6_address)
+
+Query the IPv6 ipaddress of a host and apply any rspec supported matchers.
+
+```ruby
+describe host('example.jp') do
+  its(:ipv6_address) { should eq '2001:db8::1234' }
+end
+
+describe host('example.jp') do
+  its(:ipv6_address) { should match /2001:db8:.*/ }
 end
 
 ```
