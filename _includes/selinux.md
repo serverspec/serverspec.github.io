@@ -22,3 +22,17 @@ describe selinux do
   it { should be_permissive }
 end
 ```
+
+To check if a given policy is used in permissive or enforcing mode append the **with_policy** matcher.
+
+```ruby
+# SELinux should be enforcing with policy mls
+describe selinux do
+  it { should be_enforcing.with_policy('mls') }
+end
+
+# SELinux should be permissive with policy targeted
+describe selinux do
+  it { should be_permissive.with_policy('targeted') }
+end
+```
