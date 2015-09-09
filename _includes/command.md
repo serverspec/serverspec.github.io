@@ -22,6 +22,8 @@ end
 
 #### contain
 
+**Notice: The matcher ``contain`` will be obsoleted.**
+
 In order to test a command stdout/stderr a given string, you can use **contain** matcher.
 
 ```ruby
