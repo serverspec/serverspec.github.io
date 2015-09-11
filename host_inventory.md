@@ -190,3 +190,37 @@ To find out if the host is running on a virtualized platform or in a container u
 ```ruby
 host_inventory['virtualization'][:system] # => "docker" 
 ```
+
+### block_device
+
+You can get block devices.
+
+```ruby
+host_inventory['block_device']['sda']['size'] # => 81920000
+```
+
+`host_inventory['block_device']` is a hash which has keys and values like this.
+
+```ruby
+{
+    "loop0" => {
+        "rotational" => "1",
+         "removable" => "0",
+              "size" => "0"
+    },
+     "ram0" => {
+        "rotational" => "1",
+         "removable" => "0",
+              "size" => "32768"
+    },
+      "sda" => {
+             "model" => "VBOX HARDDISK",
+               "rev" => "1.0",
+             "state" => "running",
+           "timeout" => "30",
+            "vendor" => "ATA",
+        "rotational" => "1",
+         "removable" => "0",
+              "size" => "81920000"
+    }
+```
