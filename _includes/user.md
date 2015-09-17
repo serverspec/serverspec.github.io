@@ -64,6 +64,24 @@ describe user('root') do
 end
 ```
 
+#### encrypted\_password
+
+To run tests against hashed passwords use the **encrypted\_password** matcher.
+
+Match a user without password.
+```ruby
+describe user('nobody') do
+  its(:encrypted_password) { should match(/^.{0,2}$/) }
+end
+```
+
+Ensure password is stored using a SHA-512 hash.
+```ruby
+describe user('unicorn') do
+  its(:encrypted_password) { should match(/^\$6\$.{16}\$.{86}$/) }
+end
+```
+
 #### minimum\_days\_between\_password\_change
 
 In order to test the minimum days that a user is allowed to change their password use **minimum\_days\_between\_password\_change** matcher.
