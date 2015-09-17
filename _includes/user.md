@@ -69,6 +69,7 @@ end
 To run tests against hashed passwords use the **encrypted\_password** matcher.
 
 Match a user without password.
+
 ```ruby
 describe user('nobody') do
   its(:encrypted_password) { should match(/^.{0,2}$/) }
@@ -76,6 +77,7 @@ end
 ```
 
 Ensure password is stored using a SHA-512 hash.
+
 ```ruby
 describe user('unicorn') do
   its(:encrypted_password) { should match(/^\$6\$.{16}\$.{86}$/) }
