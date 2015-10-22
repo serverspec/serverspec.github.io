@@ -22,7 +22,7 @@ describe x509_private_key('/my/private/server-key.pem') do
 end
 ```
 
-#### has\_matching\_certificate
+#### have\_matching\_certificate
 
 In order to ensure that the private key modulus is equal to modulus of given certificate, that is, certificate has been created from key. 
 
