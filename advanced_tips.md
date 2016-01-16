@@ -287,11 +287,11 @@ RSpec.configure do |c|
 ```ruby
 # In xxxxx_spec.rb
 describe command('whoami'), :sudo => false do
-  it { should return_stdout 'vagrant' }
+  its(:stdout) { should match 'vagrant' }
 end
 
 describe command('whoami') do
-  it { should return_stdout 'root' }
+  its(:stdout) { should match 'root' }
 end
 ```
 
@@ -302,11 +302,11 @@ Another way to disable sudo temporarily.
 ```ruby
 describe command('whoami') do
   let(:disable_sudo) { true }
-  it { should return_stdout 'vagrant' }
+  its(:stdout) { should match 'vagrant' }
 end
 
 describe command('whoami') do
-  it { should return_stdout 'root' }
+  its(:stdout) { should match 'root' }
 end
 ```
 
