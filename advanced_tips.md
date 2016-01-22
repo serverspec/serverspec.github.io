@@ -76,7 +76,7 @@ namespace :spec do
     desc "Run serverspec to #{host}"
     RSpec::Core::RakeTask.new(short_name) do |t|
       ENV['TARGET_HOST'] = host
-      t.pattern = "spec/base,#{role}/*_spec.rb"
+      t.pattern = "spec/{base,#{role}}/*_spec.rb"
     end
   end
 end
