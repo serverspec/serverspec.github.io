@@ -32,6 +32,7 @@ title: Resource Types
 | [iis\_app\_pool](#iis_app_pool)
 | [iis\_website](#iis_website)
 | [interface](#interface)
+| [ip6tables](#ip6tables)
 | [ipfilter](#ipfilter)
 | [ipnat](#ipnat)
 | [iptables](#iptables)
@@ -135,6 +136,11 @@ title: Resource Types
 
 {% capture interface %}{% include interface.md %}{% endcapture %}
 {{ interface | markdownify }}
+
+----
+
+{% capture ip6tables %}{% include ip6tables.md %}{% endcapture %}
+{{ ip6tables | markdownify }}
 
 ----
 
