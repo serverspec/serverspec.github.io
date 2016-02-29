@@ -77,6 +77,15 @@ end
 
 ```
 
+Should the monitor resource not match the service name the **with\_name** matcher can be used override it.
+
+```ruby
+describe service('tinc') do
+  it { should be_monitored_by('monit').with_name('tinc-myvpn') }
+end
+
+```
+
 
 #### have\_start\_mode
 
