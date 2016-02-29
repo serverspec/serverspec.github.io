@@ -16,11 +16,21 @@ end
 
 #### belong\_to\_group
 
-In order to test a user belongs to a given group, you should use **belong\_to\_group** matcher.
+In order to test a user belongs to a given group, be it primary or secondary, use the **belong\_to\_group** matcher.
 
 ```ruby
 describe user('apache') do
   it { should belong_to_group 'apache' }
+end
+```
+
+#### belong\_to\_primary\_group
+
+In order to test a user's primary group, use the **belong\_to\_primary\_group** matcher.
+
+```ruby
+describe user('apache') do
+  it { should belong_to_primary_group 'apache' }
 end
 ```
 
@@ -80,7 +90,7 @@ Ensure password is stored using a SHA-512 hash.
 
 ```ruby
 describe user('unicorn') do
-  its(:encrypted_password) { should match(/^\$6\$.{16}\$.{86}$/) }
+  its(:encrypted_password) { should match(/^\$6\$.{8}\$.{86}$/) }
 end
 ```
 
