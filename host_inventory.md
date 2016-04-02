@@ -23,6 +23,38 @@ node['memory']['total']
 
 ## Supported inventory types
 
+### cpu
+
+```ruby
+host_inventory['cpu']['total']               # => 1
+host_inventory['cpu'][0]['vendor_id']        # => GenuineIntel
+host_inventory['cpu'][0]['cpu_family']       # => 6
+host_inventory['cpu'][0]['model']            # => 58
+host_inventory['cpu'][0]['model_name']       # => Intel(R) Core(TM) i7-3630QM CPU @ 2.40GHz
+host_inventory['cpu'][0]['stepping']         # => 9
+host_inventory['cpu'][0]['microcode']        # => 0x19
+host_inventory['cpu'][0]['cpu_mhz']          # => 2395.601
+host_inventory['cpu'][0]['cache_size']       # => 6144KB
+host_inventory['cpu'][0]['physical_id']      # => 0
+host_inventory['cpu'][0]['siblings']         # => 1
+host_inventory['cpu'][0]['core_id']          # => 0
+host_inventory['cpu'][0]['cpu_cores']        # => 1
+host_inventory['cpu'][0]['apicid']           # => 0
+host_inventory['cpu'][0]['initial_apicid']   # => 0
+host_inventory['cpu'][0]['fpu']              # => yes
+host_inventory['cpu'][0]['fpu_exception']    # => yes
+host_inventory['cpu'][0]['cpuid_level']      # => 13
+host_inventory['cpu'][0]['wp']               # => yes
+host_inventory['cpu'][0]['flags']            # => ["fpu", "vme", "de", "pse", "tsc", "msr", "pae", "mce", "cx8", "apic", "sep", "mtrr", "pge", "mca", "cmov", "pat", "pse36", "clflush", "mmx", "fxsr", "sse", "sse2", "syscall", "nx", "rdtscp", "lm", "constant_tsc", "rep_good", "nopl", "xtopology", "nonstop_tsc", "pni", "pclmulqdq", "monitor", "ssse3", "cx16", "sse4_1", "sse4_2", "popcnt", "aes", "xsave", "avx", "rdrand", "lahf_lm"]
+host_inventory['cpu'][0]['bogomips']         # => 4791.20
+host_inventory['cpu'][0]['clflush_size']     # => 64
+host_inventory['cpu'][0]['cache_alignment']  # => 64
+host_inventory['cpu'][0]['address_sizes']    # => 36 bits physical, 48 bits virtual
+host_inventory['cpu'][0]['power_management'] # =>
+```
+
+----
+
 ### domain
 
 You can get domain name like this.
@@ -105,7 +137,7 @@ host_inventory['filesystem']['/dev/xvda1']['mount']         # => /
 
 On Solaris there are multiple instances of the file system _swap_. To provide access to every instance an integer, starting at 0 and incrementing by 1, is appended to the name.
 
-```ruby 
+```ruby
 host_inventory['filesystem']['swap0']['mount']  # => /etc/svc/volatile
 host_inventory['filesystem']['swap1']['mount']  # => /tmp
 ```
@@ -128,6 +160,20 @@ You can get host name like this.
 
 ```ruby
 host_inventory['hostname'] # => localhost
+```
+
+----
+
+### kernel
+
+You can get kernel information like this.
+
+```ruby
+host_inventory['kernel']['machine']       # => x86_64
+host_inventory['kernel']['name']          # => Linux
+host_inventory['kernel']['release']       # => 3.13.0-83-generic
+host_inventory['kernel']['version']       # => 3.13.0
+host_inventory['kernel']['version_major'] # => 3.13
 ```
 
 ----
@@ -185,10 +231,10 @@ host_inventory['platform_version'] # => 6.5
 
 ### virtualization
 
-To find out if the host is running on a virtualized platform or in a container use the _virtualization_ keyword. 
+To find out if the host is running on a virtualized platform or in a container use the _virtualization_ keyword.
 
 ```ruby
-host_inventory['virtualization'][:system] # => "docker" 
+host_inventory['virtualization'][:system] # => "docker"
 ```
 
 ### block_device
