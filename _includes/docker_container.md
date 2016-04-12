@@ -6,18 +6,18 @@ Container settings can be tested like this.
 
 ```ruby
 describe docker_container('focused_curie') do
-  its(:HostConfig_NetworkMode) { should eq 'bridge' }
+  its(['HostConfig.NetworkMode']) { should eq 'bridge' }
   its(:Path) { should eq '/bin/sh' }
 end
 ```
 
-#### be_present
+#### exist
 
 Check if a named container exists.
 
 ```ruby
 describe docker_container('focused_curie') do
-  it { should be_present }
+  it { should exist }
 end
 ```
 
@@ -40,4 +40,3 @@ describe docker_container('focused_curie') do
   it { should have_volume('/tmp','/data') }
 end
 ```
-
