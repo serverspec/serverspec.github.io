@@ -37,6 +37,7 @@ In order to test if a volume has been mounted.
 
 ```ruby
 describe docker_container('focused_curie') do
+  # matcher syntax: have_volume(container_path,host_path)
   it { should have_volume('/tmp','/data') }
 end
 ```
