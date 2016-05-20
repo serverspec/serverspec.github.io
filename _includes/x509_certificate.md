@@ -75,11 +75,21 @@ end
 
 #### keylength
 
-In oder to ensure that the key of a certificate has been generated with a certain key length, use the **key_length** matcher. 
+In order to ensure that the key of a certificate has been generated with a certain key length, use the **key_length** matcher.
 It returns the key length as an integer, so it can be easily compared like:
 
 ```ruby
 describe x509_certificate('some_cert.pem') do
   its(:keylength) { should be >= 2048 }
+end
+```
+
+#### subject\_alt\_names
+
+Subject alternative names of a certificate can be specified as the following:
+
+```ruby
+describe x509_certificate('some_cert.pem') do
+  its(:subject_alt_names) { should include 'DNS:www.example.com' }
 end
 ```
