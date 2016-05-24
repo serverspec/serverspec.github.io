@@ -317,3 +317,21 @@ describe file('/etc/services') do
   its(:size) { should < 641021 }
 end
 ```
+
+#### its(:content\_as\_yaml)
+
+In order to test YAML file's contents match a given value, you should use **its(:content\_as\_yaml)**.
+
+```ruby
+describe file('example.yml') do
+  its(:content_as_yaml) { should include('foo' => include('bar' => 'hoge')) }
+end
+```
+
+example.yml
+
+```yaml
+---
+foo:
+  bar: hoge
+```
