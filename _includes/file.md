@@ -335,3 +335,23 @@ example.yml
 foo:
   bar: hoge
 ```
+
+#### its(:content\_as\_json)
+
+In order to test JSON file's contents match a given value, you should use **its(:content\_as\_json)**.
+
+```ruby
+describe file('example.json') do
+  its(:content_as_json) { should include('foo' => include('bar' => 'hoge')) }
+end
+```
+
+example.json
+
+```json
+{
+  "foo": {
+    "bar": "hoge"
+  }
+}
+```
