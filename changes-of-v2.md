@@ -22,7 +22,7 @@ Serverspec v2 supports RSpec 3 and does not support RSpec 2 any more.
 ---
 ### Backward Compatibility
 
-Almost of Serverspec test code you wrote for v1 should  work with v2, but some matchers don't work.
+Almost all of the Serverspec test code you wrote for v1 should work with v2, but some matchers don't work.
 
 ---
 
