@@ -134,7 +134,23 @@ describe 'bacon.bar.com' do
 end
 ```
 
-You can see examples in [rubyisbeautiful/serverspec_examples](https://github.com/rubyisbeautiful/serverspec_examples)
+Note that you can also pass parameters for greater reuse:
+
+```ruby
+shared_examples 'deploy_user' do |deploy_user|
+  describe user(deploy_user) do
+    it { should exist }
+    it { should have_home_directory("/home/#{deploy_user}") }
+  end
+end
+
+# then later
+include_examples 'deploy_user', 'the_user'
+```
+
+You can see examples in [rubyisbeautiful/serverspec_examples](https://github.com/rubyisbeautiful/serverspec_examples).
+
+[RSpec shared examples docs](https://www.relishapp.com/rspec/rspec-core/docs/example-groups/shared-examples) will also help.
 
 ----
 
