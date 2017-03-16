@@ -1,3 +1,2 @@
-markdown: redcarpet
 exclude: ['Rakefile', 'README.md', 'config.rb', 'vender', 'vendor']
 
