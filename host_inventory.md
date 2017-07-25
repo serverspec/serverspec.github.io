@@ -154,6 +154,18 @@ host_inventory['fqdn'] # => localhost.localdomain
 
 ----
 
+### group
+
+You can get group information like this.
+
+```ruby
+host_inventory['group']['vagrant']['name'] # => vagrant
+host_inventory['group']['vagrant']['gid'] # => 1001
+host_inventory['group']['vagrant']['members'] # => []
+```
+
+----
+
 ### hostname
 
 You can get host name like this.
@@ -225,6 +237,21 @@ You can get OS version like this.
 
 ```ruby
 host_inventory['platform_version'] # => 6.5
+```
+
+----
+
+### user
+
+You can get user information like this.
+
+```ruby
+host_inventory['user']['vagrant']['name'] # => vagrant
+host_inventory['user']['vagrant']['uid'] # => 1001
+host_inventory['user']['vagrant']['gid'] # => 1001
+host_inventory['user']['vagrant']['gecos'] # => ""
+host_inventory['user']['vagrant']['directory'] # => /home/vagrant
+host_inventory['user']['vagrant']['shell'] # => /bin/bash
 ```
 
 ----
