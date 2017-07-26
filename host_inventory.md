@@ -122,6 +122,18 @@ host_inventory['ec2']['ami-id'] # => ami-35072834
 
 ----
 
+### facter
+
+If Facter is installed on the system, you can get information from it like this.
+
+```ruby
+host_inventory['facter']['os']['name'] # => Fedora
+host_inventory['facter']['os']['family'] # => RedHat
+host_inventory['facter']['os']['release'] # => {"major"=>"24", "full"=>"24"}
+```
+
+----
+
 ### filesystem
 
 You can get file system information like this.
@@ -217,6 +229,17 @@ host_inventory['memory']['committed_as']     # => 56248kB
 host_inventory['memory']['vmalloc_total']    # => 34359738367kB
 host_inventory['memory']['vmalloc_used']     # => 2448kB
 host_inventory['memory']['vmalloc_chunk']    # => 34359716791kB
+```
+
+----
+
+### ohai
+
+If Ohai is installed on the system, you can get information from it like this.
+
+```ruby
+host_inventory['ohai']['sessions']['by_session'] # => {"6"=>{"session"=>"6", "uid"=>"1001", "user"=>"vagrant", "seat"=>nil}}
+host_inventory['ohai']['sessions']['by_user'] # => {"vagrant"=>[{"session"=>"6", "uid"=>"1001", "user"=>"vagrant", "seat"=>nil}]}
 ```
 
 ----
