@@ -88,7 +88,7 @@ end
 
 ```ruby
 describe file('/etc/httpd/conf/httpd.conf') do
-  its(:content) { should match /ServerName www.example.jp/ }
+  its(:content) { should match /ServerName www\.example\.jp/ }
 end
 ```
 
@@ -96,7 +96,7 @@ In order to test a file contains a given string, you can use **contain** matcher
 
 ```ruby
 describe file('/etc/httpd/conf/httpd.conf') do
-  it { should contain 'ServerName www.example.jp' }
+  it { should contain 'ServerName www\.example\.jp' }
 end
 ```
 
